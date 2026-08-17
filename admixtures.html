@@ -1,0 +1,2073 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UC - Waterproofing</title>
+    <link rel="icon" href="./public/images/logo2.png">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./public/output.css">
+    <link rel="stylesheet" href="./src/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.0/swiper-bundle.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.0/swiper-bundle.min.js"></script>
+</head>
+
+<!-- Preloader -->
+<div id="preloader" class="fixed !z-[9999] inset-0 bg-white flex flex-col items-center justify-center">
+    <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/logo.png"
+        class="w-28 animate-up-pulse" alt="Logo">
+    <div class="w-8 h-8 border-4 border-gray-200 border-t-black rounded-full animate-spin mt-7"></div>
+</div>
+
+<body class="bg-gray-50">
+
+    <!-- Desktop Navbar -->
+    <nav class="hidden lg:block fixed top-5 left-0 w-full z-50">
+        <div class="max-w-7xl mx-auto px-5">
+            <div class="bg-[#f8f7f5]/90 shadow-md backdrop-blur-md border border-neutral-200 rounded-[26px]">
+                <div class="flex items-center justify-between px-8 py-1.5">
+                    <a href="./index.html">
+                        <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/logo.png"
+                            alt="Logo" class="w-28 object-contain">
+                    </a>
+
+                    <ul class="flex items-center mons font-semibold gap-12 text-[13px] uppercase text-gray-500">
+                        <li><a href="./index.html" class="hover:text-neutral-900 transition duration-300">Home</a></li>
+                        <li><a href="./about.html" class="hover:text-neutral-900 transition duration-300">About</a></li>
+                        <li><a href="./services.html" class="hover:text-neutral-900 transition duration-300">Services</a></li>
+<li class="relative">
+
+  <button id="dropdownProductsButton" data-dropdown-toggle="dropdownProducts"
+    data-dropdown-placement="bottom-start"
+    class="flex uppercase items-center gap-1 hover:text-neutral-900 transition duration-300">
+
+    Products
+
+    <svg class="w-3.5 h-3.5 mt-[1px]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7" />
+    </svg>
+
+  </button>
+
+  <!-- Dropdown Menu -->
+  <div id="dropdownProducts"
+    class="hidden absolute top-12 left-0 w-64 bg-white border border-neutral-200 tracking-[1px] rounded-2xl shadow-lg overflow-hidden">
+    <ul class="text-[11px] uppercase text-gray-500">
+
+      <li>
+        <a href="./adhesives.html"
+          class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition">
+          Adhesive
+        </a>
+      </li>
+
+      <li>
+        <a href="./admixtures.html"
+          class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition">
+          Admixtures
+        </a>
+      </li>
+
+      <li>
+        <a href="./concrete-repair.html"
+          class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition">
+          Concrete Repair
+        </a>
+      </li>
+
+      <li>
+        <a href="./flooring.html"
+          class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition">
+          Flooring
+        </a>
+      </li>
+
+      <li>
+        <a href="./grout-anchor.html"
+          class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition">
+          Grout and Anchor
+        </a>
+      </li>
+
+      <li>
+        <a href="./paints.html"
+          class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition">
+          Paint and Coatings
+        </a>
+      </li>
+
+      <li>
+        <a href="./pu.html"
+          class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition">
+          PU
+        </a>
+      </li>
+
+      <li>
+        <a href="./sealants.html"
+          class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition">
+          Sealants
+        </a>
+      </li>
+
+      <li>
+        <a href="./surface-treatment.html"
+          class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition">
+          Surface Treatment
+        </a>
+      </li>
+
+      <li>
+        <a href="./waterproofing.html"
+          class="block px-5 py-3 hover:bg-neutral-50 hover:text-neutral-900 transition">
+          Water Proofing
+        </a>
+      </li>
+
+    </ul>
+  </div>
+</li>
+
+                        <li><a href="./client.html" class="hover:text-neutral-900 transition duration-300">Our Clients</a></li>
+                        <li><a href="./public/pdfs/E-brouchure.pdf" download class="hover:text-neutral-900 transition duration-300">E-Brochure</a></li>
+                    </ul>
+
+                    <a href="./contact.html"
+                        class="flex items-center gap-4 text-neutral-900 hover:opacity-70 transition duration-300">
+                        <span class="w-10 h-px bg-neutral-900"></span>
+                        <span class="text-[14px] uppercase tracking-wide font-semibold mons">Contact Us</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Navbar -->
+    <nav class="lg:hidden fixed top-5 left-0 w-full z-[999]">
+        <div class="px-4">
+            <div class="bg-[#f8f7f5]/90 backdrop-blur-md border border-neutral-200 rounded-2xl px-5 py-2 flex items-center justify-between">
+                <a href="./index.html">
+                    <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/logo.png"
+                        class="w-24 object-contain" alt="Logo">
+                </a>
+                <button id="openMenu" class="w-11 h-11 rounded-full border border-neutral-300 flex items-center justify-center text-neutral-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Overlay -->
+    <div id="overlay" class="fixed inset-0 bg-black/20 backdrop-blur-sm hidden z-[998] opacity-0 transition duration-300"></div>
+
+    <!-- Side Menu -->
+    <div id="sideMenu"
+        class="fixed top-0 right-0 h-full w-[85%] max-w-sm bg-[#f8f7f5] z-[999] translate-x-full transition-transform duration-500 ease-in-out border-l border-neutral-200 flex flex-col">
+        <div class="flex items-center justify-between px-6 py-6 border-b border-neutral-200">
+            <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/logo.png"
+                class="w-24 object-contain" alt="Logo">
+            <button id="closeMenu" class="w-10 h-10 rounded-full border border-neutral-300 flex items-center justify-center text-neutral-700">✕</button>
+        </div>
+        <div class="flex-1 overflow-y-auto px-6 py-8">
+            <ul class="space-y-7 text-[15px] tracking-wide font-medium text-neutral-700 man">
+                <li><a href="./index.html" class="flex items-center justify-between hover:text-neutral-900 transition">Home <span class="w-8 h-px bg-neutral-900"></span></a></li>
+                <li><a href="./about.html" class="hover:text-neutral-900 transition block">About</a></li>
+                <li><a href="./services.html" class="hover:text-neutral-900 transition block">Services</a></li>
+                <li>
+                    <div class="border border-neutral-200 rounded-2xl overflow-hidden bg-white">
+                        <button id="productToggle" class="w-full flex items-center justify-between px-5 py-4 text-left text-neutral-800">
+                            <span>Products</span>
+                            <svg id="productArrow" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 transition duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div id="productMenu" class="hidden border-t border-neutral-200 px-5 py-4">
+                            <ul class="space-y-4 text-[14px] text-neutral-600">
+                                <li><a href="./waterproofing.html" class="block hover:text-neutral-900 transition">Waterproofing</a></li>
+                                <li><a href="./flooring.html" class="block hover:text-neutral-900 transition">Industrial Flooring</a></li>
+                                <li><a href="./sealants.html" class="block hover:text-neutral-900 transition">Joint Sealants</a></li>
+                                <li><a href="./structural-repair.html" class="block hover:text-neutral-900 transition">Structural Repair</a></li>
+                                <li><a href="./paints.html" class="block hover:text-neutral-900 transition">Paints & Coatings</a></li>
+                                <li><a href="./admixtures.html" class="block hover:text-neutral-900 transition">Concrete Admixtures</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="./client.html" class="hover:text-neutral-900 transition block">Our Clients</a></li>
+                <li><a href="./public/pdfs/E-brouchure.pdf" download class="hover:text-neutral-900 transition block">E-Brochure</a></li>
+            </ul>
+        </div>
+        <div class="p-6 border-t border-neutral-200">
+            <a href="./contact.html"
+                class="flex items-center justify-center gap-3 border border-neutral-300 rounded-full py-4 text-[14px] tracking-wide text-neutral-900 hover:bg-neutral-900 hover:text-white transition duration-300 man">
+                <span class="w-8 h-px bg-current"></span> Contact Us
+            </a>
+        </div>
+    </div>
+
+<!-- Hero Section - Admixtures -->
+<section class="relative h-[500px] flex items-center justify-center overflow-hidden">
+    <img loading='lazy' decoding="async" fetchpriority="low" src="./public/images/admixtures-hero.webp"
+        class="absolute inset-0 w-full h-full object-cover" alt="Concrete Admixtures">
+    <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/50 to-black/20"></div>
+    <div class="relative z-10 text-center px-4">
+        <p class="text-[11px] uppercase tracking-[0.3em] text-white/50 man font-normal mb-3">
+            Enhancing Concrete Performance
+        </p>
+        <h1 class="text-4xl md:text-5xl pop font-semibold text-white leading-tight">
+             Admixtures
+        </h1>
+        <div class="w-10 h-px bg-white/30 mx-auto mt-5"></div>
+        <p class="text-sm text-white/60 man font-normal mt-4 max-w-md mx-auto">
+            High-performance chemical admixtures for improved workability, durability, and strength
+        </p>
+    </div>
+</section>
+<!-- Introduction Section - Admixtures (Technical Focus) -->
+<section class="relative py-16 bg-white overflow-hidden">
+
+    <!-- Blue corner design -->
+    <div class="lg:block hidden pointer-events-none absolute right-0 top-0 h-[300px] w-[200px] overflow-hidden opacity-100">
+        <div class="absolute inset-0 bg-[#51B9E2]" style="clip-path: polygon(0 0, 25% 0, 100% 100%, 0 0);"></div>
+        <div class="absolute inset-0 bg-[#269FDB]" style="clip-path: polygon(25% 0, 50% 0, 100% 100%);"></div>
+        <div class="absolute inset-0 bg-[#176A9F]" style="clip-path: polygon(50% 0, 100% 0, 100% 100%);"></div>
+    </div>
+
+    <div class="container 2xl:max-w-[1530px] mx-auto px-4 relative z-10">
+        <div class="max-w-4xl mx-auto text-center">
+            <p class="tracking-[0.3em] text-sm text-gray-400 man font-normal mb-4">
+                ADVANCED CONCRETE TECHNOLOGY
+            </p>
+            <h2 class="text-3xl md:text-4xl pop font-semibold text-[#2d2a26] leading-tight mb-6">
+                Optimizing Concrete Performance with <span class="tcolor">Premium Admixtures</span>
+            </h2>
+            <div class="w-10 h-px bg-neutral-300 mx-auto mb-6"></div>
+            <p class="text-gray-500 man text-sm leading-relaxed">
+                Usman Consultants offers a comprehensive range of chemical admixtures designed to modify and enhance concrete properties for a wide variety of construction applications. Our portfolio includes <span class="font-medium text-[#2d2a26]">high-range water reducers (superplasticizers)</span> for improved workability, <span class="font-medium text-[#2d2a26]">set-controlling admixtures</span> for precise timing, <span class="font-medium text-[#2d2a26]">integral waterproofing compounds</span> for enhanced durability, <span class="font-medium text-[#2d2a26]">air-entraining agents</span> for freeze-thaw protection, and <span class="font-medium text-[#2d2a26]">specialty formulations</span> for corrosion resistance and shrinkage control — all engineered to meet international standards and project-specific requirements.
+            </p>
+            <div class="flex flex-wrap items-center justify-center gap-3 mt-6">
+                <span class="text-[10px] man px-3 py-1.5 rounded-full bg-[#f8f7f5] text-gray-500 border border-neutral-200">Superplasticizers</span>
+                <span class="text-[10px] man px-3 py-1.5 rounded-full bg-[#f8f7f5] text-gray-500 border border-neutral-200">Set Retarders</span>
+                <span class="text-[10px] man px-3 py-1.5 rounded-full bg-[#f8f7f5] text-gray-500 border border-neutral-200">Set Accelerators</span>
+                <span class="text-[10px] man px-3 py-1.5 rounded-full bg-[#f8f7f5] text-gray-500 border border-neutral-200">Waterproofing</span>
+                <span class="text-[10px] man px-3 py-1.5 rounded-full bg-[#f8f7f5] text-gray-500 border border-neutral-200">Air-Entraining</span>
+                <span class="text-[10px] man px-3 py-1.5 rounded-full bg-[#f8f7f5] text-gray-500 border border-neutral-200">Corrosion Inhibitors</span>
+                <span class="text-[10px] man px-3 py-1.5 rounded-full bg-[#f8f7f5] text-gray-500 border border-neutral-200">Shrinkage Reducers</span>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- Superplasticizers Section -->
+<section class="relative bg-[#f8f7f5] overflow-hidden flex items-center">
+
+    <!-- Luxury Gradient Background -->
+    <div class="absolute inset-0">
+
+
+   
+
+        <!-- Blue corner design -->
+        <div class="lg:block hidden pointer-events-none absolute right-0 top-0 h-[300px] w-[200px] overflow-hidden opacity-30">
+            <div class="absolute inset-0 bg-[#51B9E2]" style="clip-path: polygon(0 0, 25% 0, 100% 100%, 0 0);"></div>
+            <div class="absolute inset-0 bg-[#269FDB]" style="clip-path: polygon(25% 0, 50% 0, 100% 100%);"></div>
+            <div class="absolute inset-0 bg-[#176A9F]" style="clip-path: polygon(50% 0, 100% 0, 100% 100%);"></div>
+        </div>
+
+    </div>
+
+    <!-- Main Content -->
+    <div class="relative z-10 container 2xl:max-w-[1530px] mx-auto px-4 py-16 pb-24">
+
+        <div class="grid lg:grid-cols-12 gap-16 items-center">
+
+            <!-- LEFT CONTENT -->
+            <div class="lg:col-span-7">
+
+                <!-- Label -->
+                <div class="flex items-center gap-4 mb-8">
+
+                    <span class="w-12 h-px bg-[#2d2a26]/30"></span>
+
+                    <p class="text-[11px] tracking-[0.35em] uppercase text-gray-500 man">
+                        High-Range Water Reducers
+                    </p>
+
+                </div>
+
+                <!-- Heading -->
+                <h1 class="text-5xl pop font-semibold text-[#2d2a26] max-w-5xl">
+
+                    Superior Workability.<br>
+                    <span class="tcolor">Maximum Strength.</span>
+
+                </h1>
+
+                <!-- Description -->
+                <p class="mt-8 max-w-2xl text-[15px] md:text-[16px] leading-relaxed text-gray-500 man">
+
+                    Premium superplasticizers for high-performance concrete — delivering exceptional workability with significant water reduction. Engineered for ready-mix, precast, and high-strength concrete applications, our formulations ensure superior flow, extended slump retention, and enhanced compressive strength.
+
+                </p>
+
+                <!-- CTA -->
+                <div class="mt-10 flex flex-col sm:flex-row gap-4">
+
+                    <!-- Primary -->
+                    <a href="./contact.html"
+                        class="group inline-flex items-center justify-center gap-3 px-4 py-2.5 rounded-full bg-[#1d3a72] text-white text-sm tracking-wide man hover:bg-[#176A9F] transition duration-500">
+
+                        Request Technical Data
+
+                        <span class="group-hover:translate-x-1 transition duration-300">
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </span>
+
+                    </a>
+
+                    <!-- Secondary -->
+                    <a href="./admixtures.html"
+                        class="inline-flex items-center justify-center gap-3 px-4 py-2.5 rounded-full border border-neutral-300 text-[#2d2a26] text-sm tracking-wide hover:bg-white transition duration-500">
+
+                        Explore All Admixtures
+
+                    </a>
+
+                </div>
+
+                <!-- Stats -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-5 mt-16">
+
+                    <!-- Stat -->
+                    <div class="bg-white/70 backdrop-blur-xl border border-neutral-200 rounded-3xl p-5">
+
+                        <h3 class="text-3xl pop font-semibold text-[#1d3a72] mb-2">
+                            >40%
+                        </h3>
+
+                        <p class="text-[11px] tracking-[0.2em] uppercase text-gray-400 man">
+                            Water Reduction
+                        </p>
+
+                    </div>
+
+                    <!-- Stat -->
+                    <div class="bg-white/70 backdrop-blur-xl border border-neutral-200 rounded-3xl p-5">
+
+                        <h3 class="text-3xl pop font-semibold text-[#1d3a72] mb-2">
+                            250mm
+                        </h3>
+
+                        <p class="text-[11px] tracking-[0.2em] uppercase text-gray-400 man">
+                            Slump Flow
+                        </p>
+
+                    </div>
+
+                    <!-- Stat -->
+                    <div class="bg-white/70 backdrop-blur-xl border border-neutral-200 rounded-3xl p-5">
+
+                        <h3 class="text-3xl pop font-semibold text-[#1d3a72] mb-2">
+                            C3
+                        </h3>
+
+                        <p class="text-[11px] tracking-[0.2em] uppercase text-gray-400 man">
+                            S3, S4, S5 Slump Classes
+                        </p>
+
+                    </div>
+
+                    <!-- Stat -->
+                    <div class="bg-white/70 backdrop-blur-xl border border-neutral-200 rounded-3xl p-5">
+
+                        <h3 class="text-3xl pop font-semibold text-[#1d3a72] mb-2">
+                            60+ MPa
+                        </h3>
+
+                        <p class="text-[11px] tracking-[0.2em] uppercase text-gray-400 man">
+                            Compressive Strength
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- RIGHT PANEL -->
+            <div class="lg:col-span-5">
+
+                <!-- Product Card -->
+                <div class="relative bg-white/70 backdrop-blur-2xl border border-neutral-200 rounded-[36px] p-4 overflow-hidden shadow-xl">
+
+                    <!-- Header -->
+                    <div class="relative z-10">
+
+                        <p class="text-[11px] tracking-[0.3em] uppercase text-gray-400 man pt-2">
+                            Superplasticizer Range
+                        </p>
+
+                        <h3 class="text-3xl pop font-semibold text-[#2d2a26] leading-tight mb-8">
+                            Product Categories
+                        </h3>
+
+                    </div>
+
+                    <!-- Products -->
+                    <div class="relative z-10 space-y-4">
+
+                        <!-- Item 1 -->
+                        <div class="group flex items-center justify-between border border-neutral-200 rounded-2xl px-5 py-4 hover:bg-[#1d3a72] transition duration-500">
+
+                            <div>
+                                <span class="text-sm text-[#2d2a26] group-hover:text-white transition man font-medium">
+                                    PCE Superplasticizer
+                                </span>
+                                <p class="text-[10px] text-gray-400 group-hover:text-white/50 transition">Polycarboxylate Ether</p>
+                            </div>
+
+                            <span class="text-gray-300 group-hover:text-white/40 transition text-xs">
+                                01
+                            </span>
+
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="group flex items-center justify-between border border-neutral-200 rounded-2xl px-5 py-4 hover:bg-[#1d3a72] transition duration-500">
+
+                            <div>
+                                <span class="text-sm text-[#2d2a26] group-hover:text-white transition man font-medium">
+                                    SNF Superplasticizer
+                                </span>
+                                <p class="text-[10px] text-gray-400 group-hover:text-white/50 transition">Sulfonated Naphthalene</p>
+                            </div>
+
+                            <span class="text-gray-300 group-hover:text-white/40 transition text-xs">
+                                02
+                            </span>
+
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="group flex items-center justify-between border border-neutral-200 rounded-2xl px-5 py-4 hover:bg-[#1d3a72] transition duration-500">
+
+                            <div>
+                                <span class="text-sm text-[#2d2a26] group-hover:text-white transition man font-medium">
+                                    SMF Superplasticizer
+                                </span>
+                                <p class="text-[10px] text-gray-400 group-hover:text-white/50 transition">Sulfonated Melamine</p>
+                            </div>
+
+                            <span class="text-gray-300 group-hover:text-white/40 transition text-xs">
+                                03
+                            </span>
+
+                        </div>
+
+                        <!-- Item 4 -->
+                        <div class="group flex items-center justify-between border border-neutral-200 rounded-2xl px-5 py-4 hover:bg-[#1d3a72] transition duration-500">
+
+                            <div>
+                                <span class="text-sm text-[#2d2a26] group-hover:text-white transition man font-medium">
+                                    Slump Retention
+                                </span>
+                                <p class="text-[10px] text-gray-400 group-hover:text-white/50 transition">Extended Workability</p>
+                            </div>
+
+                            <span class="text-gray-300 group-hover:text-white/40 transition text-xs">
+                                04
+                            </span>
+
+                        </div>
+
+                        <!-- Item 5 -->
+                        <div class="group flex items-center justify-between border border-neutral-200 rounded-2xl px-5 py-4 hover:bg-[#1d3a72] transition duration-500">
+
+                            <div>
+                                <span class="text-sm text-[#2d2a26] group-hover:text-white transition man font-medium">
+                                    High-Strength Formulation
+                                </span>
+                                <p class="text-[10px] text-gray-400 group-hover:text-white/50 transition">>60 MPa Compressive Strength</p>
+                            </div>
+
+                            <span class="text-gray-300 group-hover:text-white/40 transition text-xs">
+                                05
+                            </span>
+
+                        </div>
+
+                        <!-- Item 6 -->
+                        <div class="group flex items-center justify-between border border-neutral-200 rounded-2xl px-5 py-4 hover:bg-[#1d3a72] transition duration-500">
+
+                            <div>
+                                <span class="text-sm text-[#2d2a26] group-hover:text-white transition man font-medium">
+                                    Self-Compacting Concrete
+                                </span>
+                                <p class="text-[10px] text-gray-400 group-hover:text-white/50 transition">SCC Formulations</p>
+                            </div>
+
+                            <span class="text-gray-300 group-hover:text-white/40 transition text-xs">
+                                06
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Certifications -->
+        <div class="mt-20 border-t border-neutral-200 pt-8">
+
+            <div class="flex flex-wrap items-center justify-center gap-x-10 gap-y-5">
+
+                <p class="text-[11px] tracking-[0.35em] uppercase text-gray-400">
+                    Certified By
+                </p>
+
+                <span class="text-sm text-[#2d2a26] man font-medium">ISO 9001</span>
+
+                <span class="w-px h-4 bg-neutral-300"></span>
+
+                <span class="text-sm text-[#2d2a26] man font-medium">EN 934-2</span>
+
+                <span class="w-px h-4 bg-neutral-300"></span>
+
+                <span class="text-sm text-[#2d2a26] man font-medium">ASTM C494</span>
+
+                <span class="w-px h-4 bg-neutral-300"></span>
+
+                <span class="text-sm text-[#2d2a26] man font-medium">BS 5075</span>
+
+                <span class="w-px h-4 bg-neutral-300"></span>
+
+                <span class="text-sm text-[#2d2a26] man font-medium">SGS Tested</span>
+
+                <span class="w-px h-4 bg-neutral-300"></span>
+
+                <span class="text-sm text-[#2d2a26] man font-medium">Quality Assured</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Set Retarders - Detailed Section -->
+<section class="relative py-16 bg-[#f8f7f5] overflow-hidden">
+
+    <!-- Background accents -->
+    <div class="absolute inset-0">
+        <div class="absolute inset-0 bg-gradient-to-br from-[#f8f7f5] via-white to-[#f1efe9]"></div>
+        <div class="absolute inset-0 opacity-[0.03]" style="background-image: linear-gradient(to right, #2d2a26 1px, transparent 1px),
+               linear-gradient(to bottom, #2d2a26 1px, transparent 1px);
+               background-size: 80px 80px;">
+        </div>
+        <!-- Blue corner design -->
+        <div class="lg:block hidden pointer-events-none absolute right-0 top-0 h-[300px] w-[200px] overflow-hidden opacity-20">
+            <div class="absolute inset-0 bg-[#51B9E2]" style="clip-path: polygon(0 0, 25% 0, 100% 100%, 0 0);"></div>
+            <div class="absolute inset-0 bg-[#269FDB]" style="clip-path: polygon(25% 0, 50% 0, 100% 100%);"></div>
+            <div class="absolute inset-0 bg-[#176A9F]" style="clip-path: polygon(50% 0, 100% 0, 100% 100%);"></div>
+        </div>
+    </div>
+
+    <div class="relative z-10 container 2xl:max-w-[1530px] mx-auto px-4">
+
+        <!-- Header -->
+        <div class="max-w-3xl mb-14">
+            <p class="text-[11px] tracking-[0.35em] uppercase text-gray-400 man mb-3">
+                Set-Controlling Admixtures
+            </p>
+
+            <h2 class="text-4xl md:text-5xl pop font-semibold text-[#2d2a26] leading-tight">
+                Set Retarders<br>
+                <span class="tcolor">Extended Workability for Demanding Conditions</span>
+            </h2>
+
+            <p class="mt-6 text-gray-500 man text-[15px] leading-relaxed">
+                Our set retarder range is engineered to delay the setting time of concrete, providing extended workability for hot weather concreting, long-haul transportation, and complex placements. Formulated with advanced chemistry to maintain slump and workability without compromising final strength development.
+            </p>
+        </div>
+
+        <!-- Grid -->
+        <div class="grid lg:grid-cols-2 gap-6">
+
+            <!-- LEFT: Product Types -->
+            <div class="bg-white/70 backdrop-blur-xl border border-neutral-200 rounded-3xl p-8">
+
+                <h3 class="text-xl pop font-semibold text-[#2d2a26] mb-6">
+                    Set Retarder <span class="tcolor">Product Range</span>
+                </h3>
+
+                <ul class="space-y-4 text-sm text-gray-600 man leading-relaxed">
+
+                    <li>• <span class="font-medium text-[#2d2a26]">Standard Set Retarder</span> – Lignosulfonate-based formulation, extending setting time by 2-4 hours, ideal for normal concreting conditions</li>
+
+                    <li>• <span class="font-medium text-[#2d2a26]">High-Performance Retarder</span> – Advanced polymer-based, providing 4-8 hours of extended workability for hot weather and long-haul concrete delivery</li>
+
+                    <li>• <span class="font-medium text-[#2d2a26]">Sugar-Based Retarder</span> – Natural formulation for controlled retardation with consistent performance, suitable for all concrete types</li>
+
+                    <li>• <span class="font-medium text-[#2d2a26]">Slump Retention Retarder</span> – Combined retarding and slump retention properties, maintaining workability for 3+ hours without excessive retardation</li>
+
+                    <li>• <span class="font-medium text-[#2d2a26]">Multi-Functional Retarder</span> – Combined retarding and water-reducing properties, enhancing both workability and set control</li>
+
+                </ul>
+
+            </div>
+
+            <!-- RIGHT: Performance + Engineering -->
+            <div class="space-y-6">
+
+                <!-- Performance Systems -->
+                <div class="bg-white/70 backdrop-blur-xl border border-neutral-200 rounded-3xl p-8">
+
+                    <h3 class="text-xl pop font-semibold text-[#2d2a26] mb-6">
+                        Performance <span class="tcolor">Characteristics</span>
+                    </h3>
+
+                    <ul class="space-y-4 text-sm text-gray-600 man leading-relaxed">
+
+                        <li>• <span class="font-medium text-[#2d2a26]">Extended Workability:</span> Setting time extended by 2-8 hours depending on formulation and dosage, preventing cold joints and placement issues</li>
+
+                        <li>• <span class="font-medium text-[#2d2a26]">Slump Retention:</span> Maintains required slump for 2-4 hours, essential for ready-mix concrete and long-distance transportation</li>
+
+                        <li>• <span class="font-medium text-[#2d2a26]">Hot Weather Protection:</span> Counteracts rapid setting caused by high temperatures, ensuring adequate placement time in challenging conditions</li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Technical Compliance -->
+                <div class="bg-white/70 backdrop-blur-xl border border-neutral-200 rounded-3xl p-8">
+
+                    <h3 class="text-xl pop font-semibold text-[#2d2a26] mb-6">
+                        Technical <span class="tcolor">Compliance</span>
+                    </h3>
+
+                    <ul class="space-y-4 text-sm text-gray-600 man leading-relaxed">
+
+                        <li>• EN 934-2 compliant – European standard for concrete admixtures (Type B)</li>
+
+                        <li>• ASTM C494 compliant – Type B (Retarding) and Type D (Water-Reducing & Retarding) classifications available</li>
+
+                        <li>• BS 5075 compliant – British standard for concrete admixtures</li>
+
+                        <li>• ISO 9001 certified – Quality management systems</li>
+
+                        <li>• SGS tested – Third-party verified performance</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- CTA -->
+        <div class="mt-14 text-center">
+
+            <a href="./contact.html"
+                class="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-[#1d3a72] text-white text-sm tracking-wide man hover:bg-[#176A9F] transition">
+
+                Request Set Retarder Technical Data
+                <i class="fa-solid fa-arrow-right text-xs"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Set Accelerators - Detailed Section with Technical Specs -->
+<section class="relative py-16 bg-[#f8f7f5] overflow-hidden">
+
+
+
+    <div class="relative z-10 container 2xl:max-w-[1530px] mx-auto px-4">
+
+        <!-- Header -->
+        <div class="max-w-3xl mb-14">
+            <p class="text-[11px] tracking-[0.35em] uppercase text-gray-400 man mb-3">
+                Set-Accelerating Admixtures
+            </p>
+
+            <h2 class="text-4xl md:text-5xl pop font-semibold text-[#2d2a26] leading-tight">
+                Set Accelerators<br>
+                <span class="tcolor">Early Strength for Fast-Track Construction</span>
+            </h2>
+
+            <p class="mt-6 text-gray-500 man text-[15px] leading-relaxed">
+                Our set accelerator range is engineered to speed up the setting and early strength development of concrete, enabling faster formwork removal, reduced construction time, and cold weather protection. Formulated for ready-mix, precast, and shotcrete applications.
+            </p>
+        </div>
+
+        <!-- GRID -->
+        <div class="grid lg:grid-cols-12 gap-10 items-start">
+
+            <!-- RIGHT CONTENT -->
+            <div class="lg:col-span-7 space-y-6">
+
+                <!-- Block 1 -->
+                <div class="bg-white/70 backdrop-blur-xl border border-neutral-200 rounded-3xl p-8">
+
+                    <h3 class="text-xl pop font-semibold text-[#2d2a26] mb-4">
+                        Accelerator <span class="tcolor">Technology</span>
+                    </h3>
+
+                    <p class="text-sm text-gray-500 man leading-relaxed">
+                        Engineered for rapid concrete setting and early strength gain where accelerated construction cycles, cold weather conditions, and fast-track project schedules demand immediate performance. Designed for ready-mix, precast, and shotcrete applications globally.
+                    </p>
+
+                </div>
+
+                <!-- Specs Grid -->
+                <div class="grid md:grid-cols-2 gap-4">
+
+                    <div class="bg-white/70 backdrop-blur-xl border border-neutral-200 rounded-3xl p-6">
+                        <p class="text-[11px] tracking-[0.3em] text-gray-400 uppercase mb-2">Calcium-Based</p>
+                        <p class="text-sm text-gray-600 man">
+                            Calcium chloride & calcium nitrate<br>
+                            Rapid setting · 4-8 hours initial set<br>
+                            Ideal for cold weather concreting
+                        </p>
+                    </div>
+
+                    <div class="bg-white/70 backdrop-blur-xl border border-neutral-200 rounded-3xl p-6">
+                        <p class="text-[11px] tracking-[0.3em] text-gray-400 uppercase mb-2">Non-Chloride</p>
+                        <p class="text-sm text-gray-600 man">
+                            Triethanolamine & organic compounds<br>
+                            Corrosion-safe · 6-10 hours initial set<br>
+                            For reinforced concrete structures
+                        </p>
+                    </div>
+
+                    <div class="bg-white/70 backdrop-blur-xl border border-neutral-200 rounded-3xl p-6">
+                        <p class="text-[11px] tracking-[0.3em] text-gray-400 uppercase mb-2">Shotcrete Grade</p>
+                        <p class="text-sm text-gray-600 man">
+                            Alkali-free liquid accelerator<br>
+                            Flash setting · 1-3 minutes initial set<br>
+                            For tunneling & underground applications
+                        </p>
+                    </div>
+
+                    <div class="bg-white/70 backdrop-blur-xl border border-neutral-200 rounded-3xl p-6">
+                        <p class="text-[11px] tracking-[0.3em] text-gray-400 uppercase mb-2">Combined Action</p>
+                        <p class="text-sm text-gray-600 man">
+                            Accelerator + Water Reducer<br>
+                            Early strength + improved workability<br>
+                            High-performance ready-mix applications
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- Technical Specifications -->
+                <div class="bg-white/70 backdrop-blur-xl border border-neutral-200 rounded-3xl p-8">
+
+                    <h3 class="text-xl pop font-semibold text-[#2d2a26] mb-4">
+                        Technical <span class="tcolor">Specifications</span>
+                    </h3>
+
+                    <div class="grid grid-cols-2 gap-4 text-sm">
+                        <div>
+                            <p class="text-[10px] text-gray-400 man uppercase tracking-wider">Dosage Range</p>
+                            <p class="text-[#2d2a26] man font-medium">0.5 – 3.0% (by cement weight)</p>
+                        </div>
+                        <div>
+                            <p class="text-[10px] text-gray-400 man uppercase tracking-wider">Initial Setting Time</p>
+                            <p class="text-[#2d2a26] man font-medium">2 – 4 hours (at 20°C)</p>
+                        </div>
+                        <div>
+                            <p class="text-[10px] text-gray-400 man uppercase tracking-wider">Final Setting Time</p>
+                            <p class="text-[#2d2a26] man font-medium">4 – 6 hours (at 20°C)</p>
+                        </div>
+                        <div>
+                            <p class="text-[10px] text-gray-400 man uppercase tracking-wider">Early Strength (24 hrs)</p>
+                            <p class="text-[#2d2a26] man font-medium">>50% of 28-day strength</p>
+                        </div>
+                        <div>
+                            <p class="text-[10px] text-gray-400 man uppercase tracking-wider">Appearance</p>
+                            <p class="text-[#2d2a26] man font-medium">Clear to light brown liquid</p>
+                        </div>
+                        <div>
+                            <p class="text-[10px] text-gray-400 man uppercase tracking-wider">Packaging</p>
+                            <p class="text-[#2d2a26] man font-medium">25 kg, 200 kg, 1000 kg IBC</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Compliance -->
+                <div class="bg-white/70 backdrop-blur-xl border border-neutral-200 rounded-3xl p-8">
+
+                    <h3 class="text-xl pop font-semibold text-[#2d2a26] mb-4">
+                        Technical <span class="tcolor">Compliance</span>
+                    </h3>
+
+                    <ul class="space-y-2 text-sm text-gray-600 man leading-relaxed">
+
+                        <li>• EN 934-2 compliant – European standard for concrete admixtures (Type C)</li>
+
+                        <li>• ASTM C494 compliant – Type C (Accelerating) and Type E (Water-Reducing & Accelerating) classifications available</li>
+
+                        <li>• BS 5075 compliant – British standard for concrete admixtures</li>
+
+                        <li>• ISO 9001 certified – Quality management systems</li>
+
+                        <li>• SGS tested – Third-party verified performance</li>
+
+                    </ul>
+
+                </div>
+
+                <!-- CTA -->
+                <div class="pt-2 flex flex-wrap gap-4">
+
+                    <a href="./contact.html"
+                        class="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-[#1d3a72] text-white text-sm tracking-wide man hover:bg-[#176A9F] transition">
+
+                        Request Accelerator Technical Data
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+
+                    </a>
+
+                    <a href="./admixtures.html"
+                        class="inline-flex items-center gap-3 px-6 py-3 rounded-full border border-neutral-300 text-[#2d2a26] text-sm tracking-wide man hover:bg-white transition">
+
+                        Explore All Admixtures
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- LEFT IMAGE -->
+            <div class="lg:col-span-5">
+
+                <div class="relative rounded-[32px] overflow-hidden border border-neutral-200 shadow-xl">
+
+                    <img src="./public/images/accelerator-hero.webp" alt="Set Accelerators"
+                        class="w-full h-[600px] object-cover object-center decoding-async" loading="lazy" fetchpriority="low">
+
+                    <!-- Overlay label -->
+                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
+
+                        <p class="text-xs tracking-[0.3em] uppercase text-white/70 man">
+                            Set-Accelerating Admixtures
+                        </p>
+
+                        <h3 class="text-xl pop font-semibold text-white mt-2">
+                            Rapid Strength Development
+                        </h3>
+
+                    </div>
+
+                    <!-- Floating stats badge -->
+                    <div class="absolute top-6 right-6 bg-white/95 backdrop-blur-sm border border-neutral-200 rounded-2xl p-4 shadow-lg hidden lg:block">
+                        <div class="text-center">
+                            <p class="text-2xl pop font-semibold text-[#1d3a72]">24</p>
+                            <p class="text-[9px] man font-medium text-gray-400 uppercase tracking-wider">Hours to 50% Strength</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Air-Entraining Admixtures - Detailed Section -->
+<section class="relative py-16 bg-[#f8f7f5] overflow-hidden">
+
+    <!-- Background -->
+    <div class="absolute inset-0">
+        <div class="absolute inset-0 bg-gradient-to-br from-[#f8f7f5] via-white to-[#f1efe9]"></div>
+
+        <!-- Soft pattern -->
+        <div class="absolute inset-0 opacity-[0.04]" style="background-image: radial-gradient(circle at 20% 20%, #2d2a26 1px, transparent 1px),
+               radial-gradient(circle at 80% 60%, #2d2a26 1px, transparent 1px);
+               background-size: 120px 120px;">
+        </div>
+        <!-- Blue corner design -->
+        <div class="lg:block hidden pointer-events-none absolute right-0 top-0 h-[300px] w-[200px] overflow-hidden opacity-20">
+            <div class="absolute inset-0 bg-[#51B9E2]" style="clip-path: polygon(0 0, 25% 0, 100% 100%, 0 0);"></div>
+            <div class="absolute inset-0 bg-[#269FDB]" style="clip-path: polygon(25% 0, 50% 0, 100% 100%);"></div>
+            <div class="absolute inset-0 bg-[#176A9F]" style="clip-path: polygon(50% 0, 100% 0, 100% 100%);"></div>
+        </div>
+    </div>
+
+    <div class="relative z-10 container 2xl:max-w-[1530px] mx-auto px-4">
+
+        <!-- Header -->
+        <div class="max-w-3xl mb-14">
+            <p class="text-[11px] tracking-[0.35em] uppercase text-gray-400 man mb-3">
+                Air-Entraining Admixtures
+            </p>
+
+            <h2 class="text-4xl md:text-5xl pop font-semibold text-[#2d2a26] leading-tight">
+                Air-Entraining Agents<br>
+                <span class="tcolor">Freeze-Thaw Protection for Durable Concrete</span>
+            </h2>
+
+            <p class="mt-6 text-gray-500 man text-[15px] leading-relaxed">
+                Our air-entraining admixtures create stable microscopic air bubbles in concrete, providing superior freeze-thaw resistance, improved workability, and enhanced durability in harsh weather conditions. Essential for cold climate construction and infrastructure projects.
+            </p>
+        </div>
+
+        <!-- MAIN LAYOUT -->
+        <div class="grid lg:grid-cols-12 gap-10 items-center">
+
+            <!-- LEFT: STACK VISUAL -->
+            <div class="lg:col-span-6 relative">
+
+                <!-- Base image -->
+                <div class="rounded-[34px] overflow-hidden border border-neutral-200 shadow-xl">
+                    <img src="./public/images/air-entraining-hero.webp" alt="Air-Entraining Admixtures"
+                        class="w-full h-[520px] object-cover object-center" decoding="async" loading="lazy" fetchpriority="low">
+                </div>
+
+                <!-- Floating layer 1 -->
+                <div class="absolute -bottom-6 -right-6 w-48 bg-white/80 backdrop-blur-xl border border-neutral-200 rounded-3xl p-4 shadow-lg">
+                    <p class="text-[10px] tracking-[0.3em] uppercase text-gray-400 mb-2 man">
+                        Air Bubble System
+                    </p>
+                    <p class="text-xs text-gray-600 man">
+                        Stable micro-bubbles · 0.3-1.5mm size
+                    </p>
+                </div>
+
+                <!-- Floating layer 2 -->
+                <div class="absolute -top-6 -left-6 w-52 bg-white/80 backdrop-blur-xl border border-neutral-200 rounded-3xl p-4 shadow-lg">
+                    <p class="text-[10px] tracking-[0.3em] uppercase text-gray-400 mb-2 man">
+                        Freeze-Thaw Resistance
+                    </p>
+                    <p class="text-xs text-gray-600 man">
+                        ASTM C666 · 300+ cycles durability
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- RIGHT: TECH STACK -->
+            <div class="lg:col-span-6 space-y-6">
+
+                <!-- Intro card -->
+                <div class="bg-white/70 backdrop-blur-xl border border-neutral-200 rounded-3xl p-8">
+                    <h3 class="text-xl pop font-semibold text-[#2d2a26] mb-4">
+                        Air-Entraining <span class="tcolor">Technology</span>
+                    </h3>
+
+                    <p class="text-sm text-gray-500 man leading-relaxed">
+                        Engineered to create and stabilize microscopic air bubbles in concrete, providing critical protection against freeze-thaw damage, de-icing salt scaling, and improving overall concrete durability in extreme weather conditions.
+                    </p>
+                </div>
+
+                <!-- Feature cards -->
+                <div class="grid md:grid-cols-2 gap-4">
+
+                    <div class="bg-white/70 backdrop-blur-xl border border-neutral-200 rounded-3xl p-6">
+                        <p class="text-[11px] tracking-[0.3em] text-gray-400 uppercase mb-2">
+                            Synthetic-Based
+                        </p>
+                        <p class="text-sm text-gray-600 man">
+                            Alkyl ether sulfonate<br>
+                            Stable bubble structure · 4-8% air content<br>
+                            Consistent performance
+                        </p>
+                    </div>
+
+                    <div class="bg-white/70 backdrop-blur-xl border border-neutral-200 rounded-3xl p-6">
+                        <p class="text-[11px] tracking-[0.3em] text-gray-400 uppercase mb-2">
+                            Natural-Based
+                        </p>
+                        <p class="text-sm text-gray-600 man">
+                            Wood resin & vinsol resin<br>
+                            Traditional formulation · 3-6% air content<br>
+                            Cost-effective protection
+                        </p>
+                    </div>
+
+                    <div class="bg-white/70 backdrop-blur-xl border border-neutral-200 rounded-3xl p-6">
+                        <p class="text-[11px] tracking-[0.3em] text-gray-400 uppercase mb-2">
+                            High-Performance
+                        </p>
+                        <p class="text-sm text-gray-600 man">
+                            Modified synthetic blend<br>
+                            5-10% air content · Enhanced stability<br>
+                            For severe exposure conditions
+                        </p>
+                    </div>
+
+                    <div class="bg-white/70 backdrop-blur-xl border border-neutral-200 rounded-3xl p-6">
+                        <p class="text-[11px] tracking-[0.3em] text-gray-400 uppercase mb-2">
+                            Combined Action
+                        </p>
+                        <p class="text-sm text-gray-600 man">
+                            Air-Entraining + Water Reducer<br>
+                            Improved workability + protection<br>
+                            High-performance concrete systems
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- CTA -->
+                <div class="pt-2 flex flex-wrap gap-4">
+
+                    <a href="./contact.html"
+                        class="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-[#1d3a72] text-white text-sm tracking-wide man hover:bg-[#176A9F] transition">
+
+                        Request Air-Entraining Technical Data
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+
+                    </a>
+
+                    <a href="./admixtures.html"
+                        class="inline-flex items-center gap-3 px-6 py-3 rounded-full border border-neutral-300 text-[#2d2a26] text-sm tracking-wide man hover:bg-white transition">
+
+                        Explore All Admixtures
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Corrosion Inhibitors - Detailed Section -->
+<section class="relative py-16 bg-[#f8f7f5] overflow-hidden">
+
+    <!-- Background -->
+    <div class="absolute inset-0">
+        <div class="absolute inset-0 bg-gradient-to-br from-[#f8f7f5] via-white to-[#f1efe9]"></div>
+
+        <div class="absolute inset-0 opacity-[0.03]" style="background-image: linear-gradient(to right, #2d2a26 1px, transparent 1px),
+               linear-gradient(to bottom, #2d2a26 1px, transparent 1px);
+               background-size: 80px 80px;">
+        </div>
+        <!-- Blue corner design -->
+        <div class="lg:block hidden pointer-events-none absolute left-0 top-0 h-[300px] w-[220px] overflow-hidden opacity-20">
+            <div class="absolute inset-0 bg-[#51B9E2]" style="clip-path: polygon(100% 0, 75% 0, 0 100%, 100% 0);"></div>
+            <div class="absolute inset-0 bg-[#269FDB]" style="clip-path: polygon(75% 0, 50% 0, 0 100%);"></div>
+            <div class="absolute inset-0 bg-[#176A9F]" style="clip-path: polygon(50% 0, 0 0, 0 100%);"></div>
+        </div>
+    </div>
+
+    <div class="relative z-10 container 2xl:max-w-[1530px] mx-auto px-4">
+
+        <!-- HEADER -->
+        <div class="max-w-3xl mb-14">
+
+            <p class="text-[11px] tracking-[0.35em] uppercase text-gray-400 man mb-3">
+                Corrosion Inhibiting Admixtures
+            </p>
+
+            <h2 class="text-4xl md:text-5xl pop font-semibold text-[#2d2a26] leading-tight">
+                Corrosion Inhibitors<br>
+                <span class="tcolor">Protecting Reinforcement for Extended Structural Life</span>
+            </h2>
+
+            <p class="mt-6 text-gray-500 man text-[15px] leading-relaxed">
+                Our corrosion inhibitor range is engineered to protect steel reinforcement from chloride-induced corrosion, carbonation, and aggressive environmental attacks — extending the service life of concrete structures in marine, industrial, and infrastructure applications.
+            </p>
+
+        </div>
+
+        <!-- SPLIT GRID -->
+        <div class="grid lg:grid-cols-12 gap-10 items-stretch">
+
+            <!-- RIGHT CONTENT -->
+            <div class="lg:col-span-7 space-y-6">
+
+                <!-- Intro -->
+                <div class="bg-white/70 backdrop-blur-xl border border-neutral-200 rounded-3xl p-8">
+
+                    <h3 class="text-xl pop font-semibold text-[#2d2a26] mb-4">
+                        Corrosion Protection <span class="tcolor">Technology</span>
+                    </h3>
+
+                    <p class="text-sm text-gray-500 man leading-relaxed">
+                        Each corrosion inhibitor formulation is engineered for specific exposure conditions — balancing protection efficiency, compatibility with concrete, and long-term durability for enhanced structural service life.
+                    </p>
+
+                </div>
+
+                <!-- PRODUCT LIST -->
+                <div class="space-y-4">
+
+                    <!-- Calcium Nitrite -->
+                    <div class="bg-white/70 backdrop-blur-xl border border-neutral-200 rounded-3xl p-6">
+
+                        <div class="flex items-center justify-between mb-2">
+
+                            <h4 class="text-sm pop font-semibold text-[#2d2a26]">
+                                Calcium Nitrite Inhibitor
+                            </h4>
+
+                            <span class="text-[11px] tracking-[0.25em] text-gray-400 uppercase man">
+                                Anodic
+                            </span>
+
+                        </div>
+
+                        <p class="text-sm text-gray-600 man">
+                            Calcium nitrite-based corrosion inhibitor · Passivates steel reinforcement · Ideal for chloride-exposed environments · 2-5% dosage by cement weight
+                        </p>
+
+                    </div>
+
+                    <!-- Organic/Amine -->
+                    <div class="bg-white/70 backdrop-blur-xl border border-neutral-200 rounded-3xl p-6">
+
+                        <div class="flex items-center justify-between mb-2">
+
+                            <h4 class="text-sm pop font-semibold text-[#2d2a26]">
+                                Organic Amine Inhibitor
+                            </h4>
+
+                            <span class="text-[11px] tracking-[0.25em] text-gray-400 uppercase man">
+                                Mixed
+                            </span>
+
+                        </div>
+
+                        <p class="text-sm text-gray-600 man">
+                            Amine-based organic corrosion inhibitor · Forms protective molecular layer · Non-toxic · Suitable for all concrete types · 0.5-2% dosage
+                        </p>
+
+                    </div>
+
+                    <!-- Calcium Nitrate -->
+                    <div class="bg-white/70 backdrop-blur-xl border border-neutral-200 rounded-3xl p-6">
+
+                        <div class="flex items-center justify-between mb-2">
+
+                            <h4 class="text-sm pop font-semibold text-[#2d2a26]">
+                                Calcium Nitrate Inhibitor
+                            </h4>
+
+                            <span class="text-[11px] tracking-[0.25em] text-gray-400 uppercase man">
+                                Multi-Functional
+                            </span>
+
+                        </div>
+
+                        <p class="text-sm text-gray-600 man">
+                            Calcium nitrate-based · Corrosion inhibitor + accelerator · Chloride-combining technology · 1-4% dosage · Enhanced early strength
+                        </p>
+
+                    </div>
+
+                    <!-- Migrating Inhibitor -->
+                    <div class="bg-white/70 backdrop-blur-xl border border-neutral-200 rounded-3xl p-6">
+
+                        <div class="flex items-center justify-between mb-2">
+
+                            <h4 class="text-sm pop font-semibold text-[#2d2a26]">
+                                Migrating Corrosion Inhibitor
+                            </h4>
+
+                            <span class="text-[11px] tracking-[0.25em] text-gray-400 uppercase man">
+                                Surface Applied
+                            </span>
+
+                        </div>
+
+                        <p class="text-sm text-gray-600 man">
+                            Migrating corrosion inhibitor (MCI) · Penetrates concrete to protect reinforcement · Surface-applied for existing structures · 10-15% solution
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- CTA -->
+                <div class="pt-2 flex flex-wrap gap-4">
+
+                    <a href="./contact.html"
+                        class="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-[#1d3a72] text-white text-sm tracking-wide man hover:bg-[#176A9F] transition">
+
+                        Request Corrosion Inhibitor Data
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+
+                    </a>
+
+                    <a href="./admixtures.html"
+                        class="inline-flex items-center gap-3 px-6 py-3 rounded-full border border-neutral-300 text-[#2d2a26] text-sm tracking-wide man hover:bg-white transition">
+
+                        Explore All Admixtures
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- LEFT IMAGE -->
+            <div class="lg:col-span-5">
+
+                <div class="relative h-[600px] rounded-[34px] overflow-hidden border border-neutral-200 shadow-xl">
+
+                    <img src="./public/images/corrosion-inhibitor-hero.webp" alt="Corrosion Inhibitors"
+                        class="w-full h-full object-cover" decoding="async" loading="lazy" fetchpriority="low">
+
+                    <!-- Overlay -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent"></div>
+
+                    <!-- Label -->
+                    <div class="absolute bottom-0 left-0 right-0 p-6">
+
+                        <p class="text-[11px] tracking-[0.3em] uppercase text-white/70 man">
+                            Reinforcement Protection
+                        </p>
+
+                        <h3 class="text-xl pop font-semibold text-white mt-2">
+                            Extended Structural Life
+                        </h3>
+
+                    </div>
+
+                    <!-- Floating Stats Badge -->
+                    <div class="absolute top-6 right-6 bg-white/95 backdrop-blur-sm border border-neutral-200 rounded-2xl p-4 shadow-lg hidden lg:block">
+                        <div class="text-center">
+                            <p class="text-2xl pop font-semibold text-[#1d3a72]">50+</p>
+                            <p class="text-[9px] man font-medium text-gray-400 uppercase tracking-wider">Years Extended Life</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Shrinkage Reducers - Premium Feature Section -->
+<section class="relative py-20 bg-white overflow-hidden">
+
+    <!-- Background Elements -->
+    <div class="absolute inset-0">
+        <div class="absolute inset-0 bg-gradient-to-br from-white via-[#f8f7f5] to-white"></div>
+        
+        <!-- Abstract shapes -->
+        <div class="absolute -top-40 -right-40 w-96 h-96 bg-[#1d3a72]/5 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-[#51B9E2]/5 rounded-full blur-3xl"></div>
+        
+        <!-- Grid pattern -->
+        <div class="absolute inset-0 opacity-[0.02]" style="background-image: linear-gradient(to right, #2d2a26 1px, transparent 1px),
+               linear-gradient(to bottom, #2d2a26 1px, transparent 1px);
+               background-size: 80px 80px;">
+        </div>
+    </div>
+
+    <div class="relative z-10 container 2xl:max-w-[1530px] mx-auto px-4">
+
+        <!-- HEADER -->
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <span class="inline-block text-[11px] font-medium tracking-[0.35em] uppercase text-gray-400 man mb-4 bg-white px-5 py-2 rounded-full border border-neutral-200">
+                Shrinkage Reducing Admixtures
+            </span>
+            
+            <h2 class="text-4xl md:text-5xl pop font-semibold text-[#2d2a26] leading-tight">
+                Minimize Cracking. <br>
+                <span class="tcolor">Maximize Durability.</span>
+            </h2>
+            
+            <div class="w-12 h-[2px] bg-gradient-to-r from-transparent via-[#1d3a72] to-transparent mx-auto mt-5"></div>
+            
+            <p class="mt-5 text-gray-500 man text-[15px] leading-relaxed">
+                Our shrinkage reducing admixtures minimize drying shrinkage and cracking in concrete — delivering enhanced dimensional stability, improved durability, and extended service life for slabs, floors, and structural elements.
+            </p>
+        </div>
+
+        <!-- MAIN FEATURE GRID -->
+        <div class="grid lg:grid-cols-12 gap-8 items-center">
+
+            <!-- LEFT: Visual Feature -->
+            <div class="lg:col-span-5 relative">
+                
+                <!-- Main Image Card -->
+                <div class="relative rounded-[32px] overflow-hidden border border-neutral-200 shadow-2xl">
+                    <img src="./public/images/shrinkage-reducer-hero.webp" alt="Shrinkage Reducing Admixtures"
+                        class="w-full h-[500px] object-cover object-center" loading="lazy" decoding="async">
+                    
+                    <!-- Gradient Overlay -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"></div>
+                    
+                    <!-- Floating Feature Badge - Top Right -->
+                    <div class="absolute top-6 right-6 bg-white/95 backdrop-blur-sm border border-neutral-200 rounded-2xl p-4 shadow-lg">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-[#1d3a72]/10 flex items-center justify-center">
+                                <i class="fa-solid fa-arrows-left-right text-[#1d3a72] text-sm"></i>
+                            </div>
+                            <div>
+                                <p class="text-[10px] font-medium text-[#2d2a26] man">Shrinkage Reduction</p>
+                                <p class="text-[8px] text-gray-400 man uppercase tracking-wider">Up to 50% Reduction</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Bottom Label -->
+                    <div class="absolute bottom-0 left-0 right-0 p-6">
+                        <p class="text-[10px] tracking-[0.3em] uppercase text-white/60 man">
+                            Dimensional Stability
+                        </p>
+                        <h3 class="text-xl pop font-semibold text-white mt-1">
+                            Engineered Crack Control
+                        </h3>
+                    </div>
+                </div>
+
+                <!-- Floating Stat Card -->
+                <div class="absolute -bottom-4 -left-4 bg-white border border-neutral-200 rounded-2xl p-5 shadow-xl hidden lg:block">
+                    <div class="flex items-center gap-5">
+                        <div class="text-center">
+                            <p class="text-3xl pop font-bold text-[#1d3a72]">50%</p>
+                            <p class="text-[8px] text-gray-400 man uppercase tracking-wider">Shrinkage Reduction</p>
+                        </div>
+                        <div class="w-px h-10 bg-neutral-200"></div>
+                        <div class="text-center">
+                            <p class="text-3xl pop font-bold text-[#1d3a72]">80%</p>
+                            <p class="text-[8px] text-gray-400 man uppercase tracking-wider">Crack Reduction</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- RIGHT: Content Stack -->
+            <div class="lg:col-span-7 space-y-6">
+
+                <!-- Overview Card -->
+                <div class="bg-white/80 backdrop-blur-xl border border-neutral-200 rounded-3xl p-8 shadow-sm">
+                    <h3 class="text-xl pop font-semibold text-[#2d2a26] mb-3">
+                        Shrinkage Reduction <span class="tcolor">Technology</span>
+                    </h3>
+                    <p class="text-sm text-gray-500 man leading-relaxed">
+                        Our shrinkage reducing admixtures utilize advanced polyether-based technology to reduce capillary tension and drying shrinkage — minimizing cracking and ensuring long-term dimensional stability in concrete structures.
+                    </p>
+                </div>
+
+                <!-- Feature Grid -->
+                <div class="grid sm:grid-cols-2 gap-4">
+
+                    <div class="group bg-white/80 backdrop-blur-xl border border-neutral-200 rounded-2xl p-6 hover:shadow-lg hover:border-[#1d3a72]/30 transition-all duration-300">
+                        <div class="w-10 h-10 rounded-xl bg-[#1d3a72]/10 flex items-center justify-center mb-3 group-hover:bg-[#1d3a72] transition-colors duration-300">
+                            <i class="fa-solid fa-compress-arrows-alt text-[#1d3a72] group-hover:text-white text-sm transition-colors duration-300"></i>
+                        </div>
+                        <h4 class="text-sm pop font-semibold text-[#2d2a26] mb-1">Reduced Drying Shrinkage</h4>
+                        <p class="text-xs text-gray-500 man leading-relaxed">Up to 50% reduction in drying shrinkage — minimizing cracking potential</p>
+                    </div>
+
+                    <div class="group bg-white/80 backdrop-blur-xl border border-neutral-200 rounded-2xl p-6 hover:shadow-lg hover:border-[#1d3a72]/30 transition-all duration-300">
+                        <div class="w-10 h-10 rounded-xl bg-[#1d3a72]/10 flex items-center justify-center mb-3 group-hover:bg-[#1d3a72] transition-colors duration-300">
+                            <i class="fa-solid fa-layer-group text-[#1d3a72] group-hover:text-white text-sm transition-colors duration-300"></i>
+                        </div>
+                        <h4 class="text-sm pop font-semibold text-[#2d2a26] mb-1">Enhanced Dimensional Stability</h4>
+                        <p class="text-xs text-gray-500 man leading-relaxed">Maintains structural integrity in slabs, floors, and large pours</p>
+                    </div>
+
+                    <div class="group bg-white/80 backdrop-blur-xl border border-neutral-200 rounded-2xl p-6 hover:shadow-lg hover:border-[#1d3a72]/30 transition-all duration-300">
+                        <div class="w-10 h-10 rounded-xl bg-[#1d3a72]/10 flex items-center justify-center mb-3 group-hover:bg-[#1d3a72] transition-colors duration-300">
+                            <i class="fa-solid fa-gem text-[#1d3a72] group-hover:text-white text-sm transition-colors duration-300"></i>
+                        </div>
+                        <h4 class="text-sm pop font-semibold text-[#2d2a26] mb-1">Improved Surface Quality</h4>
+                        <p class="text-xs text-gray-500 man leading-relaxed">Enhanced surface finish with reduced crazing and plastic shrinkage cracking</p>
+                    </div>
+
+                    <div class="group bg-white/80 backdrop-blur-xl border border-neutral-200 rounded-2xl p-6 hover:shadow-lg hover:border-[#1d3a72]/30 transition-all duration-300">
+                        <div class="w-10 h-10 rounded-xl bg-[#1d3a72]/10 flex items-center justify-center mb-3 group-hover:bg-[#1d3a72] transition-colors duration-300">
+                            <i class="fa-solid fa-clock text-[#1d3a72] group-hover:text-white text-sm transition-colors duration-300"></i>
+                        </div>
+                        <h4 class="text-sm pop font-semibold text-[#2d2a26] mb-1">Extended Service Life</h4>
+                        <p class="text-xs text-gray-500 man leading-relaxed">Reduces maintenance costs and extends structural durability</p>
+                    </div>
+
+                </div>
+
+                <!-- Product Types -->
+                <div class="bg-white/80 backdrop-blur-xl border border-neutral-200 rounded-3xl p-6 shadow-sm">
+                    <p class="text-[10px] tracking-[0.3em] uppercase text-gray-400 man mb-3">
+                        Product Range
+                    </p>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="text-xs man px-4 py-2 rounded-full bg-[#f8f7f5] text-[#2d2a26] border border-neutral-200 font-medium">Polyether-Based</span>
+                        <span class="text-xs man px-4 py-2 rounded-full bg-[#f8f7f5] text-[#2d2a26] border border-neutral-200 font-medium">Modified Polyol</span>
+                        <span class="text-xs man px-4 py-2 rounded-full bg-[#f8f7f5] text-[#2d2a26] border border-neutral-200 font-medium">Combined Action SRA+WR</span>
+                        <span class="text-xs man px-4 py-2 rounded-full bg-[#f8f7f5] text-[#2d2a26] border border-neutral-200 font-medium">High-Performance SRA</span>
+                    </div>
+                </div>
+
+                <!-- CTA -->
+                <div class="flex flex-wrap gap-4 pt-2">
+                    <a href="./contact.html"
+                        class="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-[#1d3a72] text-white text-sm tracking-wide man hover:bg-[#176A9F] transition shadow-lg shadow-[#1d3a72]/20">
+                        Request Shrinkage Reducer Data
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                    <a href="./admixtures.html"
+                        class="inline-flex items-center gap-3 px-6 py-3 rounded-full border border-neutral-300 text-[#2d2a26] text-sm tracking-wide man hover:bg-white transition">
+                        Explore All Admixtures
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Complete Admixtures Specifications Table -->
+<section class="relative py-16 bg-white overflow-hidden">
+
+    <!-- Blue corner design -->
+    <div class="lg:block hidden pointer-events-none absolute right-0 top-0 h-[300px] w-[200px] overflow-hidden opacity-100">
+        <div class="absolute inset-0 bg-[#51B9E2]" style="clip-path: polygon(0 0, 25% 0, 100% 100%, 0 0);"></div>
+        <div class="absolute inset-0 bg-[#269FDB]" style="clip-path: polygon(25% 0, 50% 0, 100% 100%);"></div>
+        <div class="absolute inset-0 bg-[#176A9F]" style="clip-path: polygon(50% 0, 100% 0, 100% 100%);"></div>
+    </div>
+
+    <div class="container 2xl:max-w-[1530px] mx-auto px-4">
+
+        <!-- Header -->
+        <div class="text-center mb-10">
+            <span class="inline-block text-[11px] font-medium tracking-[0.3em] uppercase text-gray-400 man mb-4 bg-[#f8f7f5] px-4 py-1.5 rounded-full border border-neutral-200">
+                Complete Product Range
+            </span>
+            <h2 class="text-3xl md:text-4xl pop font-semibold text-[#2d2a26] leading-tight">
+                Admixtures <span class="tcolor">Specifications</span>
+            </h2>
+            <div class="w-10 h-px bg-neutral-300 mx-auto mt-4"></div>
+            <p class="text-gray-500 man text-sm mt-4 max-w-2xl mx-auto leading-relaxed">
+                Technical specifications across our complete range of high-performance concrete admixtures
+            </p>
+        </div>
+
+        <!-- Table - Desktop -->
+        <div class="hidden lg:block overflow-x-auto">
+            <div class="bg-[#f8f7f5] border border-neutral-200 rounded-2xl overflow-hidden shadow-sm">
+                <table class="w-full text-left man text-sm">
+                    <thead>
+                        <tr class="bg-[#1d3a72] text-white">
+                            <th class="px-3 py-4 text-[9px] font-semibold tracking-[0.15em] uppercase text-center w-[10%]">Property</th>
+                            <th class="px-3 py-4 text-[9px] font-semibold tracking-[0.15em] uppercase text-center w-[15%]">Superplasticizers</th>
+                            <th class="px-3 py-4 text-[9px] font-semibold tracking-[0.15em] uppercase text-center w-[15%]">Set Retarders</th>
+                            <th class="px-3 py-4 text-[9px] font-semibold tracking-[0.15em] uppercase text-center w-[15%]">Set Accelerators</th>
+                            <th class="px-3 py-4 text-[9px] font-semibold tracking-[0.15em] uppercase text-center w-[15%]">Air-Entraining</th>
+                            <th class="px-3 py-4 text-[9px] font-semibold tracking-[0.15em] uppercase text-center w-[15%]">Corrosion Inhibitors</th>
+                            <th class="px-3 py-4 text-[9px] font-semibold tracking-[0.15em] uppercase text-center w-[15%]">Shrinkage Reducers</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-neutral-200 bg-white">
+
+                        <!-- Product Code -->
+                        <tr class="hover:bg-[#f8f7f5] transition">
+                            <td class="px-3 py-3 text-[10px] font-medium text-[#2d2a26]">Product Code</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">UC-SP-101</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">UC-SR-201</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">UC-SA-301</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">UC-AE-401</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">UC-CI-501</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">UC-SRA-601</td>
+                        </tr>
+
+                        <!-- Type -->
+                        <tr class="hover:bg-[#f8f7f5] transition">
+                            <td class="px-3 py-3 text-[10px] font-medium text-[#2d2a26]">Type</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">PCE / SNF / SMF</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">Lignosulfonate / Polymer</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">Calcium / Non-Chloride</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">Synthetic / Natural</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">Nitrite / Amine / Nitrate</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">Polyether / Polyol</td>
+                        </tr>
+
+                        <!-- Classification -->
+                        <tr class="hover:bg-[#f8f7f5] transition">
+                            <td class="px-3 py-3 text-[10px] font-medium text-[#2d2a26]">Classification</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">EN 934-2 (Type F/G)</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">EN 934-2 (Type B)</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">EN 934-2 (Type C)</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">EN 934-2 (Type A)</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">EN 934-2 (Type I)</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">EN 934-2 (Type S)</td>
+                        </tr>
+
+                        <!-- ASTM Standard -->
+                        <tr class="hover:bg-[#f8f7f5] transition">
+                            <td class="px-3 py-3 text-[10px] font-medium text-[#2d2a26]">ASTM Standard</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">C494 Type A/F/G</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">C494 Type B/D</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">C494 Type C/E</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">C260 / C494 Type A</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">NACE / ASTM</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">C494 Type S</td>
+                        </tr>
+
+                        <!-- Dosage Range -->
+                        <tr class="hover:bg-[#f8f7f5] transition">
+                            <td class="px-3 py-3 text-[10px] font-medium text-[#2d2a26]">Dosage (% cement)</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">0.5 – 3.0%</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">0.2 – 2.0%</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">0.5 – 3.0%</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">0.05 – 0.5%</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">0.5 – 5.0%</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">0.5 – 2.5%</td>
+                        </tr>
+
+                        <!-- Water Reduction -->
+                        <tr class="hover:bg-[#f8f7f5] transition">
+                            <td class="px-3 py-3 text-[10px] font-medium text-[#2d2a26]">Water Reduction</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">Up to 40%</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">5 – 15%</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">5 – 10%</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">5 – 10%</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">5 – 15%</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">10 – 25%</td>
+                        </tr>
+
+                        <!-- Setting Time Effect -->
+                        <tr class="hover:bg-[#f8f7f5] transition">
+                            <td class="px-3 py-3 text-[10px] font-medium text-[#2d2a26]">Setting Effect</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">Neutral / Slight delay</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">Delayed 2-8 hrs</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">Accelerated 2-4 hrs</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">Neutral</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">Neutral</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">Neutral</td>
+                        </tr>
+
+                        <!-- Key Performance -->
+                        <tr class="hover:bg-[#f8f7f5] transition">
+                            <td class="px-3 py-3 text-[10px] font-medium text-[#2d2a26]">Key Performance</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">High workability<br>High strength</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">Extended workability<br>Hot weather</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">Early strength<br>Cold weather</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">Freeze-thaw protection<br>Durability</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">Corrosion protection<br>Extended life</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">Crack reduction<br>Stability</td>
+                        </tr>
+
+                        <!-- Appearance -->
+                        <tr class="hover:bg-[#f8f7f5] transition">
+                            <td class="px-3 py-3 text-[10px] font-medium text-[#2d2a26]">Appearance</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">Light yellow liquid</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">Brown liquid</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">Clear to light brown</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">Clear to amber</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">Clear to light brown</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">Clear to amber liquid</td>
+                        </tr>
+
+                        <!-- pH Value -->
+                        <tr class="hover:bg-[#f8f7f5] transition">
+                            <td class="px-3 py-3 text-[10px] font-medium text-[#2d2a26]">pH Value</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">6.0 – 8.0</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">8.0 – 9.5</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">8.0 – 10.5</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">7.0 – 9.0</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">8.0 – 10.5</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">7.0 – 9.0</td>
+                        </tr>
+
+                        <!-- Specific Gravity -->
+                        <tr class="hover:bg-[#f8f7f5] transition">
+                            <td class="px-3 py-3 text-[10px] font-medium text-[#2d2a26]">Specific Gravity</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">1.05 – 1.15</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">1.15 – 1.22</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">1.20 – 1.30</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">1.00 – 1.05</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">1.15 – 1.30</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">1.05 – 1.15</td>
+                        </tr>
+
+                        <!-- VOC Content -->
+                        <tr class="hover:bg-[#f8f7f5] transition">
+                            <td class="px-3 py-3 text-[10px] font-medium text-[#2d2a26]">VOC Content</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">Low-VOC</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">Low-VOC</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">Low-VOC</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">Low-VOC</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">Low-VOC</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">Low-VOC</td>
+                        </tr>
+
+                        <!-- Packaging -->
+                        <tr class="hover:bg-[#f8f7f5] transition">
+                            <td class="px-3 py-3 text-[10px] font-medium text-[#2d2a26]">Packaging</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">25kg / 200kg / IBC</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">25kg / 200kg / IBC</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">25kg / 200kg / IBC</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">25kg / 200kg / IBC</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">25kg / 200kg / IBC</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">25kg / 200kg / IBC</td>
+                        </tr>
+
+                        <!-- Shelf Life -->
+                        <tr class="hover:bg-[#f8f7f5] transition">
+                            <td class="px-3 py-3 text-[10px] font-medium text-[#2d2a26]">Shelf Life</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">24 months</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">12 months</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">12 months</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">12 months</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">24 months</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">24 months</td>
+                        </tr>
+
+                        <!-- Key Applications -->
+                        <tr class="hover:bg-[#f8f7f5] transition">
+                            <td class="px-3 py-3 text-[10px] font-medium text-[#2d2a26]">Applications</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">High-rise, Precast, SCC</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">Hot weather, RMC</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">Cold weather, Precast</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">Cold climate, Pavements</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">Marine, Bridges, Parking</td>
+                            <td class="px-3 py-3 text-[10px] text-gray-500 text-center">Slabs, Floors, Pours</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Mobile: Card View -->
+        <div class="lg:hidden space-y-6">
+
+            <!-- Superplasticizers -->
+            <div class="bg-[#f8f7f5] border border-neutral-200 rounded-2xl p-5">
+                <h4 class="text-base pop font-semibold text-[#2d2a26]">Superplasticizers</h4>
+                <p class="text-xs text-gray-400 man mt-0.5">UC-SP-101 · PCE/SNF/SMF</p>
+                <div class="grid grid-cols-2 gap-2 mt-3 text-sm">
+                    <div><span class="text-gray-400 man text-xs">Dosage</span><p class="text-[#2d2a26] man text-sm font-medium">0.5 – 3.0%</p></div>
+                    <div><span class="text-gray-400 man text-xs">Water Reduction</span><p class="text-[#2d2a26] man text-sm font-medium">Up to 40%</p></div>
+                    <div><span class="text-gray-400 man text-xs">pH</span><p class="text-[#2d2a26] man text-sm font-medium">6.0 – 8.0</p></div>
+                    <div><span class="text-gray-400 man text-xs">Packaging</span><p class="text-[#2d2a26] man text-sm font-medium">25/200 kg/IBC</p></div>
+                </div>
+            </div>
+
+            <!-- Set Retarders -->
+            <div class="bg-[#f8f7f5] border border-neutral-200 rounded-2xl p-5">
+                <h4 class="text-base pop font-semibold text-[#2d2a26]">Set Retarders</h4>
+                <p class="text-xs text-gray-400 man mt-0.5">UC-SR-201 · Lignosulfonate</p>
+                <div class="grid grid-cols-2 gap-2 mt-3 text-sm">
+                    <div><span class="text-gray-400 man text-xs">Dosage</span><p class="text-[#2d2a26] man text-sm font-medium">0.2 – 2.0%</p></div>
+                    <div><span class="text-gray-400 man text-xs">Retardation</span><p class="text-[#2d2a26] man text-sm font-medium">2 – 8 hrs</p></div>
+                    <div><span class="text-gray-400 man text-xs">pH</span><p class="text-[#2d2a26] man text-sm font-medium">8.0 – 9.5</p></div>
+                    <div><span class="text-gray-400 man text-xs">Packaging</span><p class="text-[#2d2a26] man text-sm font-medium">25/200 kg/IBC</p></div>
+                </div>
+            </div>
+
+            <!-- Set Accelerators -->
+            <div class="bg-[#f8f7f5] border border-neutral-200 rounded-2xl p-5">
+                <h4 class="text-base pop font-semibold text-[#2d2a26]">Set Accelerators</h4>
+                <p class="text-xs text-gray-400 man mt-0.5">UC-SA-301 · Calcium-based</p>
+                <div class="grid grid-cols-2 gap-2 mt-3 text-sm">
+                    <div><span class="text-gray-400 man text-xs">Dosage</span><p class="text-[#2d2a26] man text-sm font-medium">0.5 – 3.0%</p></div>
+                    <div><span class="text-gray-400 man text-xs">Acceleration</span><p class="text-[#2d2a26] man text-sm font-medium">2 – 4 hrs</p></div>
+                    <div><span class="text-gray-400 man text-xs">pH</span><p class="text-[#2d2a26] man text-sm font-medium">8.0 – 10.5</p></div>
+                    <div><span class="text-gray-400 man text-xs">Packaging</span><p class="text-[#2d2a26] man text-sm font-medium">25/200 kg/IBC</p></div>
+                </div>
+            </div>
+
+            <!-- Air-Entraining -->
+            <div class="bg-[#f8f7f5] border border-neutral-200 rounded-2xl p-5">
+                <h4 class="text-base pop font-semibold text-[#2d2a26]">Air-Entraining Agents</h4>
+                <p class="text-xs text-gray-400 man mt-0.5">UC-AE-401 · Synthetic/Natural</p>
+                <div class="grid grid-cols-2 gap-2 mt-3 text-sm">
+                    <div><span class="text-gray-400 man text-xs">Dosage</span><p class="text-[#2d2a26] man text-sm font-medium">0.05 – 0.5%</p></div>
+                    <div><span class="text-gray-400 man text-xs">Air Content</span><p class="text-[#2d2a26] man text-sm font-medium">3 – 10%</p></div>
+                    <div><span class="text-gray-400 man text-xs">pH</span><p class="text-[#2d2a26] man text-sm font-medium">7.0 – 9.0</p></div>
+                    <div><span class="text-gray-400 man text-xs">Packaging</span><p class="text-[#2d2a26] man text-sm font-medium">25/200 kg/IBC</p></div>
+                </div>
+            </div>
+
+            <!-- Corrosion Inhibitors -->
+            <div class="bg-[#f8f7f5] border border-neutral-200 rounded-2xl p-5">
+                <h4 class="text-base pop font-semibold text-[#2d2a26]">Corrosion Inhibitors</h4>
+                <p class="text-xs text-gray-400 man mt-0.5">UC-CI-501 · Nitrite/Amine</p>
+                <div class="grid grid-cols-2 gap-2 mt-3 text-sm">
+                    <div><span class="text-gray-400 man text-xs">Dosage</span><p class="text-[#2d2a26] man text-sm font-medium">0.5 – 5.0%</p></div>
+                    <div><span class="text-gray-400 man text-xs">Protection</span><p class="text-[#2d2a26] man text-sm font-medium">50+ years</p></div>
+                    <div><span class="text-gray-400 man text-xs">pH</span><p class="text-[#2d2a26] man text-sm font-medium">8.0 – 10.5</p></div>
+                    <div><span class="text-gray-400 man text-xs">Packaging</span><p class="text-[#2d2a26] man text-sm font-medium">25/200 kg/IBC</p></div>
+                </div>
+            </div>
+
+            <!-- Shrinkage Reducers -->
+            <div class="bg-[#f8f7f5] border border-neutral-200 rounded-2xl p-5">
+                <h4 class="text-base pop font-semibold text-[#2d2a26]">Shrinkage Reducers</h4>
+                <p class="text-xs text-gray-400 man mt-0.5">UC-SRA-601 · Polyether/Polyol</p>
+                <div class="grid grid-cols-2 gap-2 mt-3 text-sm">
+                    <div><span class="text-gray-400 man text-xs">Dosage</span><p class="text-[#2d2a26] man text-sm font-medium">0.5 – 2.5%</p></div>
+                    <div><span class="text-gray-400 man text-xs">Shrinkage Reduction</span><p class="text-[#2d2a26] man text-sm font-medium">Up to 50%</p></div>
+                    <div><span class="text-gray-400 man text-xs">pH</span><p class="text-[#2d2a26] man text-sm font-medium">7.0 – 9.0</p></div>
+                    <div><span class="text-gray-400 man text-xs">Packaging</span><p class="text-[#2d2a26] man text-sm font-medium">25/200 kg/IBC</p></div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- CTA -->
+        <div class="text-center mt-8">
+            <div class="inline-flex flex-wrap items-center justify-center gap-4 bg-[#f8f7f5] border border-neutral-200 rounded-full px-6 py-3">
+                <span class="text-sm text-gray-500 man">Need detailed technical data sheets?</span>
+                <a href="./contact.html" class="inline-flex items-center gap-2 text-sm man font-semibold text-[#1d3a72] hover:opacity-70 transition">
+                    Contact Technical Team
+                    <i class="fa-solid fa-arrow-right text-xs"></i>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FAQ Section - Admixtures -->
+<section class="relative py-16 bg-[#f8f7f5] overflow-hidden">
+
+    <div class="container 2xl:max-w-[1530px] mx-auto px-4">
+
+        <div class="text-center mb-12">
+            <p class="tracking-[0.3em] text-sm text-gray-400 man font-normal mb-4">
+                KNOWLEDGE CENTER
+            </p>
+            <h2 class="text-3xl md:text-4xl pop font-semibold text-[#2d2a26] leading-tight">
+                Frequently Asked <span class="tcolor">Questions</span>
+            </h2>
+            <div class="w-10 h-px bg-neutral-300 mx-auto mt-4"></div>
+        </div>
+
+        <div class="mx-auto space-y-4">
+
+            <!-- FAQ 1 -->
+            <div class="bg-white border border-neutral-200 rounded-2xl overflow-hidden hover:border-[#1d3a72]/20 transition duration-300">
+                <button class="faq-btn w-full flex justify-between items-center px-6 py-5 text-left group">
+                    <span class="text-[15px] pop font-semibold text-[#2d2a26] group-hover:text-[#1d3a72] transition">
+                        What types of admixtures does Usman Consultants offer?
+                    </span>
+                    <span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full bg-[#f8f7f5] border border-neutral-200 flex items-center justify-center text-[#2d2a26] text-lg font-light transition duration-300 group-hover:border-[#1d3a72] group-hover:text-[#1d3a72]">+</span>
+                </button>
+                <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                    <div class="px-6 pb-6 pt-1">
+                        <p class="text-gray-500 man text-sm leading-relaxed">
+                            We offer a comprehensive range of concrete admixtures including superplasticizers, set retarders, set accelerators, air-entraining agents, corrosion inhibitors, shrinkage reducers, waterproofing admixtures, and viscosity modifiers — engineered for specific concrete performance requirements.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="bg-white border border-neutral-200 rounded-2xl overflow-hidden hover:border-[#1d3a72]/20 transition duration-300">
+                <button class="faq-btn w-full flex justify-between items-center px-6 py-5 text-left group">
+                    <span class="text-[15px] pop font-semibold text-[#2d2a26] group-hover:text-[#1d3a72] transition">
+                        Which admixture is best for high-strength concrete?
+                    </span>
+                    <span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full bg-[#f8f7f5] border border-neutral-200 flex items-center justify-center text-[#2d2a26] text-lg font-light transition duration-300 group-hover:border-[#1d3a72] group-hover:text-[#1d3a72]">+</span>
+                </button>
+                <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                    <div class="px-6 pb-6 pt-1">
+                        <p class="text-gray-500 man text-sm leading-relaxed">
+                            For high-strength concrete, we recommend PCE-based superplasticizers (polycarboxylate ether) which provide high-range water reduction >40%, enabling low water-cement ratios while maintaining excellent workability. Combined with silica fume or other pozzolans, compressive strengths exceeding 60 MPa can be achieved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="bg-white border border-neutral-200 rounded-2xl overflow-hidden hover:border-[#1d3a72]/20 transition duration-300">
+                <button class="faq-btn w-full flex justify-between items-center px-6 py-5 text-left group">
+                    <span class="text-[15px] pop font-semibold text-[#2d2a26] group-hover:text-[#1d3a72] transition">
+                        What is the difference between set retarders and accelerators?
+                    </span>
+                    <span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full bg-[#f8f7f5] border border-neutral-200 flex items-center justify-center text-[#2d2a26] text-lg font-light transition duration-300 group-hover:border-[#1d3a72] group-hover:text-[#1d3a72]">+</span>
+                </button>
+                <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                    <div class="px-6 pb-6 pt-1">
+                        <p class="text-gray-500 man text-sm leading-relaxed">
+                            Set retarders delay the setting time of concrete, providing extended workability for hot weather concreting and long-haul transportation. Set accelerators speed up setting and early strength development, ideal for cold weather construction and fast-track projects. Both are available from Usman Consultants in various formulations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="bg-white border border-neutral-200 rounded-2xl overflow-hidden hover:border-[#1d3a72]/20 transition duration-300">
+                <button class="faq-btn w-full flex justify-between items-center px-6 py-5 text-left group">
+                    <span class="text-[15px] pop font-semibold text-[#2d2a26] group-hover:text-[#1d3a72] transition">
+                        Why are air-entraining admixtures important for concrete?
+                    </span>
+                    <span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full bg-[#f8f7f5] border border-neutral-200 flex items-center justify-center text-[#2d2a26] text-lg font-light transition duration-300 group-hover:border-[#1d3a72] group-hover:text-[#1d3a72]">+</span>
+                </button>
+                <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                    <div class="px-6 pb-6 pt-1">
+                        <p class="text-gray-500 man text-sm leading-relaxed">
+                            Air-entraining admixtures create stable microscopic air bubbles in concrete, providing critical protection against freeze-thaw damage and de-icing salt scaling. They also improve workability, reduce bleeding, and enhance overall durability in harsh weather conditions — essential for cold climate construction.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ 5 -->
+            <div class="bg-white border border-neutral-200 rounded-2xl overflow-hidden hover:border-[#1d3a72]/20 transition duration-300">
+                <button class="faq-btn w-full flex justify-between items-center px-6 py-5 text-left group">
+                    <span class="text-[15px] pop font-semibold text-[#2d2a26] group-hover:text-[#1d3a72] transition">
+                        How do corrosion inhibitors protect reinforced concrete?
+                    </span>
+                    <span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full bg-[#f8f7f5] border border-neutral-200 flex items-center justify-center text-[#2d2a26] text-lg font-light transition duration-300 group-hover:border-[#1d3a72] group-hover:text-[#1d3a72]">+</span>
+                </button>
+                <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                    <div class="px-6 pb-6 pt-1">
+                        <p class="text-gray-500 man text-sm leading-relaxed">
+                            Corrosion inhibitors protect steel reinforcement by passivating the steel surface, forming a protective molecular layer, or combining with chlorides to prevent corrosion. They extend structural service life by 50+ years in chloride-exposed environments such as marine, bridge decks, and industrial applications.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ 6 -->
+            <div class="bg-white border border-neutral-200 rounded-2xl overflow-hidden hover:border-[#1d3a72]/20 transition duration-300">
+                <button class="faq-btn w-full flex justify-between items-center px-6 py-5 text-left group">
+                    <span class="text-[15px] pop font-semibold text-[#2d2a26] group-hover:text-[#1d3a72] transition">
+                        How do I choose the right admixture for my concrete project?
+                    </span>
+                    <span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full bg-[#f8f7f5] border border-neutral-200 flex items-center justify-center text-[#2d2a26] text-lg font-light transition duration-300 group-hover:border-[#1d3a72] group-hover:text-[#1d3a72]">+</span>
+                </button>
+                <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                    <div class="px-6 pb-6 pt-1">
+                        <p class="text-gray-500 man text-sm leading-relaxed">
+                            Our technical team assesses your project requirements including concrete grade, exposure conditions, climate, placement method, and performance targets to recommend the optimal admixture system. We provide detailed proposals with dosage recommendations, compatibility testing, and application guidelines. <a href="./contact.html" class="text-[#1d3a72] hover:underline">Contact us</a> for a free consultation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="text-center mt-10">
+            <div class="inline-flex items-center gap-6 bg-white border border-neutral-200 rounded-full px-6 py-3">
+                <span class="text-sm text-gray-500 man">Still have questions?</span>
+                <a href="./contact.html" class="text-sm man font-semibold text-[#1d3a72] hover:opacity-70 transition flex items-center gap-2">
+                    Contact Us
+                    <i class="fa-solid fa-arrow-right text-xs"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section - Admixtures -->
+<section class="relative py-20 bg-[#1a2744] overflow-hidden">
+
+    <div class="absolute inset-0 opacity-[0.03] mix-blend-overlay bg-[url('./public/images/pattern.png')] bg-repeat"></div>
+    <div class="absolute -top-32 -right-32 w-[30rem] h-[30rem] bg-[#51B9E2]/10 rounded-full blur-3xl"></div>
+    <div class="absolute -bottom-32 -left-32 w-[30rem] h-[30rem] bg-[#269FDB]/8 rounded-full blur-3xl"></div>
+
+    <div class="container 2xl:max-w-[1530px] mx-auto px-4 relative z-10">
+
+        <div class="max-w-5xl mx-auto text-center">
+
+            <p class="text-[11px] tracking-[0.3em] text-[#51B9E2]/70 man font-normal uppercase mb-4">
+                Enhance Your Concrete
+            </p>
+
+            <h2 class="text-4xl md:text-5xl pop font-semibold text-white leading-tight">
+                Optimize Concrete Performance with <br>
+                <span class="text-[#51B9E2]">Premium Admixture Solutions</span>
+            </h2>
+
+            <p class="mt-6 text-gray-300 man text-sm leading-relaxed max-w-3xl mx-auto">
+                Partner with Usman Consultants for high-performance concrete admixtures that enhance workability, durability, and strength. From superplasticizers to corrosion inhibitors — quality, reliability, and technical excellence for every construction project.
+            </p>
+
+            <div class="w-16 h-px bg-gradient-to-r from-transparent via-[#51B9E2]/30 to-transparent mx-auto mt-8 mb-10"></div>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+
+                <a href="./contact.html"
+                    class="group px-10 py-4 bg-[#51B9E2] text-[#0a1628] text-sm man font-semibold rounded-full hover:bg-[#269FDB] transition duration-300 flex items-center gap-2 shadow-lg shadow-[#51B9E2]/20">
+                    Request Technical Consultation
+                    <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition duration-300"></i>
+                </a>
+
+                <a href="./admixtures.html"
+                    class="group px-10 py-4 border border-white/20 text-white text-sm man font-medium rounded-full hover:bg-white/10 hover:border-white/40 transition duration-300 flex items-center gap-2">
+                    Explore Admixtures
+                    <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition duration-300 opacity-0 group-hover:opacity-100"></i>
+                </a>
+
+            </div>
+
+            <div class="mt-12 pt-8 border-t border-white/5 flex flex-wrap items-center justify-center gap-4 md:gap-8">
+                <span class="text-[10px] text-gray-400 tracking-[0.2em] man uppercase">Superplasticizers</span>
+                <span class="w-px h-3 bg-white/10 hidden sm:block"></span>
+                <span class="text-[10px] text-gray-400 tracking-[0.2em] man uppercase">Set Retarders</span>
+                <span class="w-px h-3 bg-white/10 hidden sm:block"></span>
+                <span class="text-[10px] text-gray-400 tracking-[0.2em] man uppercase">Set Accelerators</span>
+                <span class="w-px h-3 bg-white/10 hidden sm:block"></span>
+                <span class="text-[10px] text-gray-400 tracking-[0.2em] man uppercase">Air-Entraining Agents</span>
+                <span class="w-px h-3 bg-white/10 hidden sm:block"></span>
+                <span class="text-[10px] text-gray-400 tracking-[0.2em] man uppercase">Corrosion Inhibitors</span>
+                <span class="w-px h-3 bg-white/10 hidden sm:block"></span>
+                <span class="text-[10px] text-gray-400 tracking-[0.2em] man uppercase">Shrinkage Reducers</span>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="relative font-[Playfair_Display] overflow-hidden border-t border-[#1d3a72]/30 text-white bg-[#0a1628]">
+        <div class="absolute inset-0 bg-gradient-to-b from-[#0a1628] via-[#0f1f3a] to-[#0a1628]"></div>
+        <div class="absolute inset-0 opacity-[0.04] mix-blend-overlay bg-[url('./public/images/pattern.png')] bg-repeat"></div>
+
+        <div class="relative border-b border-[#1d3a72]/30 py-3 px-6 backdrop-blur-xl bg-[#1d3a72]/10">
+            <div class="container 2xl:max-w-[1530px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
+                <p class="text-[12px] man tracking-[0.25em] uppercase text-gray-400">Faisalabad, Pakistan</p>
+                <div class="flex items-center gap-4">
+                    <span class="text-[12px] man tracking-[0.25em] uppercase text-gray-400">Quality Assured</span>
+                    <span class="w-px h-3 bg-[#1d3a72]/30"></span>
+                    <span class="text-[12px] man tracking-[0.25em] uppercase text-gray-400">Est. 2012</span>
+                    <span class="w-px h-3 bg-[#1d3a72]/30"></span>
+                    <span class="text-[12px] man tracking-[0.25em] uppercase text-gray-400">100+ Projects</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="relative container 2xl:max-w-[1530px] mx-auto px-4 py-10">
+            <div class="grid lg:grid-cols-12 gap-10">
+                <div class="lg:col-span-4 flex flex-col gap-4">
+                    <a href="./index.html">
+                        <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/logo.png"
+                            alt="Usman Consultants Logo" class="w-24 object-contain">
+                    </a>
+                    <p class="text-sm text-gray-400 man leading-relaxed max-w-xs">
+                        Premium construction chemicals, structural repair, waterproofing, and industrial flooring solutions since 2012.
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <a href="#" class="w-8 h-8 rounded-full bg-[#1d3a72]/20 border border-[#1d3a72]/30 flex items-center justify-center text-gray-400 hover:text-white hover:bg-[#1d3a72] hover:border-[#1d3a72] transition">
+                            <i class="fa-brands fa-facebook-f text-[11px]"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-[#1d3a72]/20 border border-[#1d3a72]/30 flex items-center justify-center text-gray-400 hover:text-white hover:bg-[#1d3a72] hover:border-[#1d3a72] transition">
+                            <i class="fa-brands fa-instagram text-[11px]"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-[#1d3a72]/20 border border-[#1d3a72]/30 flex items-center justify-center text-gray-400 hover:text-white hover:bg-[#1d3a72] hover:border-[#1d3a72] transition">
+                            <i class="fa-brands fa-linkedin-in text-[11px]"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-[#1d3a72]/20 border border-[#1d3a72]/30 flex items-center justify-center text-gray-400 hover:text-white hover:bg-[#1d3a72] hover:border-[#1d3a72] transition">
+                            <i class="fa-brands fa-youtube text-[11px]"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-2 lg:col-start-6">
+                    <p class="text-[12px] man tracking-[0.25em] uppercase text-[white] mb-4 font-semibold">Navigate</p>
+                    <ul class="flex pop flex-col gap-2">
+                        <li><a href="./index.html" class="text-sm text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="./about.html" class="text-sm text-gray-400 hover:text-white transition">About</a></li>
+                        <li><a href="./services.html" class="text-sm text-gray-400 hover:text-white transition">Services</a></li>
+                        <li><a href="./client.html" class="text-sm text-gray-400 hover:text-white transition">Our Clients</a></li>
+                        <li><a href="./contact.html" class="text-sm text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="lg:col-span-2">
+                    <p class="text-[12px] man tracking-[0.25em] uppercase text-[white] mb-4 font-semibold">Solutions</p>
+                    <ul class="flex flex-col pop gap-2">
+                        <li><a href="./waterproofing.html" class="text-sm text-gray-400 hover:text-white transition">Waterproofing</a></li>
+                        <li><a href="./flooring.html" class="text-sm text-gray-400 hover:text-white transition">Industrial Flooring</a></li>
+                        <li><a href="./sealants.html" class="text-sm text-gray-400 hover:text-white transition">Joint Sealants</a></li>
+                        <li><a href="./structural-repair.html" class="text-sm text-gray-400 hover:text-white transition">Structural Repair</a></li>
+                        <li><a href="./paints.html" class="text-sm text-gray-400 hover:text-white transition">Paints & Coatings</a></li>
+                        <li><a href="./admixtures.html" class="text-sm text-gray-400 hover:text-white transition">Concrete Admixtures</a></li>
+                    </ul>
+                </div>
+
+                <div class="lg:col-span-2">
+                    <p class="text-[12px] man tracking-[0.25em] uppercase text-[white] mb-4 font-semibold">Get In Touch</p>
+                    <ul class="flex flex-col pop gap-3">
+                        <li>
+                            <a href="tel:03009653044" class="flex flex-col">
+                                <span class="text-[10px] text-gray-500">Phone</span>
+                                <span class="text-xs text-gray-300 hover:text-white transition">0300-9653044</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:usman.zahid1@yahoo.com" class="flex flex-col">
+                                <span class="text-[10px] text-gray-500">Email</span>
+                                <span class="text-xs text-gray-300 hover:text-white transition">usman.zahid1@yahoo.com</span>
+                            </a>
+                        </li>
+                        <li class="flex flex-col">
+                            <span class="text-[10px] text-gray-500">Location</span>
+                            <span class="text-xs text-gray-300">Faisalabad, Pakistan</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-10 border-t border-[#1d3a72]/30 pt-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+                <p class="text-[11px] text-gray-500">© 2026 Usman Consultants. All rights reserved.</p>
+                <div class="flex items-center gap-4">
+                    <a href="./terms.html" class="text-[11px] text-gray-500 hover:text-white transition">Terms</a>
+                    <span class="w-px h-3 bg-[#1d3a72]/30"></span>
+                    <a href="./privacy.html" class="text-[11px] text-gray-500 hover:text-white transition">Privacy</a>
+                </div>
+                <p class="text-[11px] text-gray-500">
+                    Developed by
+                    <a href="https://wa.me/923224066958" target="_blank" class="text-gray-300 hover:text-white transition">MAC</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/923009653044" target="_blank" rel="noopener noreferrer"
+        class="fixed bottom-6 left-6 z-[9999] flex items-center gap-3 bg-[#25D366] text-white no-underline px-5 py-3 rounded-full shadow-lg hover:opacity-90 hover:scale-105 transition duration-300"
+        style="font-family: Manrope, sans-serif; font-size: 13px; font-weight: 500; letter-spacing: 0.02em; box-shadow: 0 4px 20px rgba(37,211,102,0.35);">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32" fill="white">
+            <path d="M16.003 2C8.28 2 2 8.278 2 15.998c0 2.47.648 4.788 1.784 6.8L2 30l7.397-1.744A13.947 13.947 0 0016.003 30C23.722 30 30 23.722 30 16.003 30 8.278 23.722 2 16.003 2zm0 25.452a11.43 11.43 0 01-5.832-1.596l-.418-.248-4.392 1.036 1.068-4.27-.272-.44A11.417 11.417 0 014.55 16c0-6.319 5.134-11.452 11.453-11.452S27.452 9.681 27.452 16c0 6.318-5.131 11.452-11.449 11.452zm6.28-8.57c-.344-.172-2.036-1.004-2.352-1.118-.316-.116-.546-.172-.776.172-.23.344-.892 1.118-1.092 1.348-.2.23-.4.258-.744.086-.344-.172-1.454-.536-2.77-1.708-1.024-.912-1.714-2.038-1.914-2.382-.2-.344-.022-.53.15-.702.154-.154.344-.4.516-.6.172-.2.23-.344.344-.574.114-.23.058-.43-.028-.602-.086-.172-.776-1.87-1.064-2.562-.28-.672-.564-.58-.776-.59l-.66-.012c-.23 0-.602.086-.916.43-.316.344-1.204 1.176-1.204 2.868s1.232 3.326 1.404 3.556c.172.23 2.424 3.7 5.874 5.19.822.354 1.462.566 1.962.724.824.262 1.574.225 2.167.136.66-.1 2.036-.832 2.322-1.634.286-.8.286-1.488.2-1.634-.084-.144-.314-.23-.658-.4z"/>
+        </svg>
+        <span>WhatsApp</span>
+    </a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script defer src="./src/js/index.js"></script>
+    <script defer src="./src/js/gsap.js"></script>
+
+</body>
+</html>

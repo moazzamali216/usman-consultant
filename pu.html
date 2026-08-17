@@ -1,0 +1,1899 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UC - PU</title>
+    <link rel="icon" href="./public/images/logo2.png">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./public/output.css">
+    <link rel="stylesheet" href="./src/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.0/swiper-bundle.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.0/swiper-bundle.min.js"></script>
+</head>
+
+<!-- Preloader -->
+<div id="preloader" class="fixed !z-[9999] inset-0 bg-white flex flex-col items-center justify-center">
+    <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/logo.png"
+        class="w-28 animate-up-pulse" alt="Logo">
+    <div class="w-8 h-8 border-4 border-gray-200 border-t-black rounded-full animate-spin mt-7"></div>
+</div>
+
+<body class="bg-gray-50">
+
+    <!-- Desktop Navbar -->
+    <nav class="hidden lg:block fixed top-5 left-0 w-full z-50">
+        <div class="max-w-7xl mx-auto px-5">
+            <div class="bg-[#f8f7f5]/90 shadow-md backdrop-blur-md border border-neutral-200 rounded-[26px]">
+                <div class="flex items-center justify-between px-8 py-1.5">
+                    <a href="./index.html">
+                        <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/logo.png"
+                            alt="Logo" class="w-28 object-contain">
+                    </a>
+
+                    <ul class="flex items-center mons font-semibold gap-12 text-[13px] uppercase text-gray-500">
+                        <li><a href="./index.html" class="hover:text-neutral-900 transition duration-300">Home</a></li>
+                        <li><a href="./about.html" class="hover:text-neutral-900 transition duration-300">About</a></li>
+                        <li><a href="./services.html"
+                                class="hover:text-neutral-900 transition duration-300">Services</a></li>
+                        <li class="relative">
+
+                            <button id="dropdownProductsButton" data-dropdown-toggle="dropdownProducts"
+                                data-dropdown-placement="bottom-start"
+                                class="flex uppercase items-center gap-1 hover:text-neutral-900 transition duration-300">
+
+                                Products
+
+                                <svg class="w-3.5 h-3.5 mt-[1px]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+
+                            </button>
+
+                            <!-- Dropdown Menu -->
+                            <div id="dropdownProducts"
+                                class="hidden absolute top-12 left-0 w-64 bg-white border border-neutral-200 tracking-[1px] rounded-2xl shadow-lg overflow-hidden">
+                                <ul class="text-[11px] uppercase text-gray-500">
+
+                                    <li>
+                                        <a href="./adhesives.html"
+                                            class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition">
+                                            Adhesive
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="./admixtures.html"
+                                            class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition">
+                                            Admixtures
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="./concrete-repair.html"
+                                            class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition">
+                                            Concrete Repair
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="./flooring.html"
+                                            class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition">
+                                            Flooring
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="./grout-anchor.html"
+                                            class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition">
+                                            Grout and Anchor
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="./paints.html"
+                                            class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition">
+                                            Paint and Coatings
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="./pu.html"
+                                            class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition">
+                                            PU
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="./sealants.html"
+                                            class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition">
+                                            Sealants
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="./surface-treatment.html"
+                                            class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition">
+                                            Surface Treatment
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="./waterproofing.html"
+                                            class="block px-5 py-3 hover:bg-neutral-50 hover:text-neutral-900 transition">
+                                            Water Proofing
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li><a href="./client.html" class="hover:text-neutral-900 transition duration-300">Our
+                                Clients</a></li>
+                        <li><a href="./public/pdfs/E-brouchure.pdf" download
+                                class="hover:text-neutral-900 transition duration-300">E-Brochure</a></li>
+                    </ul>
+
+                    <a href="./contact.html"
+                        class="flex items-center gap-4 text-neutral-900 hover:opacity-70 transition duration-300">
+                        <span class="w-10 h-px bg-neutral-900"></span>
+                        <span class="text-[14px] uppercase tracking-wide font-semibold mons">Contact Us</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Navbar -->
+    <nav class="lg:hidden fixed top-5 left-0 w-full z-[999]">
+        <div class="px-4">
+            <div
+                class="bg-[#f8f7f5]/90 backdrop-blur-md border border-neutral-200 rounded-2xl px-5 py-2 flex items-center justify-between">
+                <a href="./index.html">
+                    <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/logo.png"
+                        class="w-24 object-contain" alt="Logo">
+                </a>
+                <button id="openMenu"
+                    class="w-11 h-11 rounded-full border border-neutral-300 flex items-center justify-center text-neutral-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Overlay -->
+    <div id="overlay"
+        class="fixed inset-0 bg-black/20 backdrop-blur-sm hidden z-[998] opacity-0 transition duration-300"></div>
+
+    <!-- Side Menu -->
+    <div id="sideMenu"
+        class="fixed top-0 right-0 h-full w-[85%] max-w-sm bg-[#f8f7f5] z-[999] translate-x-full transition-transform duration-500 ease-in-out border-l border-neutral-200 flex flex-col">
+        <div class="flex items-center justify-between px-6 py-6 border-b border-neutral-200">
+            <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/logo.png"
+                class="w-24 object-contain" alt="Logo">
+            <button id="closeMenu"
+                class="w-10 h-10 rounded-full border border-neutral-300 flex items-center justify-center text-neutral-700">✕</button>
+        </div>
+        <div class="flex-1 overflow-y-auto px-6 py-8">
+            <ul class="space-y-7 text-[15px] tracking-wide font-medium text-neutral-700 man">
+                <li><a href="./index.html"
+                        class="flex items-center justify-between hover:text-neutral-900 transition">Home <span
+                            class="w-8 h-px bg-neutral-900"></span></a></li>
+                <li><a href="./about.html" class="hover:text-neutral-900 transition block">About</a></li>
+                <li><a href="./services.html" class="hover:text-neutral-900 transition block">Services</a></li>
+                <li>
+                    <div class="border border-neutral-200 rounded-2xl overflow-hidden bg-white">
+                        <button id="productToggle"
+                            class="w-full flex items-center justify-between px-5 py-4 text-left text-neutral-800">
+                            <span>Products</span>
+                            <svg id="productArrow" xmlns="http://www.w3.org/2000/svg"
+                                class="w-4 h-4 transition duration-300" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div id="productMenu" class="hidden border-t border-neutral-200 px-5 py-4">
+                            <ul class="space-y-4 text-[14px] text-neutral-600">
+                                <li><a href="./waterproofing.html"
+                                        class="block hover:text-neutral-900 transition">Waterproofing</a></li>
+                                <li><a href="./flooring.html" class="block hover:text-neutral-900 transition">Industrial
+                                        Flooring</a></li>
+                                <li><a href="./sealants.html" class="block hover:text-neutral-900 transition">Joint
+                                        Sealants</a></li>
+                                <li><a href="./structural-repair.html"
+                                        class="block hover:text-neutral-900 transition">Structural Repair</a></li>
+                                <li><a href="./paints.html" class="block hover:text-neutral-900 transition">Paints &
+                                        Coatings</a></li>
+                                <li><a href="./admixtures.html" class="block hover:text-neutral-900 transition">Concrete
+                                        Admixtures</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="./client.html" class="hover:text-neutral-900 transition block">Our Clients</a></li>
+                <li><a href="./public/pdfs/E-brouchure.pdf" download
+                        class="hover:text-neutral-900 transition block">E-Brochure</a></li>
+            </ul>
+        </div>
+        <div class="p-6 border-t border-neutral-200">
+            <a href="./contact.html"
+                class="flex items-center justify-center gap-3 border border-neutral-300 rounded-full py-4 text-[14px] tracking-wide text-neutral-900 hover:bg-neutral-900 hover:text-white transition duration-300 man">
+                <span class="w-8 h-px bg-current"></span> Contact Us
+            </a>
+        </div>
+    </div>
+
+    <!-- Hero Section - PU -->
+    <section class="relative h-[500px] flex items-center justify-center overflow-hidden">
+        <img loading='lazy' decoding="async" fetchpriority="low" src="./public/images/pu-hero.webp"
+            class="absolute inset-0 w-full h-full object-cover" alt="PU Solutions">
+        <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/50 to-black/20"></div>
+        <div class="relative z-10 text-center px-4">
+            <p class="text-[11px] uppercase tracking-[0.3em] text-white/50 man font-normal mb-3">
+                Premium Polyurethane Solutions
+            </p>
+            <h1 class="text-4xl md:text-5xl pop font-semibold text-white leading-tight">
+                Polyurethane (PU)
+            </h1>
+            <div class="w-10 h-px bg-white/30 mx-auto mt-5"></div>
+            <p class="text-sm text-white/60 man font-normal mt-4 max-w-md mx-auto">
+                High-performance polyurethane systems for flexible coatings, waterproofing, flooring, and industrial
+                applications
+            </p>
+        </div>
+    </section>
+    <!-- Introduction Section - PU -->
+    <section class="relative py-24 bg-white overflow-hidden">
+
+        <!-- Background Elements -->
+        <div class="absolute inset-0">
+            <div class="absolute inset-0 bg-gradient-to-br from-white via-[#f8f7f5] to-white"></div>
+            <div class="absolute inset-0 opacity-[0.02]" style="background-image: 
+            radial-gradient(circle at 20% 30%, #1d3a72 3px, transparent 3px),
+            radial-gradient(circle at 80% 70%, #51B9E2 3px, transparent 3px);
+            background-size: 120px 120px;">
+            </div>
+
+            <!-- Large gradient blob -->
+            <div
+                class="absolute -top-60 -right-60 w-[40rem] h-[40rem] bg-gradient-to-br from-[#51B9E2]/10 to-[#1d3a72]/5 rounded-full blur-3xl">
+            </div>
+            <div
+                class="absolute -bottom-60 -left-60 w-[40rem] h-[40rem] bg-gradient-to-tr from-[#269FDB]/8 to-[#176A9F]/5 rounded-full blur-3xl">
+            </div>
+        </div>
+
+        <div class="relative z-10 container 2xl:max-w-[1530px] mx-auto px-4">
+
+            <!-- Full Width Layout -->
+            <div class="max-w-5xl mx-auto">
+
+                <!-- Top Badge -->
+                <div class="text-center mb-8">
+                    <span
+                        class="inline-flex items-center gap-3 text-[10px] font-medium tracking-[0.35em] uppercase text-white man bg-gradient-to-r from-[#1d3a72] to-[#176A9F] px-5 py-2.5 rounded-full shadow-lg shadow-[#1d3a72]/20">
+                        <i class="fa-solid fa-arrow-right text-[#51B9E2] text-xs"></i>
+                        The Ultimate Performance Material
+                        <i class="fa-solid fa-arrow-left text-[#51B9E2] text-xs"></i>
+                    </span>
+                </div>
+
+                <!-- Main Headline -->
+                <h2 class="text-4xl md:text-6xl pop font-semibold text-[#2d2a26] leading-[1.1] text-center">
+                    Flexible. Resilient. <br>
+                    <span
+                        class="bg-gradient-to-r from-[#1d3a72] via-[#51B9E2] to-[#269FDB] bg-clip-text text-transparent">Unstoppable.</span>
+                </h2>
+
+                <!-- Divider -->
+                <div class="w-16 h-1 bg-gradient-to-r from-[#51B9E2] to-[#1d3a72] mx-auto mt-6 rounded-full"></div>
+
+                <!-- Description -->
+                <p class="mt-6 text-gray-500 man text-[15px] leading-relaxed text-center max-w-3xl mx-auto">
+                    Usman Consultants delivers premium polyurethane (PU) solutions engineered for unmatched flexibility,
+                    durability, and performance. From protective coatings and waterproofing membranes to
+                    high-performance flooring and industrial applications — our PU systems provide superior resistance
+                    to wear, weather, and chemicals.
+                </p>
+
+                <!-- Stats Row - Horizontal -->
+                <div class="mt-10 grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div
+                        class="bg-white border border-neutral-200 rounded-2xl p-5 text-center hover:shadow-xl hover:border-[#1d3a72]/20 transition group">
+                        <div
+                            class="w-12 h-12 rounded-full bg-[#1d3a72]/10 flex items-center justify-center mx-auto mb-2 group-hover:bg-[#1d3a72] transition">
+                            <i class="fa-solid fa-expand text-[#1d3a72] group-hover:text-white text-lg transition"></i>
+                        </div>
+                        <p class="text-2xl pop font-bold text-[#1d3a72]">500%</p>
+                        <p class="text-[9px] text-gray-400 man uppercase tracking-wider">Elongation</p>
+                    </div>
+
+                    <div
+                        class="bg-white border border-neutral-200 rounded-2xl p-5 text-center hover:shadow-xl hover:border-[#51B9E2]/20 transition group">
+                        <div
+                            class="w-12 h-12 rounded-full bg-[#51B9E2]/10 flex items-center justify-center mx-auto mb-2 group-hover:bg-[#51B9E2] transition">
+                            <i
+                                class="fa-solid fa-snowflake text-[#51B9E2] group-hover:text-white text-lg transition"></i>
+                        </div>
+                        <p class="text-2xl pop font-bold text-[#51B9E2]">-30°C</p>
+                        <p class="text-[9px] text-gray-400 man uppercase tracking-wider">Low Temp Resistance</p>
+                    </div>
+
+                    <div
+                        class="bg-white border border-neutral-200 rounded-2xl p-5 text-center hover:shadow-xl hover:border-[#269FDB]/20 transition group">
+                        <div
+                            class="w-12 h-12 rounded-full bg-[#269FDB]/10 flex items-center justify-center mx-auto mb-2 group-hover:bg-[#269FDB] transition">
+                            <i class="fa-solid fa-shield text-[#269FDB] group-hover:text-white text-lg transition"></i>
+                        </div>
+                        <p class="text-2xl pop font-bold text-[#269FDB]">100%</p>
+                        <p class="text-[9px] text-gray-400 man uppercase tracking-wider">Waterproof</p>
+                    </div>
+
+                    <div
+                        class="bg-white border border-neutral-200 rounded-2xl p-5 text-center hover:shadow-xl hover:border-[#176A9F]/20 transition group">
+                        <div
+                            class="w-12 h-12 rounded-full bg-[#176A9F]/10 flex items-center justify-center mx-auto mb-2 group-hover:bg-[#176A9F] transition">
+                            <i class="fa-solid fa-clock text-[#176A9F] group-hover:text-white text-lg transition"></i>
+                        </div>
+                        <p class="text-2xl pop font-bold text-[#176A9F]">25+</p>
+                        <p class="text-[9px] text-gray-400 man uppercase tracking-wider">Years Service Life</p>
+                    </div>
+                </div>
+
+                <!-- Feature Cards Row -->
+                <div class="mt-10 grid md:grid-cols-3 gap-5">
+
+                    <div
+                        class="bg-gradient-to-br from-[#f8f7f5] to-white border border-neutral-200 rounded-2xl p-6 hover:shadow-xl hover:border-[#1d3a72]/20 transition">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="w-10 h-10 rounded-xl bg-[#1d3a72]/10 flex items-center justify-center">
+                                <i class="fa-solid fa-paint-roller text-[#1d3a72] text-sm"></i>
+                            </div>
+                            <span class="text-[10px] font-semibold text-[#1d3a72] man uppercase tracking-wider">PU
+                                Coatings</span>
+                        </div>
+                        <h4 class="text-sm pop font-semibold text-[#2d2a26]">Superior Surface Protection</h4>
+                        <p class="text-xs text-gray-500 man mt-1">UV-resistant, weatherproof, and abrasion-resistant
+                            coatings for exterior and industrial surfaces.</p>
+                    </div>
+
+                    <div
+                        class="bg-gradient-to-br from-[#f8f7f5] to-white border border-neutral-200 rounded-2xl p-6 hover:shadow-xl hover:border-[#51B9E2]/20 transition">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="w-10 h-10 rounded-xl bg-[#51B9E2]/10 flex items-center justify-center">
+                                <i class="fa-solid fa-layer-group text-[#51B9E2] text-sm"></i>
+                            </div>
+                            <span class="text-[10px] font-semibold text-[#51B9E2] man uppercase tracking-wider">PU
+                                Flooring</span>
+                        </div>
+                        <h4 class="text-sm pop font-semibold text-[#2d2a26]">Flexible & Durable Flooring</h4>
+                        <p class="text-xs text-gray-500 man mt-1">Impact-resistant, seamless, and flexible flooring for
+                            parking garages, sports floors, and rooftops.</p>
+                    </div>
+
+                    <div
+                        class="bg-gradient-to-br from-[#f8f7f5] to-white border border-neutral-200 rounded-2xl p-6 hover:shadow-xl hover:border-[#176A9F]/20 transition">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="w-10 h-10 rounded-xl bg-[#176A9F]/10 flex items-center justify-center">
+                                <i class="fa-solid fa-droplet text-[#176A9F] text-sm"></i>
+                            </div>
+                            <span class="text-[10px] font-semibold text-[#176A9F] man uppercase tracking-wider">PU
+                                Waterproofing</span>
+                        </div>
+                        <h4 class="text-sm pop font-semibold text-[#2d2a26]">Seamless Waterproofing</h4>
+                        <p class="text-xs text-gray-500 man mt-1">Liquid-applied membranes for roofs, balconies, and wet
+                            areas with exceptional water resistance.</p>
+                    </div>
+
+                </div>
+
+                <!-- Additional Applications -->
+                <div class="mt-10 bg-[#f8f7f5] border border-neutral-200 rounded-2xl p-6">
+                    <div class="grid md:grid-cols-4 gap-4">
+                        <div class="text-center">
+                            <span class="text-[9px] text-gray-400 man uppercase tracking-wider block">Sealants</span>
+                            <p class="text-xs text-[#2d2a26] font-medium">Joint & Crack Sealing</p>
+                        </div>
+                        <div class="text-center">
+                            <span class="text-[9px] text-gray-400 man uppercase tracking-wider block">Grouts</span>
+                            <p class="text-xs text-[#2d2a26] font-medium">Flexible & Vibration Damping</p>
+                        </div>
+                        <div class="text-center">
+                            <span class="text-[9px] text-gray-400 man uppercase tracking-wider block">Adhesives</span>
+                            <p class="text-xs text-[#2d2a26] font-medium">High-Bond Strength</p>
+                        </div>
+                        <div class="text-center">
+                            <span class="text-[9px] text-gray-400 man uppercase tracking-wider block">Elastomers</span>
+                            <p class="text-xs text-[#2d2a26] font-medium">Flexible Molding</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA -->
+                <div class="mt-10 text-center">
+                    <div
+                        class="inline-flex flex-wrap items-center justify-center gap-4 bg-white border border-neutral-200 rounded-full px-6 py-3 shadow-sm">
+                        <span class="text-sm text-gray-500 man">Ready to explore PU solutions?</span>
+                        <span class="w-px h-6 bg-neutral-200"></span>
+                        <a href="./contact.html"
+                            class="text-sm man font-semibold text-[#1d3a72] hover:opacity-70 transition flex items-center gap-2">
+                            Request a Consultation
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                        <span class="w-px h-6 bg-neutral-200"></span>
+                        <a href="./public/pdfs/E-brouchure.pdf" download
+                            class="text-sm man font-medium text-gray-500 hover:text-[#1d3a72] transition flex items-center gap-2">
+                            <i class="fa-solid fa-download text-xs"></i>
+                            Download Brochure
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Compliance -->
+                <div class="mt-8 flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
+                    <span class="text-[9px] text-gray-400 man uppercase tracking-wider">EN 1504 Compliant</span>
+                    <span class="w-px h-4 bg-neutral-300"></span>
+                    <span class="text-[9px] text-gray-400 man uppercase tracking-wider">ASTM C881</span>
+                    <span class="w-px h-4 bg-neutral-300"></span>
+                    <span class="text-[9px] text-gray-400 man uppercase tracking-wider">ISO 9001 Certified</span>
+                    <span class="w-px h-4 bg-neutral-300"></span>
+                    <span class="text-[9px] text-gray-400 man uppercase tracking-wider">SGS Tested</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- ==================== SECTION: PU CATEGORIES - PHYSICAL FORM & END PRODUCT ==================== -->
+    <section class="relative py-24 bg-white overflow-hidden">
+
+        <!-- Background Elements -->
+        <div class="absolute inset-0">
+            <div class="absolute inset-0 bg-gradient-to-b from-white via-[#f8f7f5] to-white"></div>
+            <div class="absolute inset-0 opacity-[0.015]" style="background-image: 
+            radial-gradient(circle at 30% 40%, #1d3a72 2px, transparent 2px),
+            radial-gradient(circle at 70% 60%, #51B9E2 2px, transparent 2px);
+            background-size: 80px 80px;">
+            </div>
+            <!-- Blue corner -->
+            <div
+                class="lg:block hidden pointer-events-none absolute right-0 top-0 h-[300px] w-[200px] overflow-hidden opacity-20">
+                <div class="absolute inset-0 bg-[#51B9E2]" style="clip-path: polygon(0 0, 25% 0, 100% 100%, 0 0);">
+                </div>
+                <div class="absolute inset-0 bg-[#269FDB]" style="clip-path: polygon(25% 0, 50% 0, 100% 100%);"></div>
+                <div class="absolute inset-0 bg-[#176A9F]" style="clip-path: polygon(50% 0, 100% 0, 100% 100%);"></div>
+            </div>
+            <!-- Soft glow -->
+            <div class="absolute -top-40 -right-40 w-96 h-96 bg-[#1d3a72]/3 rounded-full blur-3xl"></div>
+            <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-[#51B9E2]/3 rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="relative z-10 container 2xl:max-w-[1530px] mx-auto px-4">
+
+            <!-- Header -->
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span
+                    class="inline-flex items-center gap-3 text-[10px] font-medium tracking-[0.35em] uppercase text-[#1d3a72] man mb-4 bg-[#f8f7f5] border border-neutral-200 px-5 py-2 rounded-full">
+                    <i class="fa-solid fa-hard-hat text-[#51B9E2] text-xs"></i>
+                    Construction & Industrial Solutions
+                    <i class="fa-solid fa-hard-hat text-[#51B9E2] text-xs"></i>
+                </span>
+                <h2 class="text-4xl md:text-6xl pop font-semibold text-[#2d2a26] leading-[1.1]">
+                    PU Solutions for <br>
+                    <span class="text-[#1d3a72]">Construction & Industry</span>
+                </h2>
+                <div
+                    class="w-16 h-1 bg-gradient-to-r from-transparent via-[#1d3a72] to-transparent mx-auto mt-6 rounded-full">
+                </div>
+                <p class="mt-6 text-gray-500 man text-[15px] leading-relaxed max-w-2xl mx-auto">
+                    From structural insulation to industrial coatings, from waterproofing to protective linings —
+                    polyurethane delivers unmatched performance across construction and industrial applications.
+                </p>
+            </div>
+
+            <!-- ==================== CATEGORY 1: SPRAY FOAM & INSULATION ==================== -->
+            <div class="mb-20">
+                <div class="flex items-center gap-4 mb-8">
+                    <div
+                        class="w-16 h-16 rounded-2xl bg-[#51B9E2]/10 border border-[#51B9E2]/30 flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-building text-[#51B9E2] text-2xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-3xl pop font-semibold text-[#2d2a26]">Spray Foam & Insulation</h3>
+                        <p class="text-sm text-[#51B9E2]/70 man">Energy Efficiency · Thermal Protection · Sealing</p>
+                    </div>
+                    <div class="flex-1 h-px bg-gradient-to-r from-[#51B9E2]/30 to-transparent ml-4"></div>
+                </div>
+
+                <p class="text-gray-500 man text-[14px] leading-relaxed max-w-4xl mb-8">
+                    PU spray foam and rigid insulation systems are the gold standard for energy efficiency in
+                    construction. With superior thermal resistance and air-sealing properties, they reduce energy costs
+                    while improving comfort and structural integrity.
+                </p>
+
+                <div class="grid md:grid-cols-3 gap-5">
+
+                    <!-- Application 1: Spray Foam Insulation -->
+                    <div
+                        class="group bg-[#f8f7f5] border border-neutral-200 rounded-2xl overflow-hidden hover:shadow-xl hover:border-[#51B9E2]/40 transition duration-500">
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="./public/images/pu-spray-foam.webp" alt="PU Spray Foam"
+                                class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                                loading="lazy" decoding="async">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                            <div class="absolute bottom-0 left-0 p-4">
+                                <span class="text-white text-[10px] font-medium man tracking-wider">Spray Foam
+                                    Insulation</span>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <h4 class="text-lg pop font-semibold text-[#2d2a26]">Spray Foam Insulation</h4>
+                            <p class="text-sm text-gray-500 man leading-relaxed mt-1">Open-cell and closed-cell spray
+                                foam for walls, attics, and crawl spaces — providing superior thermal insulation and air
+                                sealing.</p>
+                            <div class="flex flex-wrap gap-2 mt-3">
+                                <span
+                                    class="text-[9px] man px-3 py-1 rounded-full bg-white border border-neutral-200 text-gray-500">Thermal
+                                    Insulation</span>
+                                <span
+                                    class="text-[9px] man px-3 py-1 rounded-full bg-white border border-neutral-200 text-gray-500">Air
+                                    Sealing</span>
+                                <span
+                                    class="text-[9px] man px-3 py-1 rounded-full bg-white border border-neutral-200 text-gray-500">Energy
+                                    Efficient</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Application 2: Rigid Insulation Boards -->
+                    <div
+                        class="group bg-[#f8f7f5] border border-neutral-200 rounded-2xl overflow-hidden hover:shadow-xl hover:border-[#51B9E2]/40 transition duration-500">
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="./public/images/pu-rigid-boards.webp" alt="PU Rigid Boards"
+                                class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                                loading="lazy" decoding="async">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                            <div class="absolute bottom-0 left-0 p-4">
+                                <span class="text-white text-[10px] font-medium man tracking-wider">Rigid Insulation
+                                    Boards</span>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <h4 class="text-lg pop font-semibold text-[#2d2a26]">Rigid Insulation Boards</h4>
+                            <p class="text-sm text-gray-500 man leading-relaxed mt-1">High-performance PIR/PUR boards
+                                for roofs, walls, floors, and façades — offering exceptional thermal efficiency and
+                                compressive strength.</p>
+                            <div class="flex flex-wrap gap-2 mt-3">
+                                <span
+                                    class="text-[9px] man px-3 py-1 rounded-full bg-white border border-neutral-200 text-gray-500">PIR
+                                    / PUR</span>
+                                <span
+                                    class="text-[9px] man px-3 py-1 rounded-full bg-white border border-neutral-200 text-gray-500">High
+                                    Compressive</span>
+                                <span
+                                    class="text-[9px] man px-3 py-1 rounded-full bg-white border border-neutral-200 text-gray-500">Flat
+                                    Roofs</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Application 3: Structural Insulated Panels -->
+                    <div
+                        class="group bg-[#f8f7f5] border border-neutral-200 rounded-2xl overflow-hidden hover:shadow-xl hover:border-[#51B9E2]/40 transition duration-500">
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="./public/images/pu-sips-panels.webp" alt="PU SIPs Panels"
+                                class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                                loading="lazy" decoding="async">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                            <div class="absolute bottom-0 left-0 p-4">
+                                <span class="text-white text-[10px] font-medium man tracking-wider">Structural Insulated
+                                    Panels</span>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <h4 class="text-lg pop font-semibold text-[#2d2a26]">Structural Insulated Panels (SIPs)</h4>
+                            <p class="text-sm text-gray-500 man leading-relaxed mt-1">High-strength composite panels
+                                with PU core — providing structural integrity, insulation, and rapid construction.</p>
+                            <div class="flex flex-wrap gap-2 mt-3">
+                                <span
+                                    class="text-[9px] man px-3 py-1 rounded-full bg-white border border-neutral-200 text-gray-500">Structural</span>
+                                <span
+                                    class="text-[9px] man px-3 py-1 rounded-full bg-white border border-neutral-200 text-gray-500">Rapid
+                                    Build</span>
+                                <span
+                                    class="text-[9px] man px-3 py-1 rounded-full bg-white border border-neutral-200 text-gray-500">Composite</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Insulation Stats -->
+                <div class="mt-6 grid grid-cols-2 md:grid-cols-4 gap-3">
+                    <div class="bg-[#f8f7f5] border border-neutral-200 rounded-xl p-3 text-center">
+                        <p class="text-lg pop font-bold text-[#51B9E2]">0.022</p>
+                        <p class="text-[8px] text-gray-400 man uppercase tracking-wider">W/m·K Thermal Conductivity</p>
+                    </div>
+                    <div class="bg-[#f8f7f5] border border-neutral-200 rounded-xl p-3 text-center">
+                        <p class="text-lg pop font-bold text-[#51B9E2]">50+</p>
+                        <p class="text-[8px] text-gray-400 man uppercase tracking-wider">Years Service Life</p>
+                    </div>
+                    <div class="bg-[#f8f7f5] border border-neutral-200 rounded-xl p-3 text-center">
+                        <p class="text-lg pop font-bold text-[#51B9E2]">80%</p>
+                        <p class="text-[8px] text-gray-400 man uppercase tracking-wider">Energy Savings</p>
+                    </div>
+                    <div class="bg-[#f8f7f5] border border-neutral-200 rounded-xl p-3 text-center">
+                        <p class="text-lg pop font-bold text-[#51B9E2]">300+</p>
+                        <p class="text-[8px] text-gray-400 man uppercase tracking-wider">kPa Compressive Strength</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==================== CATEGORY 2: STRUCTURAL STRENGTHENING & REPAIR ==================== -->
+            <div class="mb-20">
+                <div class="flex items-center gap-4 mb-8">
+                    <div
+                        class="w-16 h-16 rounded-2xl bg-[#269FDB]/10 border border-[#269FDB]/30 flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-bolt text-[#269FDB] text-2xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-3xl pop font-semibold text-[#2d2a26]">Structural Strengthening & Repair</h3>
+                        <p class="text-sm text-[#269FDB]/70 man">Rehabilitation · Seismic Upgrade · Load Capacity</p>
+                    </div>
+                    <div class="flex-1 h-px bg-gradient-to-r from-[#269FDB]/30 to-transparent ml-4"></div>
+                </div>
+
+                <p class="text-gray-500 man text-[14px] leading-relaxed max-w-4xl mb-8">
+                    PU-based structural strengthening and repair systems provide high-performance solutions for
+                    rehabilitating, upgrading, and extending the life of concrete and masonry structures. From crack
+                    injection to structural bonding, from seismic retrofitting to load capacity enhancement — PU
+                    delivers superior adhesion, flexibility, and durability.
+                </p>
+
+                <div class="grid md:grid-cols-3 gap-5">
+
+                    <!-- Application 1: Crack Injection & Repair -->
+                    <div
+                        class="group bg-[#f8f7f5] border border-neutral-200 rounded-2xl overflow-hidden hover:shadow-xl hover:border-[#269FDB]/40 transition duration-500">
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="./public/images/pu-crack-injection.webp" alt="PU Crack Injection"
+                                class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                                loading="lazy" decoding="async">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                            <div class="absolute bottom-0 left-0 p-4">
+                                <span class="text-white text-[10px] font-medium man tracking-wider">Crack
+                                    Injection</span>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <h4 class="text-lg pop font-semibold text-[#2d2a26]">Crack Injection & Repair</h4>
+                            <p class="text-sm text-gray-500 man leading-relaxed mt-1">Low-viscosity PU resins for crack
+                                injection in concrete and masonry — restoring structural integrity, sealing leaks, and
+                                preventing further deterioration.</p>
+                            <div class="flex flex-wrap gap-2 mt-3">
+                                <span
+                                    class="text-[9px] man px-3 py-1 rounded-full bg-white border border-neutral-200 text-gray-500">Structural
+                                    Repair</span>
+                                <span
+                                    class="text-[9px] man px-3 py-1 rounded-full bg-white border border-neutral-200 text-gray-500">Low
+                                    Viscosity</span>
+                                <span
+                                    class="text-[9px] man px-3 py-1 rounded-full bg-white border border-neutral-200 text-gray-500">Crack
+                                    Sealing</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Application 2: Structural Bonding & Anchoring -->
+                    <div
+                        class="group bg-[#f8f7f5] border border-neutral-200 rounded-2xl overflow-hidden hover:shadow-xl hover:border-[#269FDB]/40 transition duration-500">
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="./public/images/pu-structural-bonding.webp" alt="PU Structural Bonding"
+                                class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                                loading="lazy" decoding="async">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                            <div class="absolute bottom-0 left-0 p-4">
+                                <span class="text-white text-[10px] font-medium man tracking-wider">Structural
+                                    Bonding</span>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <h4 class="text-lg pop font-semibold text-[#2d2a26]">Structural Bonding & Anchoring</h4>
+                            <p class="text-sm text-gray-500 man leading-relaxed mt-1">High-strength PU adhesives and
+                                grouts for structural bonding, rebar anchoring, and load transfer applications —
+                                delivering exceptional bond strength.</p>
+                            <div class="flex flex-wrap gap-2 mt-3">
+                                <span
+                                    class="text-[9px] man px-3 py-1 rounded-full bg-white border border-neutral-200 text-gray-500">High
+                                    Strength</span>
+                                <span
+                                    class="text-[9px] man px-3 py-1 rounded-full bg-white border border-neutral-200 text-gray-500">Rebar
+                                    Anchoring</span>
+                                <span
+                                    class="text-[9px] man px-3 py-1 rounded-full bg-white border border-neutral-200 text-gray-500">Load
+                                    Transfer</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Application 3: Seismic & Reinforcement Systems -->
+                    <div
+                        class="group bg-[#f8f7f5] border border-neutral-200 rounded-2xl overflow-hidden hover:shadow-xl hover:border-[#269FDB]/40 transition duration-500">
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="./public/images/pu-seismic-reinforcement.webp" alt="PU Seismic Reinforcement"
+                                class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                                loading="lazy" decoding="async">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                            <div class="absolute bottom-0 left-0 p-4">
+                                <span class="text-white text-[10px] font-medium man tracking-wider">Seismic
+                                    Reinforcement</span>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <h4 class="text-lg pop font-semibold text-[#2d2a26]">Seismic & Reinforcement Systems</h4>
+                            <p class="text-sm text-gray-500 man leading-relaxed mt-1">PU-based composite systems for
+                                seismic retrofitting, structural strengthening, and load capacity enhancement —
+                                improving resilience and safety.</p>
+                            <div class="flex flex-wrap gap-2 mt-3">
+                                <span
+                                    class="text-[9px] man px-3 py-1 rounded-full bg-white border border-neutral-200 text-gray-500">Seismic
+                                    Retrofit</span>
+                                <span
+                                    class="text-[9px] man px-3 py-1 rounded-full bg-white border border-neutral-200 text-gray-500">Load
+                                    Enhancement</span>
+                                <span
+                                    class="text-[9px] man px-3 py-1 rounded-full bg-white border border-neutral-200 text-gray-500">Composite
+                                    Systems</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Structural Strengthening Stats -->
+                <div class="mt-6 grid grid-cols-2 md:grid-cols-4 gap-3">
+                    <div class="bg-[#f8f7f5] border border-neutral-200 rounded-xl p-3 text-center">
+                        <p class="text-lg pop font-bold text-[#269FDB]">50+</p>
+                        <p class="text-[8px] text-gray-400 man uppercase tracking-wider">MPa Bond Strength</p>
+                    </div>
+                    <div class="bg-[#f8f7f5] border border-neutral-200 rounded-xl p-3 text-center">
+                        <p class="text-lg pop font-bold text-[#269FDB]">>300%</p>
+                        <p class="text-[8px] text-gray-400 man uppercase tracking-wider">Elongation at Break</p>
+                    </div>
+                    <div class="bg-[#f8f7f5] border border-neutral-200 rounded-xl p-3 text-center">
+                        <p class="text-lg pop font-bold text-[#269FDB]">30+</p>
+                        <p class="text-[8px] text-gray-400 man uppercase tracking-wider">Years Service Life</p>
+                    </div>
+                    <div class="bg-[#f8f7f5] border border-neutral-200 rounded-xl p-3 text-center">
+                        <p class="text-lg pop font-bold text-[#269FDB]">100%</p>
+                        <p class="text-[8px] text-gray-400 man uppercase tracking-wider">Moisture Tolerant</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==================== CATEGORY 3: INDUSTRIAL COATINGS & LININGS ==================== -->
+            <div class="mb-16">
+                <div class="flex items-center gap-4 mb-8">
+                    <div
+                        class="w-16 h-16 rounded-2xl bg-[#176A9F]/10 border border-[#176A9F]/30 flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-industry text-[#176A9F] text-2xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-3xl pop font-semibold text-[#2d2a26]">Industrial Coatings & Linings</h3>
+                        <p class="text-sm text-[#176A9F]/70 man">Corrosion Protection · Abrasion Resistance · Durability
+                        </p>
+                    </div>
+                    <div class="flex-1 h-px bg-gradient-to-r from-[#176A9F]/30 to-transparent ml-4"></div>
+                </div>
+
+                <p class="text-gray-500 man text-[14px] leading-relaxed max-w-4xl mb-8">
+                    PU industrial coatings and linings deliver exceptional protection against corrosion, abrasion, and
+                    chemical attack. From pipelines to storage tanks, from steel structures to concrete floors — PU
+                    extends asset life and reduces maintenance costs.
+                </p>
+
+                <div class="grid md:grid-cols-3 gap-5">
+
+                    <!-- Application 1: Protective Coatings -->
+                    <div
+                        class="group bg-[#f8f7f5] border border-neutral-200 rounded-2xl overflow-hidden hover:shadow-xl hover:border-[#176A9F]/40 transition duration-500">
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="./public/images/pu-protective-coatings.webp" alt="PU Protective Coatings"
+                                class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                                loading="lazy" decoding="async">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                            <div class="absolute bottom-0 left-0 p-4">
+                                <span class="text-white text-[10px] font-medium man tracking-wider">Protective
+                                    Coatings</span>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <h4 class="text-lg pop font-semibold text-[#2d2a26]">Protective Coatings</h4>
+                            <p class="text-sm text-gray-500 man leading-relaxed mt-1">High-performance PU coatings for
+                                steel, concrete, and industrial equipment — providing corrosion and chemical resistance.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mt-3">
+                                <span
+                                    class="text-[9px] man px-3 py-1 rounded-full bg-white border border-neutral-200 text-gray-500">Corrosion
+                                    Protection</span>
+                                <span
+                                    class="text-[9px] man px-3 py-1 rounded-full bg-white border border-neutral-200 text-gray-500">Chemical
+                                    Resistant</span>
+                                <span
+                                    class="text-[9px] man px-3 py-1 rounded-full bg-white border border-neutral-200 text-gray-500">Steel
+                                    · Concrete</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Application 2: Flooring Systems -->
+                    <div
+                        class="group bg-[#f8f7f5] border border-neutral-200 rounded-2xl overflow-hidden hover:shadow-xl hover:border-[#176A9F]/40 transition duration-500">
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="./public/images/pu-flooring-systems.webp" alt="PU Flooring Systems"
+                                class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                                loading="lazy" decoding="async">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                            <div class="absolute bottom-0 left-0 p-4">
+                                <span class="text-white text-[10px] font-medium man tracking-wider">Flooring
+                                    Systems</span>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <h4 class="text-lg pop font-semibold text-[#2d2a26]">Industrial Flooring Systems</h4>
+                            <p class="text-sm text-gray-500 man leading-relaxed mt-1">Durable, chemical-resistant PU
+                                flooring for factories, warehouses, parking garages, and clean rooms — combining
+                                strength with flexibility.</p>
+                            <div class="flex flex-wrap gap-2 mt-3">
+                                <span
+                                    class="text-[9px] man px-3 py-1 rounded-full bg-white border border-neutral-200 text-gray-500">Chemical
+                                    Resistant</span>
+                                <span
+                                    class="text-[9px] man px-3 py-1 rounded-full bg-white border border-neutral-200 text-gray-500">Abrasion
+                                    Resistant</span>
+                                <span
+                                    class="text-[9px] man px-3 py-1 rounded-full bg-white border border-neutral-200 text-gray-500">Seamless</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Application 3: Tank & Pipe Linings -->
+                    <div
+                        class="group bg-[#f8f7f5] border border-neutral-200 rounded-2xl overflow-hidden hover:shadow-xl hover:border-[#176A9F]/40 transition duration-500">
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="./public/images/pu-tank-linings.webp" alt="PU Tank Linings"
+                                class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                                loading="lazy" decoding="async">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                            <div class="absolute bottom-0 left-0 p-4">
+                                <span class="text-white text-[10px] font-medium man tracking-wider">Tank & Pipe
+                                    Linings</span>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <h4 class="text-lg pop font-semibold text-[#2d2a26]">Tank & Pipe Linings</h4>
+                            <p class="text-sm text-gray-500 man leading-relaxed mt-1">High-build PU linings for storage
+                                tanks, pipelines, and process equipment — providing chemical resistance and corrosion
+                                protection.</p>
+                            <div class="flex flex-wrap gap-2 mt-3">
+                                <span
+                                    class="text-[9px] man px-3 py-1 rounded-full bg-white border border-neutral-200 text-gray-500">Chemical
+                                    Resistant</span>
+                                <span
+                                    class="text-[9px] man px-3 py-1 rounded-full bg-white border border-neutral-200 text-gray-500">High
+                                    Build</span>
+                                <span
+                                    class="text-[9px] man px-3 py-1 rounded-full bg-white border border-neutral-200 text-gray-500">Tanks
+                                    · Pipelines</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Industrial Stats -->
+                <div class="mt-6 grid grid-cols-2 md:grid-cols-4 gap-3">
+                    <div class="bg-[#f8f7f5] border border-neutral-200 rounded-xl p-3 text-center">
+                        <p class="text-lg pop font-bold text-[#176A9F]">100+</p>
+                        <p class="text-[8px] text-gray-400 man uppercase tracking-wider">MPa Compressive Strength</p>
+                    </div>
+                    <div class="bg-[#f8f7f5] border border-neutral-200 rounded-xl p-3 text-center">
+                        <p class="text-lg pop font-bold text-[#176A9F]">2000+</p>
+                        <p class="text-[8px] text-gray-400 man uppercase tracking-wider">Hours UV Resistance</p>
+                    </div>
+                    <div class="bg-[#f8f7f5] border border-neutral-200 rounded-xl p-3 text-center">
+                        <p class="text-lg pop font-bold text-[#176A9F]">1000+</p>
+                        <p class="text-[8px] text-gray-400 man uppercase tracking-wider">Hours Salt Spray Resistance</p>
+                    </div>
+                    <div class="bg-[#f8f7f5] border border-neutral-200 rounded-xl p-3 text-center">
+                        <p class="text-lg pop font-bold text-[#176A9F]">600°C</p>
+                        <p class="text-[8px] text-gray-400 man uppercase tracking-wider">Max Temperature Resistance</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==================== BOTTOM COMPARISON TABLE ==================== -->
+            <div class="mt-16 pt-12 border-t border-neutral-200">
+                <h4 class="text-center text-2xl pop font-semibold text-[#2d2a26] mb-8">PU Solutions Comparison</h4>
+
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left man text-sm">
+                        <thead>
+                            <tr class="border-b border-neutral-200 bg-[#f8f7f5]">
+                                <th class="px-4 py-3 text-[10px] font-semibold uppercase text-gray-400">Property</th>
+                                <th class="px-4 py-3 text-[10px] font-semibold uppercase text-[#51B9E2]">Spray Foam &
+                                    Insulation</th>
+                                <th class="px-4 py-3 text-[10px] font-semibold uppercase text-[#269FDB]">Waterproofing &
+                                    Sealing</th>
+                                <th class="px-4 py-3 text-[10px] font-semibold uppercase text-[#176A9F]">Industrial
+                                    Coatings</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-neutral-200">
+                            <tr>
+                                <td class="px-4 py-3 text-sm font-medium text-[#2d2a26]">Primary Function</td>
+                                <td class="px-4 py-3 text-gray-500">Thermal Insulation</td>
+                                <td class="px-4 py-3 text-gray-500">Water Protection</td>
+                                <td class="px-4 py-3 text-gray-500">Surface Protection</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 text-sm font-medium text-[#2d2a26]">Key Industries</td>
+                                <td class="px-4 py-3 text-gray-500">Construction, Residential, Commercial</td>
+                                <td class="px-4 py-3 text-gray-500">Construction, Infrastructure, Tunnels</td>
+                                <td class="px-4 py-3 text-gray-500">Industrial, Marine, Oil & Gas</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 text-sm font-medium text-[#2d2a26]">Application Method</td>
+                                <td class="px-4 py-3 text-gray-500">Spray, Pour, Lay</td>
+                                <td class="px-4 py-3 text-gray-500">Roller, Trowel, Spray</td>
+                                <td class="px-4 py-3 text-gray-500">Brush, Roller, Spray</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 text-sm font-medium text-[#2d2a26]">Key Benefit</td>
+                                <td class="px-4 py-3 text-gray-500">Energy Efficiency</td>
+                                <td class="px-4 py-3 text-gray-500">Structural Protection</td>
+                                <td class="px-4 py-3 text-gray-500">Asset Longevity</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 text-sm font-medium text-[#2d2a26]">Service Life</td>
+                                <td class="px-4 py-3 text-gray-500">50+ Years</td>
+                                <td class="px-4 py-3 text-gray-500">25+ Years</td>
+                                <td class="px-4 py-3 text-gray-500">20+ Years</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- ==================== CTA ==================== -->
+            <div class="mt-12 text-center">
+                <div
+                    class="inline-flex flex-wrap items-center justify-center gap-4 bg-[#f8f7f5] border border-neutral-200 rounded-full px-6 py-3">
+                    <span class="text-sm text-gray-500 man">Need PU solutions for your construction project?</span>
+                    <span class="w-px h-6 bg-neutral-300"></span>
+                    <a href="./contact.html"
+                        class="text-sm man font-semibold text-[#1d3a72] hover:opacity-70 transition flex items-center gap-2">
+                        Request a Consultation
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                    <span class="w-px h-6 bg-neutral-300"></span>
+                    <a href="./public/pdfs/E-brouchure.pdf" download
+                        class="text-sm man font-medium text-gray-500 hover:text-[#1d3a72] transition flex items-center gap-2">
+                        <i class="fa-solid fa-download text-xs"></i>
+                        Download Brochure
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ==================== SECTION: PU CATEGORIES - CHEMICAL COMPOSITION ==================== -->
+    <section class="relative py-24 bg-white overflow-hidden">
+
+        <!-- Background Elements -->
+        <div class="absolute inset-0">
+            <div class="absolute inset-0 bg-gradient-to-b from-white via-[#f8f7f5] to-white"></div>
+            <div class="absolute inset-0 opacity-[0.02]" style="background-image: 
+            repeating-linear-gradient(45deg, #2d2a26 0px, #2d2a26 1px, transparent 1px, transparent 30px);">
+            </div>
+            <!-- Blue corner -->
+            <div
+                class="lg:block hidden pointer-events-none absolute left-0 bottom-0 h-[300px] w-[200px] overflow-hidden opacity-20">
+                <div class="absolute inset-0 bg-[#51B9E2]" style="clip-path: polygon(100% 100%, 75% 100%, 100% 0);">
+                </div>
+                <div class="absolute inset-0 bg-[#269FDB]" style="clip-path: polygon(75% 100%, 50% 100%, 100% 0);">
+                </div>
+                <div class="absolute inset-0 bg-[#176A9F]" style="clip-path: polygon(50% 100%, 0 100%, 100% 0);"></div>
+            </div>
+            <!-- Soft glow -->
+            <div class="absolute -top-40 -right-40 w-96 h-96 bg-[#1d3a72]/3 rounded-full blur-3xl"></div>
+            <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-[#269FDB]/3 rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="relative z-10 container 2xl:max-w-[1530px] mx-auto px-4">
+
+            <!-- Header -->
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span
+                    class="inline-flex items-center gap-3 text-[10px] font-medium tracking-[0.35em] uppercase text-[#1d3a72] man mb-4 bg-[#f8f7f5] border border-neutral-200 px-5 py-2 rounded-full">
+                    <i class="fa-solid fa-flask text-[#51B9E2] text-xs"></i>
+                    Chemical Composition
+                    <i class="fa-solid fa-flask text-[#51B9E2] text-xs"></i>
+                </span>
+                <h2 class="text-4xl md:text-6xl pop font-semibold text-[#2d2a26] leading-[1.1]">
+                    The Chemistry Behind <br>
+                    <span class="text-[#1d3a72]">Polyurethane</span>
+                </h2>
+                <div
+                    class="w-16 h-1 bg-gradient-to-r from-transparent via-[#1d3a72] to-transparent mx-auto mt-6 rounded-full">
+                </div>
+                <p class="mt-6 text-gray-500 man text-[15px] leading-relaxed max-w-2xl mx-auto">
+                    At the molecular level, polyurethane's performance is determined by its chemical building blocks.
+                    Understanding the composition unlocks the right solution for every application.
+                </p>
+            </div>
+
+            <!-- ==================== MAIN MOLECULAR VISUAL ==================== -->
+            <div class="bg-[#f8f7f5] border border-neutral-200 rounded-3xl p-8 md:p-12 mb-16 relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-[#51B9E2]/5 rounded-full blur-2xl"></div>
+                <div class="absolute bottom-0 left-0 w-64 h-64 bg-[#269FDB]/5 rounded-full blur-2xl"></div>
+
+                <div class="relative z-10 grid md:grid-cols-3 gap-8 items-center">
+
+                    <!-- Polyether -->
+                    <div class="text-center">
+                        <div
+                            class="w-20 h-20 rounded-2xl bg-[#51B9E2]/10 border border-[#51B9E2]/30 flex items-center justify-center mx-auto mb-3">
+                            <i class="fa-solid fa-link text-[#51B9E2] text-3xl"></i>
+                        </div>
+                        <h4 class="text-base pop font-semibold text-[#2d2a26]">Polyether-type</h4>
+                        <p class="text-xs text-gray-400 man">Flexible · Hydrolytic Stability</p>
+                        <div class="w-12 h-px bg-[#51B9E2] mx-auto mt-2"></div>
+                    </div>
+
+                    <!-- Divider -->
+                    <div class="hidden md:flex flex-col items-center">
+                        <div class="w-px h-16 bg-gradient-to-b from-[#51B9E2] via-[#269FDB] to-[#176A9F]"></div>
+                        <span class="text-[9px] text-gray-400 man uppercase tracking-wider px-3 bg-[#f8f7f5]">OR</span>
+                        <div class="w-px h-16 bg-gradient-to-t from-[#176A9F] via-[#269FDB] to-[#51B9E2]"></div>
+                    </div>
+
+                    <!-- Polyester -->
+                    <div class="text-center">
+                        <div
+                            class="w-20 h-20 rounded-2xl bg-[#269FDB]/10 border border-[#269FDB]/30 flex items-center justify-center mx-auto mb-3">
+                            <i class="fa-solid fa-chain text-[#269FDB] text-3xl"></i>
+                        </div>
+                        <h4 class="text-base pop font-semibold text-[#2d2a26]">Polyester-type</h4>
+                        <p class="text-xs text-gray-400 man">Strength · Chemical Resistance</p>
+                        <div class="w-12 h-px bg-[#269FDB] mx-auto mt-2"></div>
+                    </div>
+
+                    <!-- Divider -->
+                    <div class="hidden md:flex flex-col items-center">
+                        <div class="w-px h-16 bg-gradient-to-b from-[#269FDB] via-[#176A9F] to-[#51B9E2]"></div>
+                        <span
+                            class="text-[9px] text-gray-400 man uppercase tracking-wider px-3 bg-[#f8f7f5]">PLUS</span>
+                        <div class="w-px h-16 bg-gradient-to-t from-[#51B9E2] via-[#176A9F] to-[#269FDB]"></div>
+                    </div>
+
+                    <!-- PUD -->
+                    <div class="text-center">
+                        <div
+                            class="w-20 h-20 rounded-2xl bg-[#176A9F]/10 border border-[#176A9F]/30 flex items-center justify-center mx-auto mb-3">
+                            <i class="fa-solid fa-water text-[#176A9F] text-3xl"></i>
+                        </div>
+                        <h4 class="text-base pop font-semibold text-[#2d2a26]">PU Dispersions</h4>
+                        <p class="text-xs text-gray-400 man">Water-based · Eco-friendly</p>
+                        <div class="w-12 h-px bg-[#176A9F] mx-auto mt-2"></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- ==================== DETAILED CARDS ==================== -->
+            <div class="grid md:grid-cols-3 gap-6 mb-16">
+
+                <!-- Card 1: Polyether-type PU -->
+                <div
+                    class="group bg-[#f8f7f5] border border-neutral-200 rounded-2xl overflow-hidden hover:shadow-xl hover:border-[#51B9E2]/40 transition duration-500">
+                    <div class="p-6">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div
+                                class="w-14 h-14 rounded-2xl bg-[#51B9E2]/10 border border-[#51B9E2]/30 flex items-center justify-center flex-shrink-0 group-hover:bg-[#51B9E2] transition">
+                                <i
+                                    class="fa-solid fa-link text-[#51B9E2] group-hover:text-white text-xl transition"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl pop font-semibold text-[#2d2a26]">Polyether-type PU</h4>
+                                <span class="text-[10px] text-[#51B9E2] man font-medium">Flexible · Hydrolytic
+                                    Stability</span>
+                            </div>
+                        </div>
+
+                        <p class="text-sm text-gray-500 man leading-relaxed">
+                            Polyether polyurethanes are known for their excellent hydrolytic stability, flexibility at
+                            low temperatures, and resistance to microbial attack. They offer superior performance in
+                            applications requiring long-term durability in wet or humid environments.
+                        </p>
+
+                        <div class="mt-4 pt-4 border-t border-neutral-200">
+                            <p class="text-[10px] font-semibold text-[#2d2a26] man uppercase tracking-wider">Key
+                                Advantages</p>
+                            <div class="flex flex-wrap gap-2 mt-2">
+                                <span
+                                    class="text-[9px] man px-3 py-1 rounded-full bg-white border border-neutral-200 text-gray-500">Hydrolytic
+                                    Stability</span>
+                                <span
+                                    class="text-[9px] man px-3 py-1 rounded-full bg-white border border-neutral-200 text-gray-500">Low
+                                    Temp Flexibility</span>
+                                <span
+                                    class="text-[9px] man px-3 py-1 rounded-full bg-white border border-neutral-200 text-gray-500">Microbial
+                                    Resistance</span>
+                                <span
+                                    class="text-[9px] man px-3 py-1 rounded-full bg-white border border-neutral-200 text-gray-500">Flexible</span>
+                            </div>
+                        </div>
+
+                        <div class="mt-4 bg-white border border-neutral-200 rounded-xl p-3">
+                            <p class="text-[9px] text-gray-400 man uppercase tracking-wider">Typical Applications</p>
+                            <div class="flex flex-wrap gap-2 mt-1">
+                                <span class="text-[9px] man px-2 py-0.5 rounded bg-[#51B9E2]/5 text-gray-500">Flexible
+                                    Foams</span>
+                                <span
+                                    class="text-[9px] man px-2 py-0.5 rounded bg-[#51B9E2]/5 text-gray-500">Sealants</span>
+                                <span
+                                    class="text-[9px] man px-2 py-0.5 rounded bg-[#51B9E2]/5 text-gray-500">Adhesives</span>
+                                <span
+                                    class="text-[9px] man px-2 py-0.5 rounded bg-[#51B9E2]/5 text-gray-500">Coatings</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Polyester-type PU -->
+                <div
+                    class="group bg-[#f8f7f5] border border-neutral-200 rounded-2xl overflow-hidden hover:shadow-xl hover:border-[#269FDB]/40 transition duration-500">
+                    <div class="p-6">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div
+                                class="w-14 h-14 rounded-2xl bg-[#269FDB]/10 border border-[#269FDB]/30 flex items-center justify-center flex-shrink-0 group-hover:bg-[#269FDB] transition">
+                                <i
+                                    class="fa-solid fa-chain text-[#269FDB] group-hover:text-white text-xl transition"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl pop font-semibold text-[#2d2a26]">Polyester-type PU</h4>
+                                <span class="text-[10px] text-[#269FDB] man font-medium">Strength · Chemical
+                                    Resistance</span>
+                            </div>
+                        </div>
+
+                        <p class="text-sm text-gray-500 man leading-relaxed">
+                            Polyester polyurethanes offer superior mechanical strength, excellent chemical resistance,
+                            and high abrasion resistance. They perform exceptionally well in demanding environments
+                            where durability and structural integrity are critical.
+                        </p>
+
+                        <div class="mt-4 pt-4 border-t border-neutral-200">
+                            <p class="text-[10px] font-semibold text-[#2d2a26] man uppercase tracking-wider">Key
+                                Advantages</p>
+                            <div class="flex flex-wrap gap-2 mt-2">
+                                <span
+                                    class="text-[9px] man px-3 py-1 rounded-full bg-white border border-neutral-200 text-gray-500">High
+                                    Mechanical Strength</span>
+                                <span
+                                    class="text-[9px] man px-3 py-1 rounded-full bg-white border border-neutral-200 text-gray-500">Chemical
+                                    Resistance</span>
+                                <span
+                                    class="text-[9px] man px-3 py-1 rounded-full bg-white border border-neutral-200 text-gray-500">Abrasion
+                                    Resistance</span>
+                                <span
+                                    class="text-[9px] man px-3 py-1 rounded-full bg-white border border-neutral-200 text-gray-500">Structural
+                                    Integrity</span>
+                            </div>
+                        </div>
+
+                        <div class="mt-4 bg-white border border-neutral-200 rounded-xl p-3">
+                            <p class="text-[9px] text-gray-400 man uppercase tracking-wider">Typical Applications</p>
+                            <div class="flex flex-wrap gap-2 mt-1">
+                                <span class="text-[9px] man px-2 py-0.5 rounded bg-[#269FDB]/5 text-gray-500">Rigid
+                                    Foams</span>
+                                <span
+                                    class="text-[9px] man px-2 py-0.5 rounded bg-[#269FDB]/5 text-gray-500">Elastomers</span>
+                                <span class="text-[9px] man px-2 py-0.5 rounded bg-[#269FDB]/5 text-gray-500">Industrial
+                                    Coatings</span>
+                                <span class="text-[9px] man px-2 py-0.5 rounded bg-[#269FDB]/5 text-gray-500">Automotive
+                                    Parts</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: PU Dispersions -->
+                <div
+                    class="group bg-[#f8f7f5] border border-neutral-200 rounded-2xl overflow-hidden hover:shadow-xl hover:border-[#176A9F]/40 transition duration-500">
+                    <div class="p-6">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div
+                                class="w-14 h-14 rounded-2xl bg-[#176A9F]/10 border border-[#176A9F]/30 flex items-center justify-center flex-shrink-0 group-hover:bg-[#176A9F] transition">
+                                <i
+                                    class="fa-solid fa-water text-[#176A9F] group-hover:text-white text-xl transition"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl pop font-semibold text-[#2d2a26]">PU Dispersions (PUD)</h4>
+                                <span class="text-[10px] text-[#176A9F] man font-medium">Water-based ·
+                                    Eco-friendly</span>
+                            </div>
+                        </div>
+
+                        <p class="text-sm text-gray-500 man leading-relaxed">
+                            Polyurethane dispersions are water-based systems that combine the performance of PU with
+                            environmental benefits. Available in anionic, cationic, or non-ionic variants, they offer
+                            low VOC emissions and excellent film-forming properties.
+                        </p>
+
+                        <div class="mt-4 pt-4 border-t border-neutral-200">
+                            <p class="text-[10px] font-semibold text-[#2d2a26] man uppercase tracking-wider">Key
+                                Advantages</p>
+                            <div class="flex flex-wrap gap-2 mt-2">
+                                <span
+                                    class="text-[9px] man px-3 py-1 rounded-full bg-white border border-neutral-200 text-gray-500">Low
+                                    VOC</span>
+                                <span
+                                    class="text-[9px] man px-3 py-1 rounded-full bg-white border border-neutral-200 text-gray-500">Eco-friendly</span>
+                                <span
+                                    class="text-[9px] man px-3 py-1 rounded-full bg-white border border-neutral-200 text-gray-500">Excellent
+                                    Film Formation</span>
+                                <span
+                                    class="text-[9px] man px-3 py-1 rounded-full bg-white border border-neutral-200 text-gray-500">Versatile</span>
+                            </div>
+                        </div>
+
+                        <div class="mt-4 bg-white border border-neutral-200 rounded-xl p-3">
+                            <p class="text-[9px] text-gray-400 man uppercase tracking-wider">Typical Applications</p>
+                            <div class="flex flex-wrap gap-2 mt-1">
+                                <span
+                                    class="text-[9px] man px-2 py-0.5 rounded bg-[#176A9F]/5 text-gray-500">Architectural
+                                    Coatings</span>
+                                <span
+                                    class="text-[9px] man px-2 py-0.5 rounded bg-[#176A9F]/5 text-gray-500">Adhesives</span>
+                                <span class="text-[9px] man px-2 py-0.5 rounded bg-[#176A9F]/5 text-gray-500">Textile
+                                    Coatings</span>
+                                <span class="text-[9px] man px-2 py-0.5 rounded bg-[#176A9F]/5 text-gray-500">Leather
+                                    Finishes</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ==================== PUD SUB-CATEGORIES ==================== -->
+            <div class="bg-[#f8f7f5] border border-neutral-200 rounded-3xl p-8 mb-16">
+                <div class="flex items-center gap-4 mb-6">
+                    <div
+                        class="w-12 h-12 rounded-2xl bg-[#176A9F]/10 border border-[#176A9F]/30 flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-water text-[#176A9F] text-xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xl pop font-semibold text-[#2d2a26]">PU Dispersions — Classification</h4>
+                        <p class="text-sm text-gray-400 man">Ionic Type & Particle Size</p>
+                    </div>
+                    <div class="flex-1 h-px bg-neutral-200 ml-4"></div>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-5">
+
+                    <!-- Anionic -->
+                    <div class="bg-white border border-neutral-200 rounded-2xl p-5 hover:shadow-md transition">
+                        <div class="flex items-center gap-3 mb-2">
+                            <span class="w-3 h-3 rounded-full bg-[#51B9E2]"></span>
+                            <h5 class="text-sm pop font-semibold text-[#2d2a26]">Anionic</h5>
+                        </div>
+                        <p class="text-xs text-gray-500 man leading-relaxed">Negatively charged particles — excellent
+                            stability and film formation. Ideal for coatings and adhesives requiring high performance.
+                        </p>
+                        <div class="flex flex-wrap gap-1.5 mt-3">
+                            <span
+                                class="text-[8px] man px-2 py-0.5 rounded-full bg-[#f8f7f5] border border-neutral-200 text-gray-500">Coatings</span>
+                            <span
+                                class="text-[8px] man px-2 py-0.5 rounded-full bg-[#f8f7f5] border border-neutral-200 text-gray-500">Adhesives</span>
+                            <span
+                                class="text-[8px] man px-2 py-0.5 rounded-full bg-[#f8f7f5] border border-neutral-200 text-gray-500">Leather</span>
+                        </div>
+                    </div>
+
+                    <!-- Cationic -->
+                    <div class="bg-white border border-neutral-200 rounded-2xl p-5 hover:shadow-md transition">
+                        <div class="flex items-center gap-3 mb-2">
+                            <span class="w-3 h-3 rounded-full bg-[#269FDB]"></span>
+                            <h5 class="text-sm pop font-semibold text-[#2d2a26]">Cationic</h5>
+                        </div>
+                        <p class="text-xs text-gray-500 man leading-relaxed">Positively charged particles — excellent
+                            adhesion to substrates and superior corrosion protection. Ideal for primers and metal
+                            coatings.</p>
+                        <div class="flex flex-wrap gap-1.5 mt-3">
+                            <span
+                                class="text-[8px] man px-2 py-0.5 rounded-full bg-[#f8f7f5] border border-neutral-200 text-gray-500">Primers</span>
+                            <span
+                                class="text-[8px] man px-2 py-0.5 rounded-full bg-[#f8f7f5] border border-neutral-200 text-gray-500">Metal
+                                Coatings</span>
+                            <span
+                                class="text-[8px] man px-2 py-0.5 rounded-full bg-[#f8f7f5] border border-neutral-200 text-gray-500">Corrosion
+                                Protection</span>
+                        </div>
+                    </div>
+
+                    <!-- Non-ionic -->
+                    <div class="bg-white border border-neutral-200 rounded-2xl p-5 hover:shadow-md transition">
+                        <div class="flex items-center gap-3 mb-2">
+                            <span class="w-3 h-3 rounded-full bg-[#176A9F]"></span>
+                            <h5 class="text-sm pop font-semibold text-[#2d2a26]">Non-ionic</h5>
+                        </div>
+                        <p class="text-xs text-gray-500 man leading-relaxed">Neutral particles — excellent compatibility
+                            and stability across a wide pH range. Ideal for textile and paper applications.</p>
+                        <div class="flex flex-wrap gap-1.5 mt-3">
+                            <span
+                                class="text-[8px] man px-2 py-0.5 rounded-full bg-[#f8f7f5] border border-neutral-200 text-gray-500">Textiles</span>
+                            <span
+                                class="text-[8px] man px-2 py-0.5 rounded-full bg-[#f8f7f5] border border-neutral-200 text-gray-500">Paper</span>
+                            <span
+                                class="text-[8px] man px-2 py-0.5 rounded-full bg-[#f8f7f5] border border-neutral-200 text-gray-500">Versatile</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- ==================== COMPARISON CHART ==================== -->
+            <div class="bg-white border border-neutral-200 rounded-3xl overflow-hidden shadow-sm">
+                <div class="px-6 py-4 bg-[#f8f7f5] border-b border-neutral-200">
+                    <h4 class="text-base pop font-semibold text-[#2d2a26]">Chemical Composition Comparison</h4>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left man text-sm">
+                        <thead>
+                            <tr class="border-b border-neutral-200 bg-white">
+                                <th class="px-5 py-3 text-[10px] font-semibold uppercase text-gray-400">Property</th>
+                                <th class="px-5 py-3 text-[10px] font-semibold uppercase text-[#51B9E2]">Polyether</th>
+                                <th class="px-5 py-3 text-[10px] font-semibold uppercase text-[#269FDB]">Polyester</th>
+                                <th class="px-5 py-3 text-[10px] font-semibold uppercase text-[#176A9F]">PUD</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-neutral-200">
+                            <tr>
+                                <td class="px-5 py-3 text-sm font-medium text-[#2d2a26]">Hydrolytic Stability</td>
+                                <td class="px-5 py-3 text-gray-500">⭐⭐⭐⭐⭐ Excellent</td>
+                                <td class="px-5 py-3 text-gray-500">⭐⭐⭐ Good</td>
+                                <td class="px-5 py-3 text-gray-500">⭐⭐⭐⭐ Very Good</td>
+                            </tr>
+                            <tr>
+                                <td class="px-5 py-3 text-sm font-medium text-[#2d2a26]">Mechanical Strength</td>
+                                <td class="px-5 py-3 text-gray-500">⭐⭐⭐ Good</td>
+                                <td class="px-5 py-3 text-gray-500">⭐⭐⭐⭐⭐ Excellent</td>
+                                <td class="px-5 py-3 text-gray-500">⭐⭐⭐⭐ Very Good</td>
+                            </tr>
+                            <tr>
+                                <td class="px-5 py-3 text-sm font-medium text-[#2d2a26]">Chemical Resistance</td>
+                                <td class="px-5 py-3 text-gray-500">⭐⭐⭐ Good</td>
+                                <td class="px-5 py-3 text-gray-500">⭐⭐⭐⭐⭐ Excellent</td>
+                                <td class="px-5 py-3 text-gray-500">⭐⭐⭐⭐ Very Good</td>
+                            </tr>
+                            <tr>
+                                <td class="px-5 py-3 text-sm font-medium text-[#2d2a26]">Low Temp Flexibility</td>
+                                <td class="px-5 py-3 text-gray-500">⭐⭐⭐⭐⭐ Excellent</td>
+                                <td class="px-5 py-3 text-gray-500">⭐⭐⭐ Good</td>
+                                <td class="px-5 py-3 text-gray-500">⭐⭐⭐⭐ Very Good</td>
+                            </tr>
+                            <tr>
+                                <td class="px-5 py-3 text-sm font-medium text-[#2d2a26]">VOC Emissions</td>
+                                <td class="px-5 py-3 text-gray-500">⭐⭐⭐ Moderate</td>
+                                <td class="px-5 py-3 text-gray-500">⭐⭐⭐ Moderate</td>
+                                <td class="px-5 py-3 text-gray-500">⭐⭐⭐⭐⭐ Very Low</td>
+                            </tr>
+                            <tr>
+                                <td class="px-5 py-3 text-sm font-medium text-[#2d2a26]">Eco-Friendliness</td>
+                                <td class="px-5 py-3 text-gray-500">⭐⭐⭐ Good</td>
+                                <td class="px-5 py-3 text-gray-500">⭐⭐⭐ Good</td>
+                                <td class="px-5 py-3 text-gray-500">⭐⭐⭐⭐⭐ Excellent</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- ==================== CTA ==================== -->
+            <div class="mt-12 text-center">
+                <div
+                    class="inline-flex flex-wrap items-center justify-center gap-4 bg-[#f8f7f5] border border-neutral-200 rounded-full px-6 py-3">
+                    <span class="text-sm text-gray-500 man">Need help selecting the right PU chemistry?</span>
+                    <span class="w-px h-6 bg-neutral-300"></span>
+                    <a href="./contact.html"
+                        class="text-sm man font-semibold text-[#1d3a72] hover:opacity-70 transition flex items-center gap-2">
+                        Request Technical Guidance
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                    <span class="w-px h-6 bg-neutral-300"></span>
+                    <a href="./public/pdfs/E-brouchure.pdf" download
+                        class="text-sm man font-medium text-gray-500 hover:text-[#1d3a72] transition flex items-center gap-2">
+                        <i class="fa-solid fa-download text-xs"></i>
+                        Download Brochure
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+<!-- ==================== SECTION: PU PRODUCT RANGE OVERVIEW ==================== -->
+<section class="relative py-20 bg-white overflow-hidden">
+
+    <!-- Background Elements -->
+    <div class="absolute inset-0">
+        <div class="absolute inset-0 bg-gradient-to-b from-white via-[#f8f7f5] to-white"></div>
+        <div class="absolute inset-0 opacity-[0.015]" style="background-image: 
+            repeating-linear-gradient(60deg, #2d2a26 0px, #2d2a26 1px, transparent 1px, transparent 40px);">
+        </div>
+        <!-- Blue corner -->
+        <div class="lg:block hidden pointer-events-none absolute right-0 bottom-0 h-[300px] w-[200px] overflow-hidden opacity-20">
+            <div class="absolute inset-0 bg-[#51B9E2]" style="clip-path: polygon(100% 100%, 75% 100%, 100% 0);"></div>
+            <div class="absolute inset-0 bg-[#269FDB]" style="clip-path: polygon(75% 100%, 50% 100%, 100% 0);"></div>
+            <div class="absolute inset-0 bg-[#176A9F]" style="clip-path: polygon(50% 100%, 0 100%, 100% 0);"></div>
+        </div>
+        <!-- Soft glow -->
+        <div class="absolute -top-40 -right-40 w-96 h-96 bg-[#1d3a72]/3 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-[#51B9E2]/3 rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="relative z-10 container 2xl:max-w-[1530px] mx-auto px-4">
+
+        <!-- Header -->
+        <div class="text-center max-w-3xl mx-auto mb-14">
+            <span class="inline-flex items-center gap-3 text-[10px] font-medium tracking-[0.35em] uppercase text-[#1d3a72] man mb-4 bg-[#f8f7f5] border border-neutral-200 px-5 py-2 rounded-full">
+                <i class="fa-solid fa-cubes text-[#51B9E2] text-xs"></i>
+                Complete PU Portfolio
+                <i class="fa-solid fa-cubes text-[#51B9E2] text-xs"></i>
+            </span>
+            <h2 class="text-4xl md:text-6xl pop font-semibold text-[#2d2a26] leading-[1.1]">
+                Polyurethane — <br>
+                <span class="text-[#1d3a72]">One Material. Infinite Solutions.</span>
+            </h2>
+            <div class="w-16 h-1 bg-gradient-to-r from-transparent via-[#1d3a72] to-transparent mx-auto mt-6 rounded-full"></div>
+            <p class="mt-6 text-gray-500 man text-[15px] leading-relaxed max-w-2xl mx-auto">
+                From thermal insulation to waterproofing, from protective coatings to structural repair — polyurethane's versatility makes it the material of choice across construction and industry. Explore our complete range below.
+            </p>
+        </div>
+
+        <!-- Main Description -->
+        <div class="max-w-5xl mx-auto space-y-6 text-gray-500 man text-[15px] leading-relaxed">
+
+            <p>
+                <strong class="text-[#2d2a26]">Polyurethane (PU)</strong> is one of the most versatile material families in the world. Its unique chemistry allows it to be formulated into a vast range of products — from flexible foams to rigid insulation, from tough coatings to elastic adhesives. At Usman Consultants, we offer a comprehensive portfolio of PU solutions engineered for construction, infrastructure, and industrial applications.
+            </p>
+
+            <p>
+                <strong class="text-[#2d2a26]">Thermal Insulation Systems</strong> — Our PU insulation solutions include spray foam (open-cell and closed-cell), rigid PIR/PUR boards, and structural insulated panels (SIPs). With thermal conductivity as low as 0.022 W/m·K, these systems deliver exceptional energy efficiency for walls, roofs, floors, and façades. Closed-cell spray foam also provides vapor barrier protection, while open-cell foam offers superior sound absorption.
+            </p>
+
+            <p>
+                <strong class="text-[#2d2a26]">Waterproofing & Sealing Systems</strong> — Our liquid-applied PU membranes provide seamless, flexible, and durable waterproofing for roofs, balconies, basements, and wet areas. With elongation exceeding 500% and cold-applied application, these systems adapt to structural movement and complex geometries. PU sealants for expansion joints, movement joints, and crack sealing ensure long-term watertight integrity.
+            </p>
+
+            <p>
+                <strong class="text-[#2d2a26]">Protective Coatings & Linings</strong> — Our high-performance PU coatings deliver exceptional corrosion resistance, chemical resistance, and UV stability for steel structures, pipelines, marine environments, and industrial equipment. With service life exceeding 20 years and resistance to extreme temperatures (-30°C to 600°C), these coatings protect assets in the most demanding environments.
+            </p>
+
+            <p>
+                <strong class="text-[#2d2a26]">Industrial Flooring Systems</strong> — Our seamless PU flooring systems provide exceptional durability, chemical resistance, and hygiene for factories, warehouses, clean rooms, food processing plants, and pharmaceutical facilities. With high compressive strength and abrasion resistance, these floors withstand heavy loads and continuous traffic.
+            </p>
+
+            <p>
+                <strong class="text-[#2d2a26]">Structural Strengthening & Repair</strong> — Our PU-based repair systems include low-viscosity crack injection resins, high-strength structural adhesives for rebar anchoring, and composite systems for seismic retrofitting and load capacity enhancement. These solutions restore and extend the life of concrete and masonry structures.
+            </p>
+
+            <p>
+                <strong class="text-[#2d2a26]">Specialty PU Products</strong> — Our portfolio also includes PU elastomers for vibration damping, fire-retardant PU systems for passive fire protection, heat-resistant coatings for industrial ovens and chimneys, and anti-corrosion systems for marine and offshore applications.
+            </p>
+
+            <p class="text-center text-gray-400 text-sm italic pt-4 border-t border-neutral-200">
+                Every PU product is engineered to meet international standards including EN 1504, ASTM, and ISO 9001 — with SGS testing for quality assurance and performance verification.
+            </p>
+
+        </div>
+
+        <!-- Quick Reference Tags -->
+        <div class="mt-12 pt-6 border-t border-neutral-200">
+            <div class="flex flex-wrap items-center justify-center gap-3">
+                <span class="text-[10px] man px-4 py-2 rounded-full bg-[#f8f7f5] text-gray-500 border border-neutral-200">Spray Foam</span>
+                <span class="text-[10px] man px-4 py-2 rounded-full bg-[#f8f7f5] text-gray-500 border border-neutral-200">Insulation Boards</span>
+                <span class="text-[10px] man px-4 py-2 rounded-full bg-[#f8f7f5] text-gray-500 border border-neutral-200">Waterproofing Membranes</span>
+                <span class="text-[10px] man px-4 py-2 rounded-full bg-[#f8f7f5] text-gray-500 border border-neutral-200">Sealants</span>
+                <span class="text-[10px] man px-4 py-2 rounded-full bg-[#f8f7f5] text-gray-500 border border-neutral-200">Protective Coatings</span>
+                <span class="text-[10px] man px-4 py-2 rounded-full bg-[#f8f7f5] text-gray-500 border border-neutral-200">Industrial Flooring</span>
+                <span class="text-[10px] man px-4 py-2 rounded-full bg-[#f8f7f5] text-gray-500 border border-neutral-200">Structural Repair</span>
+                <span class="text-[10px] man px-4 py-2 rounded-full bg-[#f8f7f5] text-gray-500 border border-neutral-200">Elastomers</span>
+                <span class="text-[10px] man px-4 py-2 rounded-full bg-[#f8f7f5] text-gray-500 border border-neutral-200">Fire Retardant</span>
+                <span class="text-[10px] man px-4 py-2 rounded-full bg-[#f8f7f5] text-gray-500 border border-neutral-200">Heat Resistant</span>
+            </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="mt-10 text-center">
+            <div class="inline-flex flex-wrap items-center justify-center gap-4 bg-[#f8f7f5] border border-neutral-200 rounded-full px-6 py-3">
+                <span class="text-sm text-gray-500 man">Need a specific PU solution for your project?</span>
+                <span class="w-px h-6 bg-neutral-300"></span>
+                <a href="./contact.html" class="text-sm man font-semibold text-[#1d3a72] hover:opacity-70 transition flex items-center gap-2">
+                    Talk to Our Experts
+                    <i class="fa-solid fa-arrow-right text-xs"></i>
+                </a>
+                <span class="w-px h-6 bg-neutral-300"></span>
+                <a href="./public/pdfs/E-brouchure.pdf" download class="text-sm man font-medium text-gray-500 hover:text-[#1d3a72] transition flex items-center gap-2">
+                    <i class="fa-solid fa-download text-xs"></i>
+                    Download Brochure
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FAQ Section - PU -->
+<section class="relative py-16 bg-[#f8f7f5] overflow-hidden">
+
+    <div class="container 2xl:max-w-[1530px] mx-auto px-4">
+
+        <div class="text-center mb-12">
+            <p class="tracking-[0.3em] text-sm text-gray-400 man font-normal mb-4">
+                KNOWLEDGE CENTER
+            </p>
+            <h2 class="text-3xl md:text-4xl pop font-semibold text-[#2d2a26] leading-tight">
+                Frequently Asked <span class="tcolor">Questions</span>
+            </h2>
+            <div class="w-10 h-px bg-neutral-300 mx-auto mt-4"></div>
+        </div>
+
+        <div class="mx-auto space-y-4">
+
+            <!-- FAQ 1 -->
+            <div class="bg-white border border-neutral-200 rounded-2xl overflow-hidden hover:border-[#1d3a72]/20 transition duration-300">
+                <button class="faq-btn w-full flex justify-between items-center px-6 py-5 text-left group">
+                    <span class="text-[15px] pop font-semibold text-[#2d2a26] group-hover:text-[#1d3a72] transition">
+                        What types of polyurethane (PU) products does Usman Consultants offer?
+                    </span>
+                    <span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full bg-[#f8f7f5] border border-neutral-200 flex items-center justify-center text-[#2d2a26] text-lg font-light transition duration-300 group-hover:border-[#1d3a72] group-hover:text-[#1d3a72]">+</span>
+                </button>
+                <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                    <div class="px-6 pb-6 pt-1">
+                        <p class="text-gray-500 man text-sm leading-relaxed">
+                            We offer a comprehensive range of polyurethane (PU) products including spray foam insulation, rigid insulation boards, liquid waterproofing membranes, joint sealants, protective coatings, industrial floor coatings, structural adhesives, and elastomeric systems — each engineered for specific construction and industrial applications.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="bg-white border border-neutral-200 rounded-2xl overflow-hidden hover:border-[#1d3a72]/20 transition duration-300">
+                <button class="faq-btn w-full flex justify-between items-center px-6 py-5 text-left group">
+                    <span class="text-[15px] pop font-semibold text-[#2d2a26] group-hover:text-[#1d3a72] transition">
+                        What is the difference between open-cell and closed-cell spray foam?
+                    </span>
+                    <span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full bg-[#f8f7f5] border border-neutral-200 flex items-center justify-center text-[#2d2a26] text-lg font-light transition duration-300 group-hover:border-[#1d3a72] group-hover:text-[#1d3a72]">+</span>
+                </button>
+                <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                    <div class="px-6 pb-6 pt-1">
+                        <p class="text-gray-500 man text-sm leading-relaxed">
+                            Open-cell spray foam is lightweight, flexible, and provides excellent sound absorption — ideal for interior walls and attics. Closed-cell spray foam is denser, provides superior thermal insulation (R-value), acts as a vapor barrier, and adds structural strength — ideal for exterior walls, roofs, and below-grade applications. Each serves different performance requirements.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="bg-white border border-neutral-200 rounded-2xl overflow-hidden hover:border-[#1d3a72]/20 transition duration-300">
+                <button class="faq-btn w-full flex justify-between items-center px-6 py-5 text-left group">
+                    <span class="text-[15px] pop font-semibold text-[#2d2a26] group-hover:text-[#1d3a72] transition">
+                        What are the advantages of PU waterproofing systems over traditional methods?
+                    </span>
+                    <span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full bg-[#f8f7f5] border border-neutral-200 flex items-center justify-center text-[#2d2a26] text-lg font-light transition duration-300 group-hover:border-[#1d3a72] group-hover:text-[#1d3a72]">+</span>
+                </button>
+                <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                    <div class="px-6 pb-6 pt-1">
+                        <p class="text-gray-500 man text-sm leading-relaxed">
+                            PU waterproofing systems offer seamless application, exceptional flexibility (>500% elongation), excellent adhesion to various substrates, and long-term durability (25+ years). They are cold-applied, require no heat, and can be applied to complex geometries. Unlike traditional sheet membranes, PU systems provide monolithic protection with no seams or joints — eliminating potential failure points.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="bg-white border border-neutral-200 rounded-2xl overflow-hidden hover:border-[#1d3a72]/20 transition duration-300">
+                <button class="faq-btn w-full flex justify-between items-center px-6 py-5 text-left group">
+                    <span class="text-[15px] pop font-semibold text-[#2d2a26] group-hover:text-[#1d3a72] transition">
+                        What makes PU protective coatings ideal for industrial applications?
+                    </span>
+                    <span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full bg-[#f8f7f5] border border-neutral-200 flex items-center justify-center text-[#2d2a26] text-lg font-light transition duration-300 group-hover:border-[#1d3a72] group-hover:text-[#1d3a72]">+</span>
+                </button>
+                <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                    <div class="px-6 pb-6 pt-1">
+                        <p class="text-gray-500 man text-sm leading-relaxed">
+                            PU protective coatings offer exceptional corrosion resistance, chemical resistance, and UV stability. They provide excellent adhesion to steel, concrete, and various substrates, with high abrasion resistance and flexibility. With service life exceeding 20 years and resistance to extreme temperatures (-30°C to 600°C), PU coatings are ideal for pipelines, marine structures, industrial equipment, and infrastructure projects.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ 5 -->
+            <div class="bg-white border border-neutral-200 rounded-2xl overflow-hidden hover:border-[#1d3a72]/20 transition duration-300">
+                <button class="faq-btn w-full flex justify-between items-center px-6 py-5 text-left group">
+                    <span class="text-[15px] pop font-semibold text-[#2d2a26] group-hover:text-[#1d3a72] transition">
+                        How do I choose the right PU system for my construction project?
+                    </span>
+                    <span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full bg-[#f8f7f5] border border-neutral-200 flex items-center justify-center text-[#2d2a26] text-lg font-light transition duration-300 group-hover:border-[#1d3a72] group-hover:text-[#1d3a72]">+</span>
+                </button>
+                <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                    <div class="px-6 pb-6 pt-1">
+                        <p class="text-gray-500 man text-sm leading-relaxed">
+                            Our technical team assesses your project requirements including substrate type, environmental conditions, performance needs (thermal insulation, waterproofing, corrosion protection), and application method. We provide detailed proposals with product specifications, application guidelines, and compliance documentation. <a href="./contact.html" class="text-[#1d3a72] hover:underline">Contact us</a> for a free consultation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ 6 -->
+            <div class="bg-white border border-neutral-200 rounded-2xl overflow-hidden hover:border-[#1d3a72]/20 transition duration-300">
+                <button class="faq-btn w-full flex justify-between items-center px-6 py-5 text-left group">
+                    <span class="text-[15px] pop font-semibold text-[#2d2a26] group-hover:text-[#1d3a72] transition">
+                        What certifications and standards do your PU products meet?
+                    </span>
+                    <span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full bg-[#f8f7f5] border border-neutral-200 flex items-center justify-center text-[#2d2a26] text-lg font-light transition duration-300 group-hover:border-[#1d3a72] group-hover:text-[#1d3a72]">+</span>
+                </button>
+                <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                    <div class="px-6 pb-6 pt-1">
+                        <p class="text-gray-500 man text-sm leading-relaxed">
+                            All our PU products meet international standards including EN 1504 (concrete protection), ASTM C881 (epoxy resins), ISO 9001 certified, and are SGS tested for quality assurance. Products comply with low VOC environmental standards and are tested for thermal performance, water resistance, UV stability, and mechanical properties.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="text-center mt-10">
+            <div class="inline-flex items-center gap-6 bg-white border border-neutral-200 rounded-full px-6 py-3">
+                <span class="text-sm text-gray-500 man">Still have questions?</span>
+                <a href="./contact.html" class="text-sm man font-semibold text-[#1d3a72] hover:opacity-70 transition flex items-center gap-2">
+                    Contact Us
+                    <i class="fa-solid fa-arrow-right text-xs"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section - PU -->
+<section class="relative py-20 bg-[#1a2744] overflow-hidden">
+
+    <div class="absolute inset-0 opacity-[0.03] mix-blend-overlay bg-[url('./public/images/pattern.png')] bg-repeat">
+    </div>
+    <div class="absolute -top-32 -right-32 w-[30rem] h-[30rem] bg-[#51B9E2]/10 rounded-full blur-3xl"></div>
+    <div class="absolute -bottom-32 -left-32 w-[30rem] h-[30rem] bg-[#269FDB]/8 rounded-full blur-3xl"></div>
+
+    <div class="container 2xl:max-w-[1530px] mx-auto px-4 relative z-10">
+
+        <div class="max-w-5xl mx-auto text-center">
+
+            <p class="text-[11px] tracking-[0.3em] text-[#51B9E2]/70 man font-normal uppercase mb-4">
+                Unleash the Power of Polyurethane
+            </p>
+
+            <h2 class="text-4xl md:text-5xl pop font-semibold text-white leading-tight">
+                Premium PU Solutions for <br>
+                <span class="text-[#51B9E2]">Construction & Industry</span>
+            </h2>
+
+            <p class="mt-6 text-gray-300 man text-sm leading-relaxed max-w-3xl mx-auto">
+                Partner with Usman Consultants for high-performance polyurethane solutions that deliver exceptional durability, flexibility, and protection. From spray foam insulation to protective coatings, from waterproofing to structural strengthening — quality, reliability, and technical excellence for every project.
+            </p>
+
+            <div class="w-16 h-px bg-gradient-to-r from-transparent via-[#51B9E2]/30 to-transparent mx-auto mt-8 mb-10">
+            </div>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+
+                <a href="./contact.html"
+                    class="group px-10 py-4 bg-[#51B9E2] text-[#0a1628] text-sm man font-semibold rounded-full hover:bg-[#269FDB] transition duration-300 flex items-center gap-2 shadow-lg shadow-[#51B9E2]/20">
+                    Request PU Consultation
+                    <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition duration-300"></i>
+                </a>
+
+                <a href="./pu.html"
+                    class="group px-10 py-4 border border-white/20 text-white text-sm man font-medium rounded-full hover:bg-white/10 hover:border-white/40 transition duration-300 flex items-center gap-2">
+                    Explore PU Solutions
+                    <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition duration-300 opacity-0 group-hover:opacity-100"></i>
+                </a>
+
+            </div>
+
+            <div class="mt-12 pt-8 border-t border-white/5 flex flex-wrap items-center justify-center gap-4 md:gap-8">
+                <span class="text-[10px] text-gray-400 tracking-[0.2em] man uppercase">Spray Foam Insulation</span>
+                <span class="w-px h-3 bg-white/10 hidden sm:block"></span>
+                <span class="text-[10px] text-gray-400 tracking-[0.2em] man uppercase">Waterproofing</span>
+                <span class="w-px h-3 bg-white/10 hidden sm:block"></span>
+                <span class="text-[10px] text-gray-400 tracking-[0.2em] man uppercase">Protective Coatings</span>
+                <span class="w-px h-3 bg-white/10 hidden sm:block"></span>
+                <span class="text-[10px] text-gray-400 tracking-[0.2em] man uppercase">Industrial Flooring</span>
+                <span class="w-px h-3 bg-white/10 hidden sm:block"></span>
+                <span class="text-[10px] text-gray-400 tracking-[0.2em] man uppercase">Structural Repair</span>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer
+        class="relative font-[Playfair_Display] overflow-hidden border-t border-[#1d3a72]/30 text-white bg-[#0a1628]">
+        <div class="absolute inset-0 bg-gradient-to-b from-[#0a1628] via-[#0f1f3a] to-[#0a1628]"></div>
+        <div
+            class="absolute inset-0 opacity-[0.04] mix-blend-overlay bg-[url('./public/images/pattern.png')] bg-repeat">
+        </div>
+
+        <div class="relative border-b border-[#1d3a72]/30 py-3 px-6 backdrop-blur-xl bg-[#1d3a72]/10">
+            <div
+                class="container 2xl:max-w-[1530px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
+                <p class="text-[12px] man tracking-[0.25em] uppercase text-gray-400">Faisalabad, Pakistan</p>
+                <div class="flex items-center gap-4">
+                    <span class="text-[12px] man tracking-[0.25em] uppercase text-gray-400">Quality Assured</span>
+                    <span class="w-px h-3 bg-[#1d3a72]/30"></span>
+                    <span class="text-[12px] man tracking-[0.25em] uppercase text-gray-400">Est. 2012</span>
+                    <span class="w-px h-3 bg-[#1d3a72]/30"></span>
+                    <span class="text-[12px] man tracking-[0.25em] uppercase text-gray-400">100+ Projects</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="relative container 2xl:max-w-[1530px] mx-auto px-4 py-10">
+            <div class="grid lg:grid-cols-12 gap-10">
+                <div class="lg:col-span-4 flex flex-col gap-4">
+                    <a href="./index.html">
+                        <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/logo.png"
+                            alt="Usman Consultants Logo" class="w-24 object-contain">
+                    </a>
+                    <p class="text-sm text-gray-400 man leading-relaxed max-w-xs">
+                        Premium construction chemicals, structural repair, waterproofing, and industrial flooring
+                        solutions since 2012.
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <a href="#"
+                            class="w-8 h-8 rounded-full bg-[#1d3a72]/20 border border-[#1d3a72]/30 flex items-center justify-center text-gray-400 hover:text-white hover:bg-[#1d3a72] hover:border-[#1d3a72] transition">
+                            <i class="fa-brands fa-facebook-f text-[11px]"></i>
+                        </a>
+                        <a href="#"
+                            class="w-8 h-8 rounded-full bg-[#1d3a72]/20 border border-[#1d3a72]/30 flex items-center justify-center text-gray-400 hover:text-white hover:bg-[#1d3a72] hover:border-[#1d3a72] transition">
+                            <i class="fa-brands fa-instagram text-[11px]"></i>
+                        </a>
+                        <a href="#"
+                            class="w-8 h-8 rounded-full bg-[#1d3a72]/20 border border-[#1d3a72]/30 flex items-center justify-center text-gray-400 hover:text-white hover:bg-[#1d3a72] hover:border-[#1d3a72] transition">
+                            <i class="fa-brands fa-linkedin-in text-[11px]"></i>
+                        </a>
+                        <a href="#"
+                            class="w-8 h-8 rounded-full bg-[#1d3a72]/20 border border-[#1d3a72]/30 flex items-center justify-center text-gray-400 hover:text-white hover:bg-[#1d3a72] hover:border-[#1d3a72] transition">
+                            <i class="fa-brands fa-youtube text-[11px]"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-2 lg:col-start-6">
+                    <p class="text-[12px] man tracking-[0.25em] uppercase text-[white] mb-4 font-semibold">Navigate</p>
+                    <ul class="flex pop flex-col gap-2">
+                        <li><a href="./index.html" class="text-sm text-gray-400 hover:text-white transition">Home</a>
+                        </li>
+                        <li><a href="./about.html" class="text-sm text-gray-400 hover:text-white transition">About</a>
+                        </li>
+                        <li><a href="./services.html"
+                                class="text-sm text-gray-400 hover:text-white transition">Services</a></li>
+                        <li><a href="./client.html" class="text-sm text-gray-400 hover:text-white transition">Our
+                                Clients</a></li>
+                        <li><a href="./contact.html"
+                                class="text-sm text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="lg:col-span-2">
+                    <p class="text-[12px] man tracking-[0.25em] uppercase text-[white] mb-4 font-semibold">Solutions</p>
+                    <ul class="flex flex-col pop gap-2">
+                        <li><a href="./waterproofing.html"
+                                class="text-sm text-gray-400 hover:text-white transition">Waterproofing</a></li>
+                        <li><a href="./flooring.html"
+                                class="text-sm text-gray-400 hover:text-white transition">Industrial Flooring</a></li>
+                        <li><a href="./sealants.html" class="text-sm text-gray-400 hover:text-white transition">Joint
+                                Sealants</a></li>
+                        <li><a href="./structural-repair.html"
+                                class="text-sm text-gray-400 hover:text-white transition">Structural Repair</a></li>
+                        <li><a href="./paints.html" class="text-sm text-gray-400 hover:text-white transition">Paints &
+                                Coatings</a></li>
+                        <li><a href="./admixtures.html"
+                                class="text-sm text-gray-400 hover:text-white transition">Concrete Admixtures</a></li>
+                    </ul>
+                </div>
+
+                <div class="lg:col-span-2">
+                    <p class="text-[12px] man tracking-[0.25em] uppercase text-[white] mb-4 font-semibold">Get In Touch
+                    </p>
+                    <ul class="flex flex-col pop gap-3">
+                        <li>
+                            <a href="tel:03009653044" class="flex flex-col">
+                                <span class="text-[10px] text-gray-500">Phone</span>
+                                <span class="text-xs text-gray-300 hover:text-white transition">0300-9653044</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:usman.zahid1@yahoo.com" class="flex flex-col">
+                                <span class="text-[10px] text-gray-500">Email</span>
+                                <span
+                                    class="text-xs text-gray-300 hover:text-white transition">usman.zahid1@yahoo.com</span>
+                            </a>
+                        </li>
+                        <li class="flex flex-col">
+                            <span class="text-[10px] text-gray-500">Location</span>
+                            <span class="text-xs text-gray-300">Faisalabad, Pakistan</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div
+                class="mt-10 border-t border-[#1d3a72]/30 pt-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+                <p class="text-[11px] text-gray-500">© 2026 Usman Consultants. All rights reserved.</p>
+                <div class="flex items-center gap-4">
+                    <a href="./terms.html" class="text-[11px] text-gray-500 hover:text-white transition">Terms</a>
+                    <span class="w-px h-3 bg-[#1d3a72]/30"></span>
+                    <a href="./privacy.html" class="text-[11px] text-gray-500 hover:text-white transition">Privacy</a>
+                </div>
+                <p class="text-[11px] text-gray-500">
+                    Developed by
+                    <a href="https://wa.me/923224066958" target="_blank"
+                        class="text-gray-300 hover:text-white transition">MAC</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/923009653044" target="_blank" rel="noopener noreferrer"
+        class="fixed bottom-6 left-6 z-[9999] flex items-center gap-3 bg-[#25D366] text-white no-underline px-5 py-3 rounded-full shadow-lg hover:opacity-90 hover:scale-105 transition duration-300"
+        style="font-family: Manrope, sans-serif; font-size: 13px; font-weight: 500; letter-spacing: 0.02em; box-shadow: 0 4px 20px rgba(37,211,102,0.35);">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32" fill="white">
+            <path
+                d="M16.003 2C8.28 2 2 8.278 2 15.998c0 2.47.648 4.788 1.784 6.8L2 30l7.397-1.744A13.947 13.947 0 0016.003 30C23.722 30 30 23.722 30 16.003 30 8.278 23.722 2 16.003 2zm0 25.452a11.43 11.43 0 01-5.832-1.596l-.418-.248-4.392 1.036 1.068-4.27-.272-.44A11.417 11.417 0 014.55 16c0-6.319 5.134-11.452 11.453-11.452S27.452 9.681 27.452 16c0 6.318-5.131 11.452-11.449 11.452zm6.28-8.57c-.344-.172-2.036-1.004-2.352-1.118-.316-.116-.546-.172-.776.172-.23.344-.892 1.118-1.092 1.348-.2.23-.4.258-.744.086-.344-.172-1.454-.536-2.77-1.708-1.024-.912-1.714-2.038-1.914-2.382-.2-.344-.022-.53.15-.702.154-.154.344-.4.516-.6.172-.2.23-.344.344-.574.114-.23.058-.43-.028-.602-.086-.172-.776-1.87-1.064-2.562-.28-.672-.564-.58-.776-.59l-.66-.012c-.23 0-.602.086-.916.43-.316.344-1.204 1.176-1.204 2.868s1.232 3.326 1.404 3.556c.172.23 2.424 3.7 5.874 5.19.822.354 1.462.566 1.962.724.824.262 1.574.225 2.167.136.66-.1 2.036-.832 2.322-1.634.286-.8.286-1.488.2-1.634-.084-.144-.314-.23-.658-.4z" />
+        </svg>
+        <span>WhatsApp</span>
+    </a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script defer src="./src/js/index.js"></script>
+    <script defer src="./src/js/gsap.js"></script>
+
+</body>
+
+</html>

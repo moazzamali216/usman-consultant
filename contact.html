@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UC - Contact Us</title>
+    <link rel="icon" href="./public/images/logo2.png">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./public/output.css">
+    <link rel="stylesheet" href="./src/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.0/swiper-bundle.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.0/swiper-bundle.min.js"></script>
+</head>
+
+<!-- Preloader -->
+<div id="preloader" class="fixed !z-[9999] inset-0 bg-white flex flex-col items-center justify-center">
+    <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/logo.png"
+        class="w-28 animate-up-pulse" alt="Logo">
+    <div class="w-8 h-8 border-4 border-gray-200 border-t-black rounded-full animate-spin mt-7"></div>
+</div>
+
+<body class="bg-gray-50">
+
+    <!-- Desktop Navbar -->
+    <nav class="hidden lg:block fixed top-5 left-0 w-full z-50">
+        <div class="max-w-7xl mx-auto px-5">
+            <div class="bg-[#f8f7f5]/90 shadow-md backdrop-blur-md border border-neutral-200 rounded-[26px]">
+                <div class="flex items-center justify-between px-8 py-1.5">
+                    <!-- Logo -->
+                    <a href="./index.html">
+                        <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/logo.png"
+                            alt="Logo" class="w-28 object-contain">
+                    </a>
+
+                    <!-- Nav Links -->
+                    <ul class="flex items-center mons font-semibold gap-12 text-[13px] uppercase text-gray-500">
+                        <li><a href="./index.html" class="hover:text-neutral-900 transition duration-300">Home</a></li>
+                        <li><a href="./about.html" class="hover:text-neutral-900 transition duration-300">About</a></li>
+                        <li><a href="./services.html" class="hover:text-neutral-900 transition duration-300">Services</a></li>
+
+<li class="relative">
+
+  <button id="dropdownProductsButton" data-dropdown-toggle="dropdownProducts"
+    data-dropdown-placement="bottom-start"
+    class="flex uppercase items-center gap-1 hover:text-neutral-900 transition duration-300">
+
+    Products
+
+    <svg class="w-3.5 h-3.5 mt-[1px]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7" />
+    </svg>
+
+  </button>
+
+  <!-- Dropdown Menu -->
+  <div id="dropdownProducts"
+    class="hidden absolute top-12 left-0 w-64 bg-white border border-neutral-200 tracking-[1px] rounded-2xl shadow-lg overflow-hidden">
+    <ul class="text-[11px] uppercase text-gray-500">
+
+      <li>
+        <a href="./adhesives.html"
+          class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition">
+          Adhesive
+        </a>
+      </li>
+
+      <li>
+        <a href="./admixtures.html"
+          class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition">
+          Admixtures
+        </a>
+      </li>
+
+      <li>
+        <a href="./concrete-repair.html"
+          class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition">
+          Concrete Repair
+        </a>
+      </li>
+
+      <li>
+        <a href="./flooring.html"
+          class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition">
+          Flooring
+        </a>
+      </li>
+
+      <li>
+        <a href="./grout-anchor.html"
+          class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition">
+          Grout and Anchor
+        </a>
+      </li>
+
+      <li>
+        <a href="./paints.html"
+          class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition">
+          Paint and Coatings
+        </a>
+      </li>
+
+      <li>
+        <a href="./pu.html"
+          class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition">
+          PU
+        </a>
+      </li>
+
+      <li>
+        <a href="./sealants.html"
+          class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition">
+          Sealants
+        </a>
+      </li>
+
+      <li>
+        <a href="./surface-treatment.html"
+          class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition">
+          Surface Treatment
+        </a>
+      </li>
+
+      <li>
+        <a href="./waterproofing.html"
+          class="block px-5 py-3 hover:bg-neutral-50 hover:text-neutral-900 transition">
+          Water Proofing
+        </a>
+      </li>
+
+    </ul>
+  </div>
+</li>
+
+                        <li><a href="./client.html" class="hover:text-neutral-900 transition duration-300">Our Clients</a></li>
+
+
+
+                        <li><a href="./public/pdfs/E-brouchure.pdf" download class="hover:text-neutral-900 transition duration-300">E-Brochure</a></li>
+                    </ul>
+
+                    <!-- Contact -->
+                    <a href="./contact.html"
+                        class="flex items-center gap-4 text-neutral-900 hover:opacity-70 transition duration-300">
+                        <span class="w-10 h-px bg-neutral-900"></span>
+                        <span class="text-[14px] uppercase tracking-wide font-semibold mons">Contact Us</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Navbar -->
+    <nav class="lg:hidden fixed top-5 left-0 w-full z-[999]">
+        <div class="px-4">
+            <div class="bg-[#f8f7f5]/90 backdrop-blur-md border border-neutral-200 rounded-2xl px-5 py-2 flex items-center justify-between">
+                <a href="./index.html">
+                    <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/logo.png"
+                        class="w-24 object-contain" alt="Logo">
+                </a>
+                <button id="openMenu" class="w-11 h-11 rounded-full border border-neutral-300 flex items-center justify-center text-neutral-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Overlay -->
+    <div id="overlay" class="fixed inset-0 bg-black/20 backdrop-blur-sm hidden z-[998] opacity-0 transition duration-300"></div>
+
+    <!-- Side Menu -->
+    <div id="sideMenu"
+        class="fixed top-0 right-0 h-full w-[85%] max-w-sm bg-[#f8f7f5] z-[999] translate-x-full transition-transform duration-500 ease-in-out border-l border-neutral-200 flex flex-col">
+        <div class="flex items-center justify-between px-6 py-6 border-b border-neutral-200">
+            <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/logo.png"
+                class="w-24 object-contain" alt="Logo">
+            <button id="closeMenu" class="w-10 h-10 rounded-full border border-neutral-300 flex items-center justify-center text-neutral-700">✕</button>
+        </div>
+        <div class="flex-1 overflow-y-auto px-6 py-8">
+            <ul class="space-y-7 text-[15px] tracking-wide font-medium text-neutral-700 man">
+                <li><a href="./index.html" class="flex items-center justify-between hover:text-neutral-900 transition">Home <span class="w-8 h-px bg-neutral-900"></span></a></li>
+                <li><a href="./about.html" class="hover:text-neutral-900 transition block">About</a></li>
+                <li><a href="./services.html" class="hover:text-neutral-900 transition block">Services</a></li>
+                <li>
+                    <div class="border border-neutral-200 rounded-2xl overflow-hidden bg-white">
+                        <button id="productToggle" class="w-full flex items-center justify-between px-5 py-4 text-left text-neutral-800">
+                            <span>Products</span>
+                            <svg id="productArrow" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 transition duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div id="productMenu" class="hidden border-t border-neutral-200 px-5 py-4">
+                            <ul class="space-y-4 text-[14px] text-neutral-600">
+                                <li><a href="./waterproofing.html" class="block hover:text-neutral-900 transition">Waterproofing</a></li>
+                                <li><a href="./flooring.html" class="block hover:text-neutral-900 transition">Industrial Flooring</a></li>
+                                <li><a href="./sealants.html" class="block hover:text-neutral-900 transition">Joint Sealants</a></li>
+                                <li><a href="./structural-repair.html" class="block hover:text-neutral-900 transition">Structural Repair</a></li>
+                                <li><a href="./paints.html" class="block hover:text-neutral-900 transition">Paints & Coatings</a></li>
+                                <li><a href="./admixtures.html" class="block hover:text-neutral-900 transition">Concrete Admixtures</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="./client.html" class="hover:text-neutral-900 transition block">Our Clients</a></li>
+                <li><a href="./public/pdfs/E-brouchure.pdf" download class="hover:text-neutral-900 transition block">E-Brochure</a></li>
+            </ul>
+        </div>
+        <div class="p-6 border-t border-neutral-200">
+            <a href="./contact.html"
+                class="flex items-center justify-center gap-3 border border-neutral-300 rounded-full py-4 text-[14px] tracking-wide text-neutral-900 hover:bg-neutral-900 hover:text-white transition duration-300 man">
+                <span class="w-8 h-px bg-current"></span> Contact Us
+            </a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="relative h-[500px] flex items-center justify-center overflow-hidden">
+        <img loading='lazy' decoding="async" fetchpriority="low" src="./public/images/c1.webp"
+            class="absolute object-bottom inset-0 w-full h-full object-cover" alt="Contact Us">
+        <div class="absolute inset-0 bg-gradient-to-b from-black/90 via-black/60 to-black/30"></div>
+        <div class="relative z-10 text-center px-4">
+            <p class="text-[11px] uppercase tracking-[0.3em] text-white/50 man font-normal mb-3">
+                Get In Touch
+            </p>
+            <h1 class="text-4xl md:text-5xl pop font-semibold text-white leading-tight">
+                Contact <span class="">Us</span>
+            </h1>
+            <div class="w-10 h-px bg-white/30 mx-auto mt-5"></div>
+            <p class="text-sm text-white/60 man font-normal mt-4 max-w-md mx-auto">
+                We'd love to hear from you — reach out for inquiries, quotes, or project consultations
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Info + Form Section -->
+    <section class="py-24 bg-[#f8f7f5]">
+        <div class="container 2xl:max-w-[1200px] mx-auto px-4">
+
+            <div class="grid lg:grid-cols-2 gap-8">
+
+                <!-- LEFT SIDE - Contact Info -->
+                <div class="bg-[#1d3a72] text-white px-8 md:px-12 py-12 rounded-3xl">
+
+                    <div class="space-y-8">
+
+                        <!-- Logo -->
+                        <div>
+                            <img src="./public/images/logo.png"
+                                class="w-[140px] "
+                                alt="Usman Consultants Logo">
+                        </div>
+
+                        <!-- Header -->
+                        <div>
+                            <p class="tracking-[0.3em] text-xs text-white/60 uppercase man">
+                                Contact Usman Consultants
+                            </p>
+
+                            <h2 class="text-3xl md:text-4xl pop text-white mt-4 leading-tight">
+                                Let's Discuss Your <br>Project Requirements
+                            </h2>
+
+                            <p class="text-sm text-white/70 man mt-5 leading-relaxed">
+                                Share your project details, material requirements, and site conditions.
+                                Our technical team will respond with tailored solutions within 24 hours.
+                            </p>
+
+                            <div class="w-14 h-px bg-white/20 mt-8"></div>
+                        </div>
+
+                        <!-- Contact Details -->
+                        <div class="space-y-6">
+
+                            <!-- Director -->
+                            <div>
+                                <p class="text-xs text-white/50 uppercase tracking-widest man">Director</p>
+                                <p class="text-sm text-white man mt-0.5 font-semibold">Usman Zahid</p>
+                                <a href="tel:03006638175" class="text-sm text-white/80 man hover:text-white transition">0300-6638175</a>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="flex items-start gap-4">
+                                <div class="w-9 h-9 rounded-xl bg-white/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                                        <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-white/50 uppercase tracking-widest man">Email</p>
+                                    <a href="mailto:usman.zahid1@yahoo.com" class="text-sm text-white man mt-0.5 hover:text-white/80 transition">usman.zahid1@yahoo.com</a>
+                                </div>
+                            </div>
+
+                            <!-- Phone -->
+                            <div class="flex items-start gap-4">
+                                <div class="w-9 h-9 rounded-xl bg-white/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                                        <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498A1 1 0 0121 15.72V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-white/50 uppercase tracking-widest man">Phone / WhatsApp</p>
+                                    <a href="tel:03009653044" class="text-sm text-white man mt-0.5 hover:text-white/80 transition">0300-9653044</a>
+                                </div>
+                            </div>
+
+                            <!-- Address -->
+                            <div class="flex items-start gap-4">
+                                <div class="w-9 h-9 rounded-xl bg-white/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                                        <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                        <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-white/50 uppercase tracking-widest man">Head Office</p>
+                                    <p class="text-sm text-white man mt-0.5 leading-relaxed">
+                                        Imtiaz Shaheed Road, Opp. Prime Care Hospital<br>
+                                        Liberty Market, Faisalabad, Pakistan
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Social Links -->
+                        <div class="pt-4 border-t border-white/10">
+                            <p class="text-xs text-white/50 uppercase tracking-widest man mb-3">Connect With Us</p>
+                            <div class="flex items-center gap-3">
+                                <a href="#" class="w-9 h-9 rounded-full bg-white/10 border border-white/10 flex items-center justify-center text-white hover:bg-white/20 transition">
+                                    <i class="fa-brands fa-facebook-f text-sm"></i>
+                                </a>
+                                <a href="#" class="w-9 h-9 rounded-full bg-white/10 border border-white/10 flex items-center justify-center text-white hover:bg-white/20 transition">
+                                    <i class="fa-brands fa-instagram text-sm"></i>
+                                </a>
+                                <a href="#" class="w-9 h-9 rounded-full bg-white/10 border border-white/10 flex items-center justify-center text-white hover:bg-white/20 transition">
+                                    <i class="fa-brands fa-linkedin-in text-sm"></i>
+                                </a>
+                                <a href="#" class="w-9 h-9 rounded-full bg-white/10 border border-white/10 flex items-center justify-center text-white hover:bg-white/20 transition">
+                                    <i class="fa-brands fa-youtube text-sm"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- RIGHT SIDE - Form -->
+                <div class="bg-white border border-neutral-200 rounded-3xl shadow-lg p-8 md:p-10">
+                    <form action="https://formspree.io/f/mredkzzv" method="POST" class="space-y-5">
+
+                        <div>
+                            <label class="text-xs tracking-widest text-gray-500 uppercase man">Full Name *</label>
+                            <input type="text" name="name" required
+                                class="mt-2 w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#1d3a72]/20 focus:border-[#1d3a72] transition">
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="text-xs tracking-widest text-gray-500 uppercase man">Email *</label>
+                                <input type="email" name="email" required
+                                    class="mt-2 w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#1d3a72]/20 focus:border-[#1d3a72] transition">
+                            </div>
+                            <div>
+                                <label class="text-xs tracking-widest text-gray-500 uppercase man">Phone</label>
+                                <input type="text" name="phone"
+                                    class="mt-2 w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#1d3a72]/20 focus:border-[#1d3a72] transition">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="text-xs tracking-widest text-gray-500 uppercase man">Company / Organization</label>
+                            <input type="text" name="company"
+                                class="mt-2 w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#1d3a72]/20 focus:border-[#1d3a72] transition">
+                        </div>
+
+                        <div>
+                            <label class="text-xs tracking-widest text-gray-500 uppercase man">Inquiry Type</label>
+                            <select name="inquiry_type"
+                                class="mt-2 w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#1d3a72]/20 focus:border-[#1d3a72] transition">
+                                <option>Product Inquiry</option>
+                                <option>Bulk Order</option>
+                                <option>Technical Consultation</option>
+                                <option>Project Collaboration</option>
+                                <option>Partnership</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="text-xs tracking-widest text-gray-500 uppercase man">Product Category</label>
+                            <select name="product_category"
+                                class="mt-2 w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#1d3a72]/20 focus:border-[#1d3a72] transition">
+                                <option>Waterproofing Systems</option>
+                                <option>Industrial Flooring</option>
+                                <option>Joint Sealants</option>
+                                <option>Structural Repair & Anchoring</option>
+                                <option>Paints & Protective Coatings</option>
+                                <option>Concrete Admixtures</option>
+                                <option>Multiple Categories</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="text-xs tracking-widest text-gray-500 uppercase man">Your Message</label>
+                            <textarea name="message" rows="5"
+                                placeholder="Describe your project requirements, specifications, quantity, or any other details..."
+                                class="mt-2 w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#1d3a72]/20 focus:border-[#1d3a72] transition"></textarea>
+                        </div>
+
+                        <button type="submit"
+                            class="w-full md:w-auto px-10 py-4 bg-[#1d3a72] text-white rounded-xl man text-sm font-semibold tracking-wide hover:bg-[#176A9F] transition duration-300">
+                            Submit Inquiry
+                        </button>
+
+                        <p class="text-xs text-gray-400 man text-center pt-2">
+                            <i class="fa-solid fa-clock mr-1"></i> Response time: 24 hours &bull; Technical support available
+                        </p>
+
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="relative py-16 bg-white overflow-hidden">
+
+        <!-- Blue corner design - TOP RIGHT -->
+        <div class="lg:block hidden pointer-events-none absolute right-0 top-0 h-[300px] w-[200px] overflow-hidden opacity-40">
+            <div class="absolute inset-0 bg-[#51B9E2]" style="clip-path: polygon(0 0, 25% 0, 100% 100%, 0 0);"></div>
+            <div class="absolute inset-0 bg-[#269FDB]" style="clip-path: polygon(25% 0, 50% 0, 100% 100%);"></div>
+            <div class="absolute inset-0 bg-[#176A9F]" style="clip-path: polygon(50% 0, 100% 0, 100% 100%);"></div>
+        </div>
+
+        <div class="container 2xl:max-w-[1530px] mx-auto px-4 relative z-10">
+
+            <!-- Header -->
+            <div class="text-center mb-14">
+                <p class="tracking-[0.3em] text-sm text-gray-400 man font-normal mb-4">
+                    KNOWLEDGE CENTER
+                </p>
+                <h2 class="text-4xl md:text-5xl pop font-semibold text-[#2d2a26] leading-tight">
+                    Frequently Asked <span class="tcolor">Questions</span>
+                </h2>
+                <div class="w-10 h-px bg-neutral-300 mx-auto mt-6"></div>
+            </div>
+
+            <!-- FAQ Accordion -->
+            <div class=" mx-auto space-y-4">
+
+                <!-- FAQ Item 1 -->
+                <div class="bg-[#f8f7f5] border border-neutral-200 rounded-2xl overflow-hidden hover:border-[#1d3a72]/20 transition duration-300">
+                    <button class="faq-btn w-full flex justify-between items-center px-6 py-5 text-left group">
+                        <span class="text-[15px] pop font-semibold text-[#2d2a26] group-hover:text-[#1d3a72] transition">
+                            What is the best way to contact Usman Consultants?
+                        </span>
+                        <span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full bg-white border border-neutral-200 flex items-center justify-center text-[#2d2a26] text-lg font-light transition duration-300 group-hover:border-[#1d3a72] group-hover:text-[#1d3a72]">
+                            +
+                        </span>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <div class="px-6 pb-6 pt-1">
+                            <p class="text-gray-500 man text-sm leading-relaxed">
+                                You can contact us through the inquiry form on this page, email us directly at
+                                <a href="mailto:usman.zahid1@yahoo.com" class="text-[#1d3a72] hover:underline">usman.zahid1@yahoo.com</a>,
+                                or call us at <a href="tel:03009653044" class="text-[#1d3a72] hover:underline">0300-9653044</a>.
+                                Our team typically responds within 24 hours.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="bg-[#f8f7f5] border border-neutral-200 rounded-2xl overflow-hidden hover:border-[#1d3a72]/20 transition duration-300">
+                    <button class="faq-btn w-full flex justify-between items-center px-6 py-5 text-left group">
+                        <span class="text-[15px] pop font-semibold text-[#2d2a26] group-hover:text-[#1d3a72] transition">
+                            What information should I include in my inquiry?
+                        </span>
+                        <span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full bg-white border border-neutral-200 flex items-center justify-center text-[#2d2a26] text-lg font-light transition duration-300 group-hover:border-[#1d3a72] group-hover:text-[#1d3a72]">
+                            +
+                        </span>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <div class="px-6 pb-6 pt-1">
+                            <p class="text-gray-500 man text-sm leading-relaxed">
+                                Please include your project requirements, product category, quantity, site conditions,
+                                and any specific technical specifications. This helps us provide accurate recommendations
+                                and pricing tailored to your needs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="bg-[#f8f7f5] border border-neutral-200 rounded-2xl overflow-hidden hover:border-[#1d3a72]/20 transition duration-300">
+                    <button class="faq-btn w-full flex justify-between items-center px-6 py-5 text-left group">
+                        <span class="text-[15px] pop font-semibold text-[#2d2a26] group-hover:text-[#1d3a72] transition">
+                            Do you provide technical support for project execution?
+                        </span>
+                        <span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full bg-white border border-neutral-200 flex items-center justify-center text-[#2d2a26] text-lg font-light transition duration-300 group-hover:border-[#1d3a72] group-hover:text-[#1d3a72]">
+                            +
+                        </span>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <div class="px-6 pb-6 pt-1">
+                            <p class="text-gray-500 man text-sm leading-relaxed">
+                                Yes, Usman Consultants provides comprehensive technical support including on-site
+                                supervision, application guidance, material testing, and post-installation verification
+                                to ensure optimal performance and durability.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="bg-[#f8f7f5] border border-neutral-200 rounded-2xl overflow-hidden hover:border-[#1d3a72]/20 transition duration-300">
+                    <button class="faq-btn w-full flex justify-between items-center px-6 py-5 text-left group">
+                        <span class="text-[15px] pop font-semibold text-[#2d2a26] group-hover:text-[#1d3a72] transition">
+                            Do you offer custom formulations or tailored solutions?
+                        </span>
+                        <span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full bg-white border border-neutral-200 flex items-center justify-center text-[#2d2a26] text-lg font-light transition duration-300 group-hover:border-[#1d3a72] group-hover:text-[#1d3a72]">
+                            +
+                        </span>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <div class="px-6 pb-6 pt-1">
+                            <p class="text-gray-500 man text-sm leading-relaxed">
+                                Yes, we offer custom formulations and tailored solutions for specific project requirements
+                                including site-specific formulations, performance optimization, color matching, and
+                                flexible packaging options.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="bg-[#f8f7f5] border border-neutral-200 rounded-2xl overflow-hidden hover:border-[#1d3a72]/20 transition duration-300">
+                    <button class="faq-btn w-full flex justify-between items-center px-6 py-5 text-left group">
+                        <span class="text-[15px] pop font-semibold text-[#2d2a26] group-hover:text-[#1d3a72] transition">
+                            What is your typical response time for inquiries?
+                        </span>
+                        <span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full bg-white border border-neutral-200 flex items-center justify-center text-[#2d2a26] text-lg font-light transition duration-300 group-hover:border-[#1d3a72] group-hover:text-[#1d3a72]">
+                            +
+                        </span>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <div class="px-6 pb-6 pt-1">
+                            <p class="text-gray-500 man text-sm leading-relaxed">
+                                Our team typically responds to inquiries within 24 hours during business days. For
+                                urgent queries, please contact us directly via phone at
+                                <a href="tel:03009653044" class="text-[#1d3a72] hover:underline">0300-9653044</a>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Still Have Questions CTA -->
+            <div class="text-center mt-10">
+                <div class="inline-flex items-center gap-6 bg-[#f8f7f5] border border-neutral-200 rounded-full px-6 py-3">
+                    <span class="text-sm text-gray-500 man">Still have questions?</span>
+                    <a href="tel:03009653044" class="text-sm man font-semibold text-[#1d3a72] hover:opacity-70 transition flex items-center gap-2">
+                        <i class="fa-solid fa-phone text-xs"></i>
+                        Call Us Now
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/923009653044" target="_blank" rel="noopener noreferrer"
+        class="fixed bottom-6 left-6 z-[9999] flex items-center gap-3 bg-[#25D366] text-white no-underline px-5 py-3 rounded-full shadow-lg hover:opacity-90 hover:scale-105 transition duration-300"
+        style="font-family: Manrope, sans-serif; font-size: 13px; font-weight: 500; letter-spacing: 0.02em; box-shadow: 0 4px 20px rgba(37,211,102,0.35);">
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32" fill="white">
+            <path d="M16.003 2C8.28 2 2 8.278 2 15.998c0 2.47.648 4.788 1.784 6.8L2 30l7.397-1.744A13.947 13.947 0 0016.003 30C23.722 30 30 23.722 30 16.003 30 8.278 23.722 2 16.003 2zm0 25.452a11.43 11.43 0 01-5.832-1.596l-.418-.248-4.392 1.036 1.068-4.27-.272-.44A11.417 11.417 0 014.55 16c0-6.319 5.134-11.452 11.453-11.452S27.452 9.681 27.452 16c0 6.318-5.131 11.452-11.449 11.452zm6.28-8.57c-.344-.172-2.036-1.004-2.352-1.118-.316-.116-.546-.172-.776.172-.23.344-.892 1.118-1.092 1.348-.2.23-.4.258-.744.086-.344-.172-1.454-.536-2.77-1.708-1.024-.912-1.714-2.038-1.914-2.382-.2-.344-.022-.53.15-.702.154-.154.344-.4.516-.6.172-.2.23-.344.344-.574.114-.23.058-.43-.028-.602-.086-.172-.776-1.87-1.064-2.562-.28-.672-.564-.58-.776-.59l-.66-.012c-.23 0-.602.086-.916.43-.316.344-1.204 1.176-1.204 2.868s1.232 3.326 1.404 3.556c.172.23 2.424 3.7 5.874 5.19.822.354 1.462.566 1.962.724.824.262 1.574.225 2.167.136.66-.1 2.036-.832 2.322-1.634.286-.8.286-1.488.2-1.634-.084-.144-.314-.23-.658-.4z"/>
+        </svg>
+
+        <span>WhatsApp</span>
+    </a>
+
+    <!-- Footer -->
+    <footer class="relative font-[Playfair_Display] overflow-hidden border-t border-[#1d3a72]/30 text-white bg-[#0a1628]">
+        <div class="absolute inset-0 bg-gradient-to-b from-[#0a1628] via-[#0f1f3a] to-[#0a1628]"></div>
+        <div class="absolute inset-0 opacity-[0.04] mix-blend-overlay bg-[url('./public/images/pattern.png')] bg-repeat"></div>
+
+        <div class="relative border-b border-[#1d3a72]/30 py-3 px-6 backdrop-blur-xl bg-[#1d3a72]/10">
+            <div class="container 2xl:max-w-[1530px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
+                <p class="text-[12px] man tracking-[0.25em] uppercase text-gray-400">Faisalabad, Pakistan</p>
+                <div class="flex items-center gap-4">
+                    <span class="text-[12px] man tracking-[0.25em] uppercase text-gray-400">Quality Assured</span>
+                    <span class="w-px h-3 bg-[#1d3a72]/30"></span>
+                    <span class="text-[12px] man tracking-[0.25em] uppercase text-gray-400">Est. 2012</span>
+                    <span class="w-px h-3 bg-[#1d3a72]/30"></span>
+                    <span class="text-[12px] man tracking-[0.25em] uppercase text-gray-400">100+ Projects</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="relative container 2xl:max-w-[1530px] mx-auto px-4 py-10">
+            <div class="grid lg:grid-cols-12 gap-10">
+                <!-- Brand -->
+                <div class="lg:col-span-4 flex flex-col gap-4">
+                    <a href="./index.html">
+                        <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/logo.png"
+                            alt="Usman Consultants Logo" class="w-24 object-contain">
+                    </a>
+                    <p class="text-sm text-gray-400 man leading-relaxed max-w-xs">
+                        Premium construction chemicals, structural repair, waterproofing, and industrial flooring solutions since 2012.
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <a href="#" class="w-8 h-8 rounded-full bg-[#1d3a72]/20 border border-[#1d3a72]/30 flex items-center justify-center text-gray-400 hover:text-white hover:bg-[#1d3a72] hover:border-[#1d3a72] transition">
+                            <i class="fa-brands fa-facebook-f text-[11px]"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-[#1d3a72]/20 border border-[#1d3a72]/30 flex items-center justify-center text-gray-400 hover:text-white hover:bg-[#1d3a72] hover:border-[#1d3a72] transition">
+                            <i class="fa-brands fa-instagram text-[11px]"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-[#1d3a72]/20 border border-[#1d3a72]/30 flex items-center justify-center text-gray-400 hover:text-white hover:bg-[#1d3a72] hover:border-[#1d3a72] transition">
+                            <i class="fa-brands fa-linkedin-in text-[11px]"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-[#1d3a72]/20 border border-[#1d3a72]/30 flex items-center justify-center text-gray-400 hover:text-white hover:bg-[#1d3a72] hover:border-[#1d3a72] transition">
+                            <i class="fa-brands fa-youtube text-[11px]"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Navigate -->
+                <div class="lg:col-span-2 lg:col-start-6">
+                    <p class="text-[12px] man tracking-[0.25em] uppercase text-[white] mb-4 font-semibold">Navigate</p>
+                    <ul class="flex pop flex-col gap-2">
+                        <li><a href="./index.html" class="text-sm text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="./about.html" class="text-sm text-gray-400 hover:text-white transition">About</a></li>
+                        <li><a href="./services.html" class="text-sm text-gray-400 hover:text-white transition">Services</a></li>
+                        <li><a href="./client.html" class="text-sm text-gray-400 hover:text-white transition">Our Clients</a></li>
+                        <li><a href="./contact.html" class="text-sm text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Solutions -->
+                <div class="lg:col-span-2">
+                    <p class="text-[12px] man tracking-[0.25em] uppercase text-[white] mb-4 font-semibold">Solutions</p>
+                    <ul class="flex flex-col pop gap-2">
+                        <li><a href="./waterproofing.html" class="text-sm text-gray-400 hover:text-white transition">Waterproofing</a></li>
+                        <li><a href="./flooring.html" class="text-sm text-gray-400 hover:text-white transition">Industrial Flooring</a></li>
+                        <li><a href="./sealants.html" class="text-sm text-gray-400 hover:text-white transition">Joint Sealants</a></li>
+                        <li><a href="./structural-repair.html" class="text-sm text-gray-400 hover:text-white transition">Structural Repair</a></li>
+                        <li><a href="./paints.html" class="text-sm text-gray-400 hover:text-white transition">Paints & Coatings</a></li>
+                        <li><a href="./admixtures.html" class="text-sm text-gray-400 hover:text-white transition">Concrete Admixtures</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="lg:col-span-2">
+                    <p class="text-[12px] man tracking-[0.25em] uppercase text-[white] mb-4 font-semibold">Get In Touch</p>
+                    <ul class="flex flex-col pop gap-3">
+                        <li>
+                            <a href="tel:03009653044" class="flex flex-col">
+                                <span class="text-[10px] text-gray-500">Phone</span>
+                                <span class="text-xs text-gray-300 hover:text-white transition">0300-9653044</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:usman.zahid1@yahoo.com" class="flex flex-col">
+                                <span class="text-[10px] text-gray-500">Email</span>
+                                <span class="text-xs text-gray-300 hover:text-white transition">usman.zahid1@yahoo.com</span>
+                            </a>
+                        </li>
+                        <li class="flex flex-col">
+                            <span class="text-[10px] text-gray-500">Location</span>
+                            <span class="text-xs text-gray-300">Faisalabad, Pakistan</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="mt-10 border-t border-[#1d3a72]/30 pt-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+                <p class="text-[11px] text-gray-500">© 2026 Usman Consultants. All rights reserved.</p>
+                <div class="flex items-center gap-4">
+                    <a href="./terms.html" class="text-[11px] text-gray-500 hover:text-white transition">Terms</a>
+                    <span class="w-px h-3 bg-[#1d3a72]/30"></span>
+                    <a href="./privacy.html" class="text-[11px] text-gray-500 hover:text-white transition">Privacy</a>
+                </div>
+                <p class="text-[11px] text-gray-500">
+                    Developed by
+                    <a href="https://wa.me/923224066958" target="_blank" class="text-gray-300 hover:text-white transition">MAC</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script defer src="./src/js/index.js"></script>
+    <script defer src="./src/js/gsap.js"></script>
+
+</body>
+</html>

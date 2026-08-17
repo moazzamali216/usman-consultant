@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UC - Our Clients</title>
+  <link rel="icon" href="./public/images/logo2.png">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="./public/output.css">
+  <link rel="stylesheet" href="./src/custom.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.0/swiper-bundle.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.0/swiper-bundle.min.js"></script>
+</head>
+
+<!-- Preloader -->
+<div id="preloader" class="fixed !z-[9999] inset-0 bg-white flex flex-col items-center justify-center">
+  <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/logo.png"
+    class="w-28 animate-up-pulse" alt="Logo">
+  <div class="w-8 h-8 border-4 border-gray-200 border-t-black rounded-full animate-spin mt-7"></div>
+</div>
+
+<body class="bg-gray-50">
+
+  <!-- Desktop Navbar -->
+  <nav class="hidden lg:block fixed top-5 left-0 w-full z-50">
+    <div class="max-w-7xl mx-auto px-5">
+      <div class="bg-[#f8f7f5]/90 shadow-md backdrop-blur-md border border-neutral-200 rounded-[26px]">
+        <div class="flex items-center justify-between px-8 py-1.5">
+          <!-- Logo -->
+          <a href="./index.html">
+            <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/logo.png" alt="Logo"
+              class="w-28 object-contain">
+          </a>
+
+          <!-- Nav Links -->
+          <ul class="flex items-center mons font-semibold gap-12 text-[13px] uppercase text-gray-500">
+            <li><a href="./index.html" class="hover:text-neutral-900 transition duration-300">Home</a></li>
+            <li><a href="./about.html" class="hover:text-neutral-900 transition duration-300">About</a></li>
+            <li><a href="./services.html" class="hover:text-neutral-900 transition duration-300">Services</a></li>
+
+<li class="relative">
+
+  <button id="dropdownProductsButton" data-dropdown-toggle="dropdownProducts"
+    data-dropdown-placement="bottom-start"
+    class="flex uppercase items-center gap-1 hover:text-neutral-900 transition duration-300">
+
+    Products
+
+    <svg class="w-3.5 h-3.5 mt-[1px]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7" />
+    </svg>
+
+  </button>
+
+  <!-- Dropdown Menu -->
+  <div id="dropdownProducts"
+    class="hidden absolute top-12 left-0 w-64 bg-white border border-neutral-200 tracking-[1px] rounded-2xl shadow-lg overflow-hidden">
+    <ul class="text-[11px] uppercase text-gray-500">
+
+      <li>
+        <a href="./adhesives.html"
+          class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition">
+          Adhesive
+        </a>
+      </li>
+
+      <li>
+        <a href="./admixtures.html"
+          class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition">
+          Admixtures
+        </a>
+      </li>
+
+      <li>
+        <a href="./concrete-repair.html"
+          class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition">
+          Concrete Repair
+        </a>
+      </li>
+
+      <li>
+        <a href="./flooring.html"
+          class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition">
+          Flooring
+        </a>
+      </li>
+
+      <li>
+        <a href="./grout-anchor.html"
+          class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition">
+          Grout and Anchor
+        </a>
+      </li>
+
+      <li>
+        <a href="./paints.html"
+          class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition">
+          Paint and Coatings
+        </a>
+      </li>
+
+      <li>
+        <a href="./pu.html"
+          class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition">
+          PU
+        </a>
+      </li>
+
+      <li>
+        <a href="./sealants.html"
+          class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition">
+          Sealants
+        </a>
+      </li>
+
+      <li>
+        <a href="./surface-treatment.html"
+          class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition">
+          Surface Treatment
+        </a>
+      </li>
+
+      <li>
+        <a href="./waterproofing.html"
+          class="block px-5 py-3 hover:bg-neutral-50 hover:text-neutral-900 transition">
+          Water Proofing
+        </a>
+      </li>
+
+    </ul>
+  </div>
+</li>
+
+            <li class="relative">
+              <a href="./client.html" class="text-neutral-900">
+                Our Clients
+              </a>
+              <span class="absolute left-0 -bottom-2 w-full h-[2px] bg-neutral-900 rounded-full"></span>
+            </li>
+
+            <li><a href="./public/pdfs/E-brouchure.pdf" download class="hover:text-neutral-900 transition duration-300">E-Brochure</a></li>
+          </ul>
+
+          <!-- Contact -->
+          <a href="./contact.html"
+            class="flex items-center gap-4 text-neutral-900 hover:opacity-70 transition duration-300">
+            <span class="w-10 h-px bg-neutral-900"></span>
+            <span class="text-[14px] uppercase tracking-wide font-semibold mons">Contact Us</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Navbar -->
+  <nav class="lg:hidden fixed top-5 left-0 w-full z-[999]">
+    <div class="px-4">
+      <div class="bg-[#f8f7f5]/90 backdrop-blur-md border border-neutral-200 rounded-2xl px-5 py-2 flex items-center justify-between">
+        <a href="./index.html">
+          <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/logo.png"
+            class="w-24 object-contain" alt="Logo">
+        </a>
+        <button id="openMenu" class="w-11 h-11 rounded-full border border-neutral-300 flex items-center justify-center text-neutral-700">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Overlay -->
+  <div id="overlay" class="fixed inset-0 bg-black/20 backdrop-blur-sm hidden z-[998] opacity-0 transition duration-300"></div>
+
+  <!-- Side Menu -->
+  <div id="sideMenu"
+    class="fixed top-0 right-0 h-full w-[85%] max-w-sm bg-[#f8f7f5] z-[999] translate-x-full transition-transform duration-500 ease-in-out border-l border-neutral-200 flex flex-col">
+    <div class="flex items-center justify-between px-6 py-6 border-b border-neutral-200">
+      <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/logo.png"
+        class="w-24 object-contain" alt="Logo">
+      <button id="closeMenu" class="w-10 h-10 rounded-full border border-neutral-300 flex items-center justify-center text-neutral-700">✕</button>
+    </div>
+    <div class="flex-1 overflow-y-auto px-6 py-8">
+      <ul class="space-y-7 text-[15px] tracking-wide font-medium text-neutral-700 man">
+        <li><a href="./index.html" class="flex items-center justify-between hover:text-neutral-900 transition">Home <span class="w-8 h-px bg-neutral-900"></span></a></li>
+        <li><a href="./about.html" class="hover:text-neutral-900 transition block">About</a></li>
+        <li><a href="./services.html" class="hover:text-neutral-900 transition block">Services</a></li>
+        <li>
+          <div class="border border-neutral-200 rounded-2xl overflow-hidden bg-white">
+            <button id="productToggle" class="w-full flex items-center justify-between px-5 py-4 text-left text-neutral-800">
+              <span>Products</span>
+              <svg id="productArrow" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 transition duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div id="productMenu" class="hidden border-t border-neutral-200 px-5 py-4">
+              <ul class="space-y-4 text-[14px] text-neutral-600">
+                <li><a href="./waterproofing.html" class="block hover:text-neutral-900 transition">Waterproofing</a></li>
+                <li><a href="./flooring.html" class="block hover:text-neutral-900 transition">Industrial Flooring</a></li>
+                <li><a href="./sealants.html" class="block hover:text-neutral-900 transition">Joint Sealants</a></li>
+                <li><a href="./structural-repair.html" class="block hover:text-neutral-900 transition">Structural Repair</a></li>
+                <li><a href="./paints.html" class="block hover:text-neutral-900 transition">Paints & Coatings</a></li>
+                <li><a href="./admixtures.html" class="block hover:text-neutral-900 transition">Concrete Admixtures</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li><a href="./client.html" class="hover:text-neutral-900 transition block">Our Clients</a></li>
+        <li><a href="./public/pdfs/E-brouchure.pdf" download class="hover:text-neutral-900 transition block">E-Brochure</a></li>
+      </ul>
+    </div>
+    <div class="p-6 border-t border-neutral-200">
+      <a href="./contact.html"
+        class="flex items-center justify-center gap-3 border border-neutral-300 rounded-full py-4 text-[14px] tracking-wide text-neutral-900 hover:bg-neutral-900 hover:text-white transition duration-300 man">
+        <span class="w-8 h-px bg-current"></span> Contact Us
+      </a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="relative h-[500px] flex items-center justify-center overflow-hidden">
+    <img loading='lazy' decoding="async" fetchpriority="low" src="./public/images/oc1.webp"
+      class="absolute inset-0 w-full h-full object-cover" alt="Our Clients">
+    <div class="absolute inset-0 bg-gradient-to-b from-black/90 via-black/60 to-black/30"></div>
+    <div class="relative z-10 text-center px-4">
+      <p class="text-[11px] uppercase tracking-[0.3em] text-white/50 man font-normal mb-3">
+        Trusted Partners
+      </p>
+      <h1 class="text-4xl md:text-5xl pop font-semibold text-white leading-tight">
+        Our <span class="">Clients</span>
+      </h1>
+      <div class="w-10 h-px bg-white/30 mx-auto mt-5"></div>
+      <p class="text-sm text-white/60 man font-normal mt-4 max-w-md mx-auto">
+        Building lasting relationships with Pakistan's leading organizations
+      </p>
+    </div>
+  </section>
+
+  <!-- Clients Grid Section -->
+  <section class="relative py-24 bg-white overflow-hidden">
+
+    <!-- Blue corner design - TOP RIGHT -->
+    <div class="lg:block hidden pointer-events-none absolute right-0 top-0 h-[400px] w-[300px] overflow-hidden">
+      <div class="absolute inset-0 bg-[#51B9E2]" style="clip-path: polygon(0 0, 25% 0, 100% 100%, 0 0);"></div>
+      <div class="absolute inset-0 bg-[#269FDB]" style="clip-path: polygon(25% 0, 50% 0, 100% 100%);"></div>
+      <div class="absolute inset-0 bg-[#176A9F]" style="clip-path: polygon(50% 0, 100% 0, 100% 100%);"></div>
+    </div>
+
+    <!-- Soft Background Accents -->
+    <div class="absolute -top-24 left-0 w-[26rem] h-[26rem] bg-[#2d2a26]/5 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 right-0 w-[28rem] h-[28rem] bg-[#2d2a26]/5 rounded-full blur-3xl"></div>
+
+    <div class="container 2xl:max-w-[1530px] mx-auto px-4 relative z-10">
+
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+        <p class="tracking-[0.3em] text-sm text-gray-400 man font-normal mb-4">
+          OUR PARTNERS
+        </p>
+        <h2 class="text-4xl md:text-5xl pop font-semibold text-[#2d2a26] leading-tight">
+          Trusted By <span class="tcolor">Industry Leaders</span>
+        </h2>
+        <div class="w-10 h-px bg-neutral-300 mx-auto mt-6"></div>
+        <p class="text-gray-500 man text-sm mt-6 max-w-2xl mx-auto leading-relaxed">
+          We take pride in serving some of Pakistan's most respected organizations across construction,
+          infrastructure, and industrial sectors.
+        </p>
+      </div>
+
+      <!-- Clients Grid - 4 Columns -->
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+        <!-- Client 1 - ho15 -->
+        <div class="group bg-[#f8f7f5] border border-neutral-200 rounded-3xl p-6 flex items-center justify-center h-40 hover:shadow-lg hover:border-[#1d3a72]/20 transition duration-500">
+          <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/ho15.webp"
+            class="max-h-24 w-auto object-contain group-hover:scale-110 transition duration-500" alt="Client Logo">
+        </div>
+
+        <!-- Client 2 - ho16 -->
+        <div class="group bg-[#f8f7f5] border border-neutral-200 rounded-3xl p-6 flex items-center justify-center h-40 hover:shadow-lg hover:border-[#1d3a72]/20 transition duration-500">
+          <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/ho16.webp"
+            class="max-h-24 w-auto object-contain group-hover:scale-110 transition duration-500" alt="Client Logo">
+        </div>
+
+        <!-- Client 3 - ho17 -->
+        <div class="group bg-[#f8f7f5] border border-neutral-200 rounded-3xl p-6 flex items-center justify-center h-40 hover:shadow-lg hover:border-[#1d3a72]/20 transition duration-500">
+          <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/ho17.webp"
+            class="max-h-24 w-auto object-contain group-hover:scale-110 transition duration-500" alt="Client Logo">
+        </div>
+
+        <!-- Client 4 - ho18 -->
+        <div class="group bg-[#f8f7f5] border border-neutral-200 rounded-3xl p-6 flex items-center justify-center h-40 hover:shadow-lg hover:border-[#1d3a72]/20 transition duration-500">
+          <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/ho18.webp"
+            class="max-h-24 w-auto object-contain group-hover:scale-110 transition duration-500" alt="Client Logo">
+        </div>
+
+        <!-- Client 5 - ho19 -->
+        <div class="group bg-[#f8f7f5] border border-neutral-200 rounded-3xl p-6 flex items-center justify-center h-40 hover:shadow-lg hover:border-[#1d3a72]/20 transition duration-500">
+          <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/ho19.webp"
+            class="max-h-24 w-auto object-contain group-hover:scale-110 transition duration-500" alt="Client Logo">
+        </div>
+
+        <!-- Client 6 - ho20 -->
+        <div class="group bg-[#f8f7f5] border border-neutral-200 rounded-3xl p-6 flex items-center justify-center h-40 hover:shadow-lg hover:border-[#1d3a72]/20 transition duration-500">
+          <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/ho20.webp"
+            class="max-h-24 w-auto object-contain group-hover:scale-110 transition duration-500" alt="Client Logo">
+        </div>
+
+        <!-- Client 7 - ho21 -->
+        <div class="group bg-[#f8f7f5] border border-neutral-200 rounded-3xl p-6 flex items-center justify-center h-40 hover:shadow-lg hover:border-[#1d3a72]/20 transition duration-500">
+          <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/ho21.webp"
+            class="max-h-24 w-auto object-contain group-hover:scale-110 transition duration-500" alt="Client Logo">
+        </div>
+
+        <!-- Client 8 - ho22 -->
+        <div class="group bg-[#f8f7f5] border border-neutral-200 rounded-3xl p-6 flex items-center justify-center h-40 hover:shadow-lg hover:border-[#1d3a72]/20 transition duration-500">
+          <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/ho22.webp"
+            class="max-h-24 w-auto object-contain group-hover:scale-110 transition duration-500" alt="Client Logo">
+        </div>
+
+        <!-- Client 9 - ho23 -->
+        <div class="group bg-[#f8f7f5] border border-neutral-200 rounded-3xl p-6 flex items-center justify-center h-40 hover:shadow-lg hover:border-[#1d3a72]/20 transition duration-500">
+          <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/ho23.webp"
+            class="max-h-24 w-auto object-contain group-hover:scale-110 transition duration-500" alt="Client Logo">
+        </div>
+
+        <!-- Client 10 - ho24 -->
+        <div class="group bg-[#f8f7f5] border border-neutral-200 rounded-3xl p-6 flex items-center justify-center h-40 hover:shadow-lg hover:border-[#1d3a72]/20 transition duration-500">
+          <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/ho24.webp"
+            class="max-h-24 w-auto object-contain group-hover:scale-110 transition duration-500" alt="Client Logo">
+        </div>
+
+        <!-- Client 11 - ho25 -->
+        <div class="group bg-[#f8f7f5] border border-neutral-200 rounded-3xl p-6 flex items-center justify-center h-40 hover:shadow-lg hover:border-[#1d3a72]/20 transition duration-500">
+          <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/ho25.webp"
+            class="max-h-24 w-auto object-contain group-hover:scale-110 transition duration-500" alt="Client Logo">
+        </div>
+
+        <!-- Client 12 - ho26 -->
+        <div class="group bg-[#f8f7f5] border border-neutral-200 rounded-3xl p-6 flex items-center justify-center h-40 hover:shadow-lg hover:border-[#1d3a72]/20 transition duration-500">
+          <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/ho26.webp"
+            class="max-h-24 w-auto object-contain group-hover:scale-110 transition duration-500" alt="Client Logo">
+        </div>
+
+        <!-- Client 13 - ho27 -->
+        <div class="group bg-[#f8f7f5] border border-neutral-200 rounded-3xl p-6 flex items-center justify-center h-40 hover:shadow-lg hover:border-[#1d3a72]/20 transition duration-500">
+          <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/ho27.webp"
+            class="max-h-24 w-auto object-contain group-hover:scale-110 transition duration-500" alt="Client Logo">
+        </div>
+
+        <!-- Client 14 - ho28 -->
+        <div class="group bg-[#f8f7f5] border border-neutral-200 rounded-3xl p-6 flex items-center justify-center h-40 hover:shadow-lg hover:border-[#1d3a72]/20 transition duration-500">
+          <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/ho28.webp"
+            class="max-h-24 w-auto object-contain group-hover:scale-110 transition duration-500" alt="Client Logo">
+        </div>
+                <!-- Client 14 - ho28 -->
+        <div class="group bg-[#f8f7f5] border border-neutral-200 rounded-3xl p-6 flex items-center justify-center h-40 hover:shadow-lg hover:border-[#1d3a72]/20 transition duration-500">
+          <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/ho29.webp"
+            class="max-h-24 w-auto object-contain group-hover:scale-110 transition duration-500" alt="Client Logo">
+        </div>
+                <!-- Client 14 - ho28 -->
+        <div class="group bg-[#f8f7f5] border border-neutral-200 rounded-3xl p-6 flex items-center justify-center h-40 hover:shadow-lg hover:border-[#1d3a72]/20 transition duration-500">
+          <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/ho30.webp"
+            class="max-h-24 w-auto object-contain group-hover:scale-110 transition duration-500" alt="Client Logo">
+        </div>
+
+      </div>
+
+      <!-- Stats Strip -->
+      <div class="mt-16 border border-neutral-200 rounded-3xl p-8 md:p-10 bg-[#f8f7f5]">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          <div>
+            <p class="text-3xl md:text-4xl pop font-semibold text-[#1d3a72]">14+</p>
+            <p class="text-xs man tracking-widest text-gray-400 uppercase mt-1">Trusted Clients</p>
+          </div>
+          <div>
+            <p class="text-3xl md:text-4xl pop font-semibold text-[#1d3a72]">100+</p>
+            <p class="text-xs man tracking-widest text-gray-400 uppercase mt-1">Projects Completed</p>
+          </div>
+          <div>
+            <p class="text-3xl md:text-4xl pop font-semibold text-[#1d3a72]">13+</p>
+            <p class="text-xs man tracking-widest text-gray-400 uppercase mt-1">Years of Excellence</p>
+          </div>
+          <div>
+            <p class="text-3xl md:text-4xl pop font-semibold text-[#1d3a72]">50+</p>
+            <p class="text-xs man tracking-widest text-gray-400 uppercase mt-1">Contractors Partnered</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial / Trust Message -->
+      <div class="mt-12 text-center">
+        <div class="inline-flex items-center gap-4 bg-[#f8f7f5] border border-neutral-200 rounded-full px-8 py-4">
+          <i class="fa-solid fa-quote-left text-[#1d3a72] text-lg"></i>
+          <p class="text-sm text-gray-600 man max-w-2xl">
+            "We are proud to partner with organizations that share our commitment to quality, reliability, and excellence in construction."
+          </p>
+          <i class="fa-solid fa-quote-right text-[#1d3a72] text-lg"></i>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="text-center mt-12">
+        <a href="./contact.html" class="inline-flex items-center gap-3 text-sm man text-[#2d2a26] hover:opacity-60 transition group">
+          Become a Partner
+          <span class="w-8 h-px bg-[#2d2a26] group-hover:w-12 group-hover:bg-[#1d3a72] transition-all duration-500"></span>
+          <i class="fa-solid fa-arrow-right text-xs group-hover:translate-x-1 transition duration-300"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="relative font-[Playfair_Display] overflow-hidden border-t border-[#1d3a72]/30 text-white bg-[#0a1628]">
+    <div class="absolute inset-0 bg-gradient-to-b from-[#0a1628] via-[#0f1f3a] to-[#0a1628]"></div>
+    <div class="absolute inset-0 opacity-[0.04] mix-blend-overlay bg-[url('./public/images/pattern.png')] bg-repeat"></div>
+
+    <div class="relative border-b border-[#1d3a72]/30 py-3 px-6 backdrop-blur-xl bg-[#1d3a72]/10">
+      <div class="container 2xl:max-w-[1530px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
+        <p class="text-[12px] man tracking-[0.25em] uppercase text-gray-400">Faisalabad, Pakistan</p>
+        <div class="flex items-center gap-4">
+          <span class="text-[12px] man tracking-[0.25em] uppercase text-gray-400">Quality Assured</span>
+          <span class="w-px h-3 bg-[#1d3a72]/30"></span>
+          <span class="text-[12px] man tracking-[0.25em] uppercase text-gray-400">Est. 2012</span>
+          <span class="w-px h-3 bg-[#1d3a72]/30"></span>
+          <span class="text-[12px] man tracking-[0.25em] uppercase text-gray-400">100+ Projects</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative container 2xl:max-w-[1530px] mx-auto px-4 py-10">
+      <div class="grid lg:grid-cols-12 gap-10">
+        <!-- Brand -->
+        <div class="lg:col-span-4 flex flex-col gap-4">
+          <a href="./index.html">
+            <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/logo.png"
+              alt="Usman Consultants Logo" class="w-24 object-contain">
+          </a>
+          <p class="text-sm text-gray-400 man leading-relaxed max-w-xs">
+            Premium construction chemicals, structural repair, waterproofing, and industrial flooring solutions since 2012.
+          </p>
+          <div class="flex items-center gap-3">
+            <a href="#" class="w-8 h-8 rounded-full bg-[#1d3a72]/20 border border-[#1d3a72]/30 flex items-center justify-center text-gray-400 hover:text-white hover:bg-[#1d3a72] hover:border-[#1d3a72] transition">
+              <i class="fa-brands fa-facebook-f text-[11px]"></i>
+            </a>
+            <a href="#" class="w-8 h-8 rounded-full bg-[#1d3a72]/20 border border-[#1d3a72]/30 flex items-center justify-center text-gray-400 hover:text-white hover:bg-[#1d3a72] hover:border-[#1d3a72] transition">
+              <i class="fa-brands fa-instagram text-[11px]"></i>
+            </a>
+            <a href="#" class="w-8 h-8 rounded-full bg-[#1d3a72]/20 border border-[#1d3a72]/30 flex items-center justify-center text-gray-400 hover:text-white hover:bg-[#1d3a72] hover:border-[#1d3a72] transition">
+              <i class="fa-brands fa-linkedin-in text-[11px]"></i>
+            </a>
+            <a href="#" class="w-8 h-8 rounded-full bg-[#1d3a72]/20 border border-[#1d3a72]/30 flex items-center justify-center text-gray-400 hover:text-white hover:bg-[#1d3a72] hover:border-[#1d3a72] transition">
+              <i class="fa-brands fa-youtube text-[11px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Navigate -->
+        <div class="lg:col-span-2 lg:col-start-6">
+          <p class="text-[12px] man tracking-[0.25em] uppercase text-[white] mb-4 font-semibold">Navigate</p>
+          <ul class="flex pop flex-col gap-2">
+            <li><a href="./index.html" class="text-sm text-gray-400 hover:text-white transition">Home</a></li>
+            <li><a href="./about.html" class="text-sm text-gray-400 hover:text-white transition">About</a></li>
+            <li><a href="./services.html" class="text-sm text-gray-400 hover:text-white transition">Services</a></li>
+            <li><a href="./client.html" class="text-sm text-gray-400 hover:text-white transition">Our Clients</a></li>
+            <li><a href="./contact.html" class="text-sm text-gray-400 hover:text-white transition">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Solutions -->
+        <div class="lg:col-span-2">
+          <p class="text-[12px] man tracking-[0.25em] uppercase text-[white] mb-4 font-semibold">Solutions</p>
+          <ul class="flex flex-col pop gap-2">
+            <li><a href="./waterproofing.html" class="text-sm text-gray-400 hover:text-white transition">Waterproofing</a></li>
+            <li><a href="./flooring.html" class="text-sm text-gray-400 hover:text-white transition">Industrial Flooring</a></li>
+            <li><a href="./sealants.html" class="text-sm text-gray-400 hover:text-white transition">Joint Sealants</a></li>
+            <li><a href="./structural-repair.html" class="text-sm text-gray-400 hover:text-white transition">Structural Repair</a></li>
+            <li><a href="./paints.html" class="text-sm text-gray-400 hover:text-white transition">Paints & Coatings</a></li>
+            <li><a href="./admixtures.html" class="text-sm text-gray-400 hover:text-white transition">Concrete Admixtures</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="lg:col-span-2">
+          <p class="text-[12px] man tracking-[0.25em] uppercase text-[white] mb-4 font-semibold">Get In Touch</p>
+          <ul class="flex flex-col pop gap-3">
+            <li>
+              <a href="tel:+923016097666" class="flex flex-col">
+                <span class="text-[10px] text-gray-500">Phone</span>
+                <span class="text-xs text-gray-300 hover:text-white transition">+92 301 6097666</span>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:info@usmanconsultants.com" class="flex flex-col">
+                <span class="text-[10px] text-gray-500">Email</span>
+                <span class="text-xs text-gray-300 hover:text-white transition">info@usmanconsultants.com</span>
+              </a>
+            </li>
+            <li class="flex flex-col">
+              <span class="text-[10px] text-gray-500">Location</span>
+              <span class="text-xs text-gray-300">Faisalabad, Pakistan</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="mt-10 border-t border-[#1d3a72]/30 pt-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <p class="text-[11px] text-gray-500">© 2026 Usman Consultants. All rights reserved.</p>
+        <div class="flex items-center gap-4">
+          <a href="./terms.html" class="text-[11px] text-gray-500 hover:text-white transition">Terms</a>
+          <span class="w-px h-3 bg-[#1d3a72]/30"></span>
+          <a href="./privacy.html" class="text-[11px] text-gray-500 hover:text-white transition">Privacy</a>
+        </div>
+        <p class="text-[11px] text-gray-500">
+          Developed by
+          <a href="https://wa.me/923224066958" target="_blank" class="text-gray-300 hover:text-white transition">MAC</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  <script defer src="./src/js/index.js"></script>
+  <script defer src="./src/js/gsap.js"></script>
+
+</body>
+</html>

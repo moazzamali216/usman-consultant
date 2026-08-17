@@ -1,0 +1,1596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UC - Home</title>
+  <!-- For PNG logo -->
+  <link rel="icon" href="./public/images/logo2.png">
+
+  <!-- External CSsS -->
+  <link rel="stylesheet" href="./public/output.css">
+  <link rel="stylesheet" href="./src/custom.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.0/swiper-bundle.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.0/swiper-bundle.min.js"></script>
+</head>
+
+
+<!-- Preloader -->
+<div id="preloader" class="fixed !z-[9999] inset-0 bg-white flex flex-col items-center justify-center">
+  <img loading="lazy" decoding="async" fetchpriority="low" loading="lazy" src="./public/images/logo.png"
+    class="w-28 animate-up-pulse" alt="Logo">
+  <p class="mt-7 text-sm tracking-widest text-gray-500 animate-up-pulse">
+  <div class="w-8 h-8 border-4 border-gray-200 border-t-black rounded-full animate-spin"></div>
+  </p>
+</div>
+
+<body class=" bg-gray-50">
+  <!-- Desktop Navbar -->
+  <!-- Minimal Luxury Navbar -->
+  <nav class="hidden lg:block  fixed top-5 left-0 w-full z-50">
+
+    <!-- Side Gaps -->
+    <div class="max-w-7xl mx-auto px-5">
+
+      <!-- Navbar Container -->
+      <div class="bg-[#f8f7f5]/90  shadow-md backdrop-blur-md border border-neutral-200 rounded-[26px] ">
+
+        <!-- Top Area -->
+        <div class="flex items-center justify-between px-8 py-1.5  border-neutral-200">
+
+          <!-- Logo -->
+          <a href="./index.html" class="flex flex-col justify center items-center">
+
+            <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/logo.png" alt="Logo"
+              class="w-28 object-contain">
+            <!-- <span class="mons font-semibold tcolor">Usman Consultants</span> -->
+          </a>
+
+          <!-- Nav Links -->
+          <ul class="flex items-center mons font-semibold  gap-12 text-[13px]  uppercase text-gray-500">
+
+            <!-- Active -->
+            <li class="relative">
+
+              <a href="./index.html" class="text-neutral-900">
+                Home
+              </a>
+
+              <span class="absolute left-0 -bottom-2 w-full h-[2px] bg-neutral-900 rounded-full"></span>
+
+            </li>
+
+            <li>
+              <a href="./about.html" class="hover:text-neutral-900 transition duration-300">
+                About
+              </a>
+            </li>
+
+            <li>
+              <a href="./services.html" class="hover:text-neutral-900 transition duration-300">
+                Services
+              </a>
+            </li>
+
+            <!-- Dropdown -->
+<li class="relative">
+
+  <button id="dropdownProductsButton" data-dropdown-toggle="dropdownProducts"
+    data-dropdown-placement="bottom-start"
+    class="flex uppercase items-center gap-1 hover:text-neutral-900 transition duration-300">
+
+    Products
+
+    <svg class="w-3.5 h-3.5 mt-[1px]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7" />
+    </svg>
+
+  </button>
+
+  <!-- Dropdown Menu -->
+  <div id="dropdownProducts"
+    class="hidden absolute top-12 left-0 w-64 bg-white border border-neutral-200 tracking-[1px] rounded-2xl shadow-lg overflow-hidden">
+    <ul class="text-[11px] uppercase text-gray-500">
+
+      <li>
+        <a href="./adhesives.html"
+          class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition">
+          Adhesive
+        </a>
+      </li>
+
+      <li>
+        <a href="./admixtures.html"
+          class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition">
+          Admixtures
+        </a>
+      </li>
+
+      <li>
+        <a href="./concrete-repair.html"
+          class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition">
+          Concrete Repair
+        </a>
+      </li>
+
+      <li>
+        <a href="./flooring.html"
+          class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition">
+          Flooring
+        </a>
+      </li>
+
+      <li>
+        <a href="./grout-anchor.html"
+          class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition">
+          Grout and Anchor
+        </a>
+      </li>
+
+      <li>
+        <a href="./paints.html"
+          class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition">
+          Paint and Coatings
+        </a>
+      </li>
+
+      <li>
+        <a href="./pu.html"
+          class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition">
+          PU
+        </a>
+      </li>
+
+      <li>
+        <a href="./sealants.html"
+          class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition">
+          Sealants
+        </a>
+      </li>
+
+      <li>
+        <a href="./surface-treatment.html"
+          class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition">
+          Surface Treatment
+        </a>
+      </li>
+
+      <li>
+        <a href="./waterproofing.html"
+          class="block px-5 py-3 hover:bg-neutral-50 hover:text-neutral-900 transition">
+          Water Proofing
+        </a>
+      </li>
+
+    </ul>
+  </div>
+</li>
+
+            <li>
+              <a href="./client.html" class="hover:text-neutral-900 transition duration-300">
+                Our Clients
+              </a>
+            </li>
+
+            <li>
+              <a href="./public/pdfs/E-brouchure.pdf" download class="hover:text-neutral-900 transition duration-300">
+                E-Brochure
+              </a>
+            </li>
+
+          </ul>
+
+          <!-- Contact -->
+          <a href="./contact.html"
+            class="flex items-center gap-4 text-neutral-900 hover:opacity-70 transition duration-300">
+
+            <span class="w-10 h-px bg-neutral-900"></span>
+
+            <span class="text-[14px] uppercase tracking-wide font-semibold mons">
+              Contact Us
+            </span>
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+  <!-- ========================= -->
+  <!-- Mobile Luxury Navbar -->
+  <!-- ========================= -->
+
+  <!-- Top Navbar -->
+  <nav class="lg:hidden fixed top-5 left-0 w-full z-[999]">
+
+    <div class="px-4">
+
+      <div
+        class="bg-[#f8f7f5]/90 backdrop-blur-md border border-neutral-200 rounded-2xl px-5 py-2 flex items-center justify-between">
+
+        <!-- Logo -->
+        <a href="./index.html">
+
+          <img loading="lazy" decoding="async" fetchpriority="low" loading="lazy" src="./public/images/logo.png"
+            class="w-24 object-contain" alt="Logo">
+
+        </a>
+
+
+        <!-- Menu Button -->
+        <button id="openMenu"
+          class="w-11 h-11 rounded-full border border-neutral-300 flex items-center justify-center text-neutral-700">
+
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M4 6h16M4 12h16M4 18h16" />
+
+          </svg>
+
+        </button>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+  <!-- Overlay -->
+  <div id="overlay" class="fixed inset-0 bg-black/20 backdrop-blur-sm hidden z-[998] opacity-0 transition duration-300">
+  </div>
+
+  <!-- Side Menu -->
+  <div id="sideMenu"
+    class="fixed top-0 right-0 h-full w-[85%] max-w-sm bg-[#f8f7f5] z-[999] translate-x-full transition-transform duration-500 ease-in-out border-l border-neutral-200 flex flex-col">
+
+    <!-- Header -->
+    <div class="flex items-center justify-between px-6 py-6 border-b border-neutral-200">
+
+      <!-- Logo -->
+      <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/logo.png"
+        class="w-24 object-contain" alt="Logo">
+
+      <!-- Close -->
+      <button id="closeMenu"
+        class="w-10 h-10 rounded-full border border-neutral-300 flex items-center justify-center text-neutral-700">
+
+        ✕
+
+      </button>
+
+    </div>
+
+    <!-- Menu Links -->
+    <div class="flex-1 overflow-y-auto px-6 py-8">
+
+<ul class="space-y-7 text-[15px] tracking-wide font-medium text-neutral-700 man">
+
+    <li>
+        <a href="./index.html" class="flex items-center justify-between hover:text-neutral-900 transition">
+            Home
+            <span class="w-8 h-px bg-neutral-900"></span>
+        </a>
+    </li>
+
+    <li>
+        <a href="./about.html" class="hover:text-neutral-900 transition block">
+            About
+        </a>
+    </li>
+
+    <li>
+        <a href="./services.html" class="hover:text-neutral-900 transition block">
+            Services
+        </a>
+    </li>
+
+    <!-- Products -->
+    <li>
+
+        <div class="border border-neutral-200 rounded-2xl overflow-hidden bg-white">
+
+            <!-- Products Heading -->
+            <button id="productToggle"
+                class="w-full flex items-center justify-between px-5 py-4 text-left text-neutral-800">
+
+                <span>Products</span>
+
+                <svg id="productArrow" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 transition duration-300"
+                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M19 9l-7 7-7-7" />
+
+                </svg>
+
+            </button>
+
+            <!-- Dropdown -->
+            <div id="productMenu" class="hidden border-t border-neutral-200 px-5 py-4">
+
+                <ul class="space-y-4 text-[14px] text-neutral-600">
+
+                    <li>
+                        <a href="./waterproofing.html" class="block hover:text-neutral-900 transition">
+                            Waterproofing
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./flooring.html" class="block hover:text-neutral-900 transition">
+                            Industrial Flooring
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./sealants.html" class="block hover:text-neutral-900 transition">
+                            Joint Sealants
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./structural-repair.html" class="block hover:text-neutral-900 transition">
+                            Structural Repair
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./paints.html" class="block hover:text-neutral-900 transition">
+                            Paints & Coatings
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./admixtures.html" class="block hover:text-neutral-900 transition">
+                            Concrete Admixtures
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </li>
+
+    <li>
+        <a href="./sustainability.html" class="hover:text-neutral-900 transition block">
+            Sustainability
+        </a>
+    </li>
+
+    <li>
+        <a href="./public/pdfs/Laj.pdf" download class="hover:text-neutral-900 transition block">
+            E-Brochure
+        </a>
+    </li>
+
+</ul>
+
+    </div>
+
+    <!-- Bottom Button -->
+    <div class="p-6 border-t border-neutral-200">
+
+      <a href="./contact.html"
+        class="flex items-center justify-center gap-3 border border-neutral-300 rounded-full py-4 text-[14px] tracking-wide text-neutral-900 hover:bg-neutral-900 hover:text-white transition duration-300 man">
+
+        <span class="w-8 h-px bg-current"></span>
+
+        Contact Us
+
+      </a>
+
+    </div>
+
+  </div>
+
+  <!-- Mobile Menu End -->
+
+  <section class="relative sm:flex w-full h-screen overflow-hidden hidden items-center justify-center">
+
+    <!-- Background Slides -->
+    <div class="absolute inset-0 z-0">
+
+      <div class="slide absolute inset-0 opacity-0 transition-opacity duration-[1500ms] ease-in-out">
+        <img loading="lazy" decoding="async" src="./public/images/ho1.webp" class="w-full h-full object-cover"
+          alt="Mountain" />
+        <div class="absolute inset-0 bg-black/60"></div>
+      </div>
+
+      <div class="slide absolute inset-0 opacity-0 transition-opacity duration-[1500ms] ease-in-out">
+        <img loading="lazy" decoding="async" src="./public/images/ho2.webp" class="w-full h-full object-cover"
+          alt="Forest" />
+        <div class="absolute inset-0 bg-black/60"></div>
+      </div>
+
+      <div class="slide absolute inset-0 opacity-0 transition-opacity duration-[1500ms] ease-in-out">
+        <img loading="lazy" decoding="async" src="./public/images/ho3.webp" class="w-full h-full object-cover"
+          alt="Valley" />
+        <div class="absolute inset-0 bg-black/60"></div>
+      </div>
+
+      <div class="slide absolute inset-0 opacity-0 transition-opacity duration-[1500ms] ease-in-out">
+        <img loading="lazy" decoding="async" src="./public/images/ho4.webp" class="w-full h-full object-cover"
+          alt="Ocean" />
+
+        <div class="absolute inset-0 bg-black/60"></div>
+
+      </div>
+
+    </div>
+
+    <!-- Hero Content -->
+    <div class="relative z-10 mt-24 text-center text-white px-6 max-w-3xl mx-auto">
+      <p class="uppercase tracking-[0.3em] text-sm text-white/50 mb-4 font-light">Construction Chemicals & Consultancy
+      </p>
+
+      <h1 id="hero-heading"
+        class="text-4xl md:text-5xl pop font-semibold  leading-wide tracking-wide mb-5 transition-all duration-700 ease-out opacity-100 translate-y-0">
+        Reliable Apparel <br> Manufacturing Hub
+      </h1>
+
+      <p id="hero-desc"
+        class="text-white/70 text-base mons font-normal mb-10 transition-all duration-700 ease-out opacity-100 translate-y-0">
+        Discover untouched peaks and breathtaking panoramas.
+      </p>
+
+      <div class="flex gap-4 justify-center flex-wrap">
+        <a href="./contact.html"
+          class="px-6 py-2.5 mons font-semibold bg-white text-black text-sm  rounded-full hover:bg-white/90 transition">
+          Contact Now
+        </a>
+        <a href="./about.html"
+          class="px-6 py-2.5 mons font-semibold border border-white/50 text-white text-sm  rounded-full hover:bg-white/10 transition">
+          Learn More
+        </a>
+      </div>
+
+      <!-- Slide Dots -->
+      <div class="flex gap-2 justify-center mt-10" id="dots"></div>
+
+    </div>
+
+  </section>
+
+  <script>
+    const slides = document.querySelectorAll(".slide");
+    const heading = document.getElementById("hero-heading");
+    const desc = document.getElementById("hero-desc");
+    const dotsContainer = document.getElementById("dots");
+
+    const heroContent = [
+      {
+        heading: "Premium Construction Chemicals & Surface Solutions",
+        subtext: "High-performance materials engineered to enhance structural integrity and extend building lifespan."
+      },
+      {
+        heading: "Complete Structural Repair & Restoration Services",
+        subtext: "Expert repair, anchoring, and reinforcement solutions for industrial, commercial, and infrastructure projects."
+      },
+      {
+        heading: "Advanced Waterproofing & Protective Coatings",
+        subtext: "Comprehensive waterproofing systems for roofs, tanks, and structures with low-VOC, durable formulations."
+      },
+      {
+        heading: "Industrial Flooring & Sealant Specialists",
+        subtext: "Epoxy, PU, self-leveling, and heavy-duty flooring solutions with premium sealants for all joint types."
+      },
+      {
+        heading: "Trusted Partner Since 2012",
+        subtext: "Serving Pakistan's construction industry with quality assurance, technical excellence, and reliable delivery."
+      }
+    ];
+    let current = 0;
+
+    // dots
+    const dots = heroContent.map((_, i) => {
+      const dot = document.createElement("button");
+
+      dot.className =
+        i === 0
+          ? "w-8 h-2 rounded-full bg-white"
+          : "w-2 h-2 rounded-full bg-white/40";
+
+      dot.onclick = () => goTo(i);
+
+      dotsContainer.appendChild(dot);
+      return dot;
+    });
+
+    function updateUI(index) {
+      heading.innerHTML = heroContent[index].heading;
+      desc.textContent = heroContent[index].subtext;
+
+      dots.forEach((d, i) => {
+        d.className =
+          i === index
+            ? "w-8 h-2 rounded-full bg-white"
+            : "w-2 h-2 rounded-full bg-white/40";
+      });
+    }
+
+    function goTo(index) {
+      if (index === current) return;
+
+      const prev = current;
+
+      slides[prev].classList.replace("opacity-100", "opacity-0");
+      slides[index].classList.replace("opacity-0", "opacity-100");
+
+      heading.style.opacity = "0";
+      heading.style.transform = "translateY(10px)";
+      desc.style.opacity = "0";
+      desc.style.transform = "translateY(10px)";
+
+      setTimeout(() => {
+        updateUI(index);
+
+        heading.style.opacity = "1";
+        heading.style.transform = "translateY(0)";
+        desc.style.opacity = "1";
+        desc.style.transform = "translateY(0)";
+      }, 300);
+
+      current = index;
+    }
+
+    // init
+    slides[0].classList.add("opacity-100");
+    updateUI(0);
+
+    // autoplay (lightweight)
+    setInterval(() => {
+      goTo((current + 1) % slides.length);
+    }, 3000);
+
+    // transitions
+    heading.style.transition = "opacity 0.4s ease, transform 0.4s ease";
+    desc.style.transition = "opacity 0.4s ease, transform 0.4s ease";
+  </script>
+
+<section class="relative w-full sm:hidden h-screen min-h-[800px] overflow-hidden flex flex-col items-center justify-end pb-14 px-6">
+
+    <!-- Background Image -->
+    <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/ho3.webp"
+        class="absolute inset-0 w-full h-full object-cover object-center" alt="Hero background" />
+
+    <!-- Dark Gradient Overlay — heavier at bottom for text legibility -->
+    <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/50 to-black/30"></div>
+
+    <!-- Top Badge -->
+    <div class="absolute top-10 left-0 right-0 flex justify-center z-10">
+        <span class="text-[10px] uppercase tracking-[0.25em] text-white/50 border border-white/20 rounded-full px-4 py-1.5">
+            Est. 2012
+        </span>
+    </div>
+
+    <!-- Content — anchored to bottom -->
+    <div class="relative z-10 w-full max-w-sm text-white">
+
+        <!-- Tag line -->
+        <p class="text-[11px] uppercase tracking-widest font-semibold text-white/50 mb-3">
+            Construction Chemicals & Consultancy
+        </p>
+
+        <!-- Heading -->
+        <h1 class="text-5xl pop font-bold leading-tight mb-3">
+            Strengthening <br />
+            <span class=" font-normal">Pakistan's Infrastructure</span>
+        </h1>
+
+        <!-- Divider -->
+        <div class="w-10 h-px bg-white/30 mb-4"></div>
+
+        <!-- Description -->
+        <p class="text-sm text-white/60 leading-relaxed mb-8">
+            Premium construction chemicals, waterproofing, and structural repair solutions engineered for durability and long-lasting performance.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-col gap-3">
+            <button class="w-full mons py-3.5 bg-white text-black text-sm font-semibold rounded-2xl active:scale-95 transition-transform">
+                Start Inquiry
+            </button>
+            <button class="w-full mons py-3.5 bg-white/10 border border-white/20 text-white text-sm font-medium rounded-2xl backdrop-blur-sm active:scale-95 transition-transform">
+                Our Services
+            </button>
+        </div>
+
+        <!-- Bottom Meta -->
+        <div class="flex items-center pop justify-between mt-8 pt-6 border-t border-white/10">
+            <div class="text-center">
+                <p class="text-base font-semibold">13+</p>
+                <p class="text-[10px] text-white/40 uppercase tracking-wider mt-0.5">Years</p>
+            </div>
+            <div class="w-px h-6 bg-white/20"></div>
+            <div class="text-center">
+                <p class="text-base font-semibold">100+</p>
+                <p class="text-[10px] text-white/40 uppercase tracking-wider mt-0.5">Projects</p>
+            </div>
+            <div class="w-px h-6 bg-white/20"></div>
+            <div class="text-center">
+                <p class="text-base font-semibold">4.9★</p>
+                <p class="text-[10px] text-white/40 uppercase tracking-wider mt-0.5">Rated</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+  <!-- About Our Story Section -->
+  <section class="relative pt-12 md:pt-16 bg-white overflow-hidden">
+
+    <div class="lg:block hidden">
+      <!-- Blue corner design -->
+      <div class="pointer-events-none absolute right-0 top-0 h-[400px] w-[300px] overflow-hidden">
+
+        <!-- Light blue -->
+        <div class="absolute inset-0 bg-[#51B9E2]" style="clip-path: polygon(0 0, 25% 0, 100% 100%, 0 0);"></div>
+
+        <!-- Medium blue -->
+        <div class="absolute inset-0 bg-[#269FDB]" style="clip-path: polygon(25% 0, 50% 0, 100% 100%);"></div>
+
+        <!-- Dark blue -->
+        <div class="absolute inset-0 bg-[#176A9F]" style="clip-path: polygon(50% 0, 100% 0, 100% 100%);"></div>
+      </div>
+
+
+    </div>
+    <div class="container 2xl:max-w-[1530px] mx-auto px-4 relative z-10">
+
+      <!-- Heading -->
+      <div class="text-center mb-10 md:mb-12">
+        <p class=" text-xs md:text-sm font-semibold text-gray-400 mons mb-3 md:mb-4">
+          WHO WE ARE
+        </p>
+
+        <h2 class="text-4xl sm:text-4xl md:text-5xl  pop font-semibold text-[#2d2a26] ">
+          Our <span class="tcolor">Story</span>
+        </h2>
+
+        <div class="w-10 h-px bg-neutral-300 mx-auto mt-5 md:mt-6"></div>
+      </div>
+
+      <!-- Top Section -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
+
+        <div class="space-y-5 md:space-y-6">
+          <h3 class="text-lg sm:text-xl md:text-3xl pop font-semibold text-[#2d2a26] leading-snug">
+            Building Pakistan's Future: Reliable Infrastructure Solutions.
+          </h3>
+
+          <p class="text-gray-500 man text-sm md:text-[15px] leading-relaxed">
+            Usman Consultants was established in Faisalabad in 2012 with a clear mission: to deliver premium
+            construction chemicals, structural repair solutions, and surface treatments that extend the life of
+            buildings and infrastructure. What began as a specialized consultancy has grown into a trusted supplier and
+            technical partner for contractors, industrial owners, and government projects across Pakistan. Today, we
+            offer a comprehensive catalog of high-performance materials — from admixtures and waterproofing systems to
+            industrial flooring, sealants, and protective coatings — all engineered to meet the rigorous demands of
+            modern construction.
+          </p>
+        </div>
+
+        <div class="w-full flex justify-center lg:justify-end">
+          <img src="./public/images/ho6.webp" alt="construction chemicals" loading="lazy" decoding="async"
+            fetchpriority="low" class="w-full max-w-md lg:max-w-full h-auto object-cover object-bottom rounded-sm">
+        </div>
+
+      </div>
+
+      <!-- Bottom Section -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 md:gap-6 mt-12 md:mt-16">
+
+        <!-- Image -->
+        <div class="flex justify-center lg:justify-start">
+          <img src="./public/images/ho7.webp" alt="structural repair" loading="lazy" decoding="async"
+            fetchpriority="low" class="w-full max-w-md lg:max-w-full h-auto object-cover rounded-sm">
+        </div>
+
+        <!-- Text -->
+        <div class="flex flex-col gap-6 justify-between">
+          <p class="text-gray-500 man text-sm md:text-[15px] leading-relaxed">
+            Our expertise spans structural repair and anchoring, waterproofing for roofs and underground tanks,
+            heavy-duty industrial flooring, joint sealants, and road marking paints. With a strong network of certified
+            suppliers and skilled application teams, we ensure consistent quality, technical excellence, and reliable
+            delivery — managing projects of all scales while maintaining the highest standards of safety and durability.
+          </p>
+
+          <img src="./public/images/ho8.webp" alt="waterproofing solutions" loading="lazy" decoding="async"
+            fetchpriority="low" class="w-full sm:max-w-xs md:max-w-sm aspect-square  object-cover rounded-sm">
+        </div>
+
+        <!-- Navigation -->
+        <div class="space-y-6 flex flex-col py-6 lg:py-10 justify-between">
+
+          <img src="./public/images/logo.png" alt="Usman Consultants logo" class="w-32 sm:w-30 md:w-36 h-auto"
+            loading="lazy" decoding="async">
+
+          <div class="space-y-3">
+
+            <a href="./about.html"
+              class="text-[#2d2a26] hover:opacity-50 transition pop  font-semibold uppercase tracking-widest text-xl md:text-2xl flex items-center gap-2">
+              About Us <i class="fa-solid fa-arrow-right text-sm"></i>
+            </a>
+
+            <a href="./contact.html"
+              class="text-[#2d2a26] hover:opacity-50 transition pop font-semibold uppercase tracking-widest text-xl md:text-2xl flex items-center gap-2">
+              Contact <i class="fa-solid fa-arrow-right text-sm"></i>
+            </a>
+
+            <a href="./services.html"
+              class="text-[#2d2a26] hover:opacity-50 transition pop font-semibold uppercase tracking-widest text-xl md:text-2xl flex items-center gap-2">
+              Our Services <i class="fa-solid fa-arrow-right text-sm"></i>
+            </a>
+
+            <a href=""
+              class="text-[#2d2a26] hover:opacity-50 transition pop font-semibold uppercase tracking-widest text-xl md:text-2xl flex items-center gap-2">
+              E-Brouchure <i class="fa-solid fa-arrow-right text-sm"></i>
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Values Section -->
+  <section class="relative py-16 bg-[#f8f7f5] overflow-hidden">
+
+    <!-- Blue corner design - FIXED -->
+    <div class="absolute left-0 lg:block hidden top-0 w-[300px] h-[400px] pointer-events-none overflow-hidden">
+      <!-- Light blue -->
+      <div class="absolute inset-0 bg-[#51B9E2]" style="clip-path: polygon(100% 0, 75% 0, 0 100%, 100% 0);"></div>
+      <!-- Medium blue -->
+      <div class="absolute inset-0 bg-[#269FDB]" style="clip-path: polygon(75% 0, 50% 0, 0 100%);"></div>
+      <!-- Dark blue -->
+      <div class="absolute inset-0 bg-[#176A9F]" style="clip-path: polygon(50% 0, 0 0, 0 100%);"></div>
+    </div>
+
+    <div class="container 2xl:max-w-[1530px] mx-auto px-4 relative z-10">
+
+      <!-- Section Label -->
+      <div class="text-center mb-16">
+        <p class="tracking-[0.3em] text-sm text-gray-400 pop mb-4">WHAT DRIVES US</p>
+        <h2 class="text-4xl md:text-5xl pop font-semibold text-[#2d2a26]">
+          Our <span class="tcolor">Values</span>
+        </h2>
+        <div class="w-10 h-px bg-neutral-300 mx-auto mt-6"></div>
+      </div>
+
+      <!-- 4 Grid -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+
+        <!-- Card 1 - Quality -->
+        <div
+          class="group bg-white border border-neutral-200 rounded-3xl px-6 py-10 flex flex-col gap-5 hover:shadow-md transition duration-500">
+
+          <div
+            class="w-12 h-12 rounded-2xl bg-blue-50 border border-blue-100 flex items-center justify-center text-blue-600 group-hover:bg-blue-600 group-hover:border-blue-600 transition duration-500">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 group-hover:stroke-white transition duration-500"
+              fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+
+          <p class="text-xs text-neutral-300 man tracking-[0.3em]">01</p>
+
+          <h3 class="text-xl pop font-semibold text-[#2d2a26] leading-snug">
+            Uncompromising Quality
+          </h3>
+
+          <div class="w-8 h-px bg-neutral-200 group-hover:w-14 group-hover:bg-blue-600 transition-all duration-500">
+          </div>
+
+          <p class="text-sm text-gray-500 pop leading-relaxed">
+            Every batch of construction chemicals, every coating application, and every sealant joint meets our rigorous
+            quality benchmarks. From raw material sourcing to final site delivery, quality is not a checkpoint — it is
+            our foundation.
+          </p>
+
+        </div>
+
+        <!-- Card 2 - Integrity -->
+        <div
+          class="group bg-white border border-neutral-200 rounded-3xl px-6 py-10 flex flex-col gap-5 hover:shadow-md transition duration-500">
+
+          <div
+            class="w-12 h-12 rounded-2xl bg-green-50 border border-green-100 flex items-center justify-center text-green-600 group-hover:bg-green-600 group-hover:border-green-600 transition duration-500">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 group-hover:stroke-white transition duration-500"
+              fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253" />
+            </svg>
+          </div>
+
+          <p class="text-xs text-neutral-300 man tracking-[0.3em]">02</p>
+
+          <h3 class="text-xl font-semibold pop text-[#2d2a26] leading-snug">
+            Technical Integrity
+          </h3>
+
+          <div class="w-8 h-px bg-neutral-200 group-hover:w-14 group-hover:bg-green-600 transition-all duration-500">
+          </div>
+
+          <p class="text-sm text-gray-500 pop leading-relaxed">
+            Full transparency in material specifications, application methods, and performance data. No shortcuts, no
+            substitutions. We deliver on every promise with certified products, documented processes, and accountable
+            project execution.
+          </p>
+
+        </div>
+
+        <!-- Card 3 - Innovation -->
+        <div
+          class="group bg-white border border-neutral-200 rounded-3xl px-6 py-10 flex flex-col gap-5 hover:shadow-md transition duration-500">
+
+          <div
+            class="w-12 h-12 rounded-2xl bg-purple-50 border border-purple-100 flex items-center justify-center text-purple-600 group-hover:bg-purple-600 group-hover:border-purple-600 transition duration-500">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 group-hover:stroke-white transition duration-500"
+              fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+            </svg>
+          </div>
+
+          <p class="text-xs text-neutral-300 man tracking-[0.3em]">03</p>
+
+          <h3 class="text-xl font-semibold pop text-[#2d2a26] leading-snug">
+            Purposeful Innovation
+          </h3>
+
+          <div class="w-8 h-px bg-neutral-200 group-hover:w-14 group-hover:bg-purple-600 transition-all duration-500">
+          </div>
+
+          <p class="text-sm text-gray-500 pop leading-relaxed">
+            Continuous improvement in material formulations, application techniques, and project methodologies. We adopt
+            global standards in waterproofing, flooring, and structural repair — delivering smarter solutions without
+            compromising our core values.
+          </p>
+
+        </div>
+
+        <!-- Card 4 - People -->
+        <div
+          class="group bg-white border border-neutral-200 rounded-3xl px-6 py-10 flex flex-col gap-5 hover:shadow-md transition duration-500">
+
+          <div
+            class="w-12 h-12 rounded-2xl bg-rose-50 border border-rose-100 flex items-center justify-center text-rose-600 group-hover:bg-rose-600 group-hover:border-rose-600 transition duration-500">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 group-hover:stroke-white transition duration-500"
+              fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+            </svg>
+          </div>
+
+          <p class="text-xs text-neutral-300 man tracking-[0.3em]">04</p>
+
+          <h3 class="text-xl font-semibold pop text-[#2d2a26] leading-snug">
+            People & Partnership First
+          </h3>
+
+          <div class="w-8 h-px bg-neutral-200 group-hover:w-14 group-hover:bg-rose-600 transition-all duration-500">
+          </div>
+
+          <p class="text-sm text-gray-500 pop leading-relaxed">
+            Fair partnerships with contractors, suppliers, and application teams. Ethical workplaces from the warehouse
+            to the construction site. We succeed together by putting the people behind every project — and every
+            structure we help build — at the center of everything we do.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>>
+
+
+  <!-- Products Section -->
+  <!-- Products Section -->
+  <section class="relative py-16 bg-[#f8f7f5] overflow-hidden">
+
+    <div class="container 2xl:max-w-[1530px] mx-auto px-4">
+
+      <!-- Section Heading -->
+      <div class="text-center mb-14">
+        <p class="tracking-[0.3em] text-sm text-gray-400 man mb-4">
+          OUR PRODUCTS
+        </p>
+
+        <h2 class="text-4xl md:text-5xl pop font-semibold text-[#2d2a26] ">
+          Construction Chemical <span class="tcolor">Solutions</span>
+        </h2>
+
+        <div class="w-10 h-px bg-neutral-300 mx-auto mt-6"></div>
+
+        <p class="text-gray-500 man text-sm mt-6 max-w-2xl mx-auto leading-relaxed">
+          High-performance materials engineered for durability, strength, and long-lasting protection across all types
+          of construction projects.
+        </p>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Card 1 - Waterproofing -->
+        <div
+          class="group bg-white border border-neutral-200 rounded-3xl overflow-hidden hover:shadow-lg transition duration-500">
+
+          <div class="h-60 overflow-hidden">
+            <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/ho14.webp"
+              class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+              alt="Waterproofing Systems">
+          </div>
+
+          <div class="p-7 flex flex-col gap-3">
+
+            <h3 class="text-xl pop font-semibold text-[#2d2a26]">
+              Waterproofing
+            </h3>
+
+            <div class="w-10 h-px bg-neutral-200 group-hover:w-16 group-hover:bg-[#1d3a72] transition-all duration-500">
+            </div>
+
+            <p class="text-sm text-gray-500 man leading-relaxed">
+              Comprehensive waterproofing solutions for roofs, tanks, and structures with low-VOC, durable formulations.
+            </p>
+
+            <a href="./waterproofing.html"
+              class="mt-4 text-sm man text-[#2d2a26] flex items-center gap-3 hover:opacity-60 transition">
+              Explore More
+              <span class="w-8 h-px bg-[#2d2a26] group-hover:bg-[#1d3a72] transition duration-500"></span>
+            </a>
+
+          </div>
+
+        </div>
+
+        <!-- Card 2 - Industrial Flooring -->
+        <div
+          class="group bg-white border border-neutral-200 rounded-3xl overflow-hidden hover:shadow-lg transition duration-500">
+
+          <div class="h-60 overflow-hidden">
+            <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/ho11.webp"
+              class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+              alt="Industrial Flooring">
+          </div>
+
+          <div class="p-7 flex flex-col gap-3">
+
+            <h3 class="text-xl pop font-semibold text-[#2d2a26]">
+              Industrial Flooring
+            </h3>
+
+            <div class="w-10 h-px bg-neutral-200 group-hover:w-16 group-hover:bg-[#1d3a72] transition-all duration-500">
+            </div>
+
+            <p class="text-sm text-gray-500 man leading-relaxed">
+              Epoxy, PU, self-leveling, and heavy-duty flooring solutions for demanding industrial environments.
+            </p>
+
+            <a href="./flooring.html"
+              class="mt-4 text-sm man text-[#2d2a26] flex items-center gap-3 hover:opacity-60 transition">
+              Explore More
+              <span class="w-8 h-px bg-[#2d2a26] group-hover:bg-[#1d3a72] transition duration-500"></span>
+            </a>
+
+          </div>
+
+        </div>
+
+        <!-- Card 3 - Sealants -->
+        <div
+          class="group bg-white border border-neutral-200 rounded-3xl overflow-hidden hover:shadow-lg transition duration-500">
+
+          <div class="h-60 overflow-hidden">
+            <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/ho10.webp"
+              class="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Joint Sealants">
+          </div>
+
+          <div class="p-7 flex flex-col gap-3">
+
+            <h3 class="text-xl pop font-semibold text-[#2d2a26]">
+              Joint Sealants
+            </h3>
+
+            <div class="w-10 h-px bg-neutral-200 group-hover:w-16 group-hover:bg-[#1d3a72] transition-all duration-500">
+            </div>
+
+            <p class="text-sm text-gray-500 man leading-relaxed">
+              Premium PU, Bitumastic, Acrylic, and Polysulphide sealants for expansion, contraction, and construction
+              joints.
+            </p>
+
+            <a href="./sealants.html"
+              class="mt-4 text-sm man text-[#2d2a26] flex items-center gap-3 hover:opacity-60 transition">
+              Explore More
+              <span class="w-8 h-px bg-[#2d2a26] group-hover:bg-[#1d3a72] transition duration-500"></span>
+            </a>
+
+          </div>
+
+        </div>
+
+        <!-- Card 4 - Structural Repair -->
+        <div
+          class="group bg-white border border-neutral-200 rounded-3xl overflow-hidden hover:shadow-lg transition duration-500">
+
+          <div class="h-60 overflow-hidden">
+            <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/ho9.webp"
+              class="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Structural Repair">
+          </div>
+
+          <div class="p-7 flex flex-col gap-3">
+
+            <h3 class="text-xl pop font-semibold text-[#2d2a26]">
+              Structural Repair & Anchoring
+            </h3>
+
+            <div class="w-10 h-px bg-neutral-200 group-hover:w-16 group-hover:bg-[#1d3a72] transition-all duration-500">
+            </div>
+
+            <p class="text-sm text-gray-500 man leading-relaxed">
+              Durable repair methods and secure anchoring systems to restore and reinforce structural elements.
+            </p>
+
+            <a href="./structural-repair.html"
+              class="mt-4 text-sm man text-[#2d2a26] flex items-center gap-3 hover:opacity-60 transition">
+              Explore More
+              <span class="w-8 h-px bg-[#2d2a26] group-hover:bg-[#1d3a72] transition duration-500"></span>
+            </a>
+
+          </div>
+
+        </div>
+
+        <!-- Card 5 - Paints & Coatings -->
+        <div
+          class="group bg-white border border-neutral-200 rounded-3xl overflow-hidden hover:shadow-lg transition duration-500">
+
+          <div class="h-60 overflow-hidden">
+            <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/ho13.webp"
+              class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+              alt="Paints and Coatings">
+          </div>
+
+          <div class="p-7 flex flex-col gap-3">
+
+            <h3 class="text-xl pop font-semibold text-[#2d2a26]">
+              Paints & Protective Coatings
+            </h3>
+
+            <div class="w-10 h-px bg-neutral-200 group-hover:w-16 group-hover:bg-[#1d3a72] transition-all duration-500">
+            </div>
+
+            <p class="text-sm text-gray-500 man leading-relaxed">
+              High-visibility road marking paints and protective coatings with UV resistance and anti-slip properties.
+            </p>
+
+            <a href="./paints.html"
+              class="mt-4 text-sm man text-[#2d2a26] flex items-center gap-3 hover:opacity-60 transition">
+              Explore More
+              <span class="w-8 h-px bg-[#2d2a26] group-hover:bg-[#1d3a72] transition duration-500"></span>
+            </a>
+
+          </div>
+
+        </div>
+
+        <!-- Card 6 - Admixtures -->
+        <div
+          class="group bg-white border border-neutral-200 rounded-3xl overflow-hidden hover:shadow-lg transition duration-500">
+
+          <div class="h-60 overflow-hidden">
+            <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/ho12.webp"
+              class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+              alt="Concrete Admixtures">
+          </div>
+
+          <div class="p-7 flex flex-col gap-3">
+
+            <h3 class="text-xl pop font-semibold text-[#2d2a26]">
+              Concrete Admixtures
+            </h3>
+
+            <div class="w-10 h-px bg-neutral-200 group-hover:w-16 group-hover:bg-[#1d3a72] transition-all duration-500">
+            </div>
+
+            <p class="text-sm text-gray-500 man leading-relaxed">
+              Plasticizers, superplasticizers, retarders, and accelerators for enhanced concrete performance.
+            </p>
+
+            <a href="./admixtures.html"
+              class="mt-4 text-sm man text-[#2d2a26] flex items-center gap-3 hover:opacity-60 transition">
+              Explore More
+              <span class="w-8 h-px bg-[#2d2a26] group-hover:bg-[#1d3a72] transition duration-500"></span>
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Certifications Section -->
+  <section class="relative bg-white py-8 overflow-hidden">
+    <div class="lg:block hidden">
+      <!-- Blue corner design -->
+      <div class="pointer-events-none absolute right-0 top-0 h-[100px] w-[150px] overflow-hidden">
+
+        <!-- Light blue -->
+        <div class="absolute inset-0 bg-[#51B9E2]" style="clip-path: polygon(0 0, 25% 0, 100% 100%, 0 0);"></div>
+
+        <!-- Medium blue -->
+        <div class="absolute inset-0 bg-[#269FDB]" style="clip-path: polygon(25% 0, 50% 0, 100% 100%);"></div>
+
+        <!-- Dark blue -->
+        <div class="absolute inset-0 bg-[#176A9F]" style="clip-path: polygon(50% 0, 100% 0, 100% 100%);"></div>
+      </div>
+
+
+    </div>
+    <!-- NEW Pattern Background -->
+    <div class="absolute inset-0 opacity-[0.05]"
+      style="background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');">
+    </div>
+
+    <div class="relative z-10 container 2xl:max-w-[1530px] mx-auto px-4">
+
+
+
+
+
+      <!-- Heading -->
+      <div class="text-center mt-10 mb-12">
+        <p class="tracking-[0.35em] text-sm text-gray-500 pop mb-4">
+          Trustable Clients
+        </p>
+
+        <h2 class="text-4xl md:text-5xl pop font-semibold text-[#2d2a26]">
+          Our <span class="tcolor">Clients</span>
+        </h2>
+      </div>
+
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper items-center">
+
+          <div class="swiper-slide flex justify-center">
+            <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/ho15.webp"
+              class="h-24 object-contain" alt="certification">
+          </div>
+
+          <div class="swiper-slide flex justify-center">
+            <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/ho16.webp"
+              class="h-24 object-contain" alt="certification">
+          </div>
+
+          <div class="swiper-slide flex justify-center">
+            <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/ho17.webp"
+              class="h-24 object-contain" alt="certification">
+          </div>
+
+          <div class="swiper-slide flex justify-center">
+            <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/ho18.webp"
+              class="h-24 object-contain" alt="certification">
+          </div>
+
+          <div class="swiper-slide flex justify-center">
+            <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/ho19.webp"
+              class="h-24 object-contain" alt="certification">
+          </div>
+
+          <div class="swiper-slide flex justify-center">
+            <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/ho20.webp"
+              class="h-24 object-contain" alt="certification">
+          </div>
+
+          <div class="swiper-slide flex justify-center">
+            <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/ho21.webp"
+              class="h-24 object-contain" alt="certification">
+          </div>
+
+          <div class="swiper-slide flex justify-center">
+            <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/ho22.webp"
+              class="h-24 object-contain" alt="certification">
+          </div>
+
+          <div class="swiper-slide flex justify-center">
+            <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/ho23.webp"
+              class="h-24 object-contain" alt="certification">
+          </div>
+
+          <div class="swiper-slide flex justify-center">
+            <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/ho24.webp"
+              class="h-24 object-contain" alt="certification">
+          </div>
+
+          <div class="swiper-slide flex justify-center">
+            <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/ho25.webp"
+              class="h-24 object-contain" alt="certification">
+          </div>
+
+          <div class="swiper-slide flex justify-center">
+            <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/ho26.webp"
+              class="h-24 object-contain" alt="certification">
+          </div>
+
+          <div class="swiper-slide flex justify-center">
+            <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/ho27.webp"
+              class="h-24 object-contain" alt="certification">
+          </div>
+
+          <div class="swiper-slide flex justify-center">
+            <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/ho28.webp"
+              class="h-24 object-contain" alt="certification">
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- Beautiful FAQ Section -->
+  <section class="relative py-10 bg-gradient-to-br from-[#f7f6f4] via-white to-[#eef0ff] overflow-hidden">
+
+    <div class="container 2xl:max-w-[1530px] mx-auto px-4 relative z-10">
+
+      <!-- Heading -->
+      <div class="text-center mb-16">
+        <p class="tracking-[0.3em] text-sm text-gray-500 mons mb-4">WHY USMAN CONSULTANTS</p>
+        <h2 class="text-4xl md:text-5xl pop font-semibold text-[#2d2a26] leading-tight">
+          Why Choose Usman Consultants? <br>
+          <span class=" tcolor text-4xl md:text-5xl">Excellence in Every Structure</span>
+        </h2>
+      </div>
+
+      <!-- Accordion -->
+      <div class="space-y-5">
+
+        <!-- Item 1 -->
+        <div class="bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
+          <button
+            class="faq-btn man flex justify-between items-center w-full px-6 py-5 text-left font-medium text-gray-700">
+            Why does Usman Consultants use premium quality construction chemicals?
+            <span class="faq-icon transition-transform duration-300">+</span>
+          </button>
+          <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+            <p class="py-5 text-gray-500 mons">
+              Usman Consultants uses carefully selected high-performance materials to ensure durability, structural
+              integrity, and long-lasting protection for every construction project.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
+          <button
+            class="faq-btn man flex justify-between items-center w-full px-6 py-5 text-left font-medium text-gray-700">
+            Does Usman Consultants offer custom solutions?
+            <span class="faq-icon transition-transform duration-300">+</span>
+          </button>
+          <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+            <p class="py-5 text-gray-500 mons">
+              Yes, Usman Consultants crafts tailored solutions based on your exact project requirements — from
+              waterproofing and flooring to structural repair and protective coatings.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
+          <button
+            class="faq-btn man flex justify-between items-center w-full px-6 py-5 text-left font-medium text-gray-700">
+            What is Usman Consultants' minimum order quantity (MOQ)?
+            <span class="faq-icon transition-transform duration-300">+</span>
+          </button>
+          <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+            <p class="py-5 text-gray-500 mons">
+              Usman Consultants offers flexible MOQ options to support both small-scale contractors and large-scale
+              infrastructure projects.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
+          <button
+            class="faq-btn man flex justify-between items-center w-full px-6 py-5 text-left font-medium text-gray-700">
+            Does Usman Consultants provide application services?
+            <span class="faq-icon transition-transform duration-300">+</span>
+          </button>
+          <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+            <p class="py-5 text-gray-500 mons">
+              Yes, Usman Consultants has skilled application teams trained in the proper installation of all products —
+              ensuring correct techniques for optimal performance and longevity.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
+          <button
+            class="faq-btn man flex justify-between items-center w-full px-6 py-5 text-left font-medium text-gray-700">
+            How does Usman Consultants ensure product quality?
+            <span class="faq-icon transition-transform duration-300">+</span>
+          </button>
+          <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+            <p class="py-5 text-gray-500 mons">
+              Every Usman Consultants product goes through rigorous quality checks, from raw material sourcing to final
+              application — maintaining high standards and technical excellence at every stage.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
+          <button
+            class="faq-btn man flex justify-between items-center w-full px-6 py-5 text-left font-medium text-gray-700">
+            How can I get started with Usman Consultants?
+            <span class="faq-icon transition-transform duration-300">+</span>
+          </button>
+          <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+            <p class="py-5 text-gray-500 mons">
+              Getting started with Usman Consultants is simple — contact our team and we'll guide you through every
+              step, from product selection to project execution.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="relative py-20 bg-[#f8f7f5] overflow-hidden">
+
+    <!-- Subtle Pattern Background -->
+    <div class="absolute inset-0 opacity-[0.06]"
+      style="background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');">
+    </div>
+
+    <!-- Soft Gradient Wash -->
+    <div class="absolute inset-0 bg-gradient-to-r from-white via-[#f8f7f5] to-white"></div>
+
+    <div class="relative z-10 container 2xl:max-w-[1530px] mx-auto px-4 text-center">
+
+      <!-- Heading -->
+      <p class="tracking-[0.35em] text-sm text-gray-400 man mb-4">
+        LET'S WORK TOGETHER
+      </p>
+
+      <h2 class="text-4xl md:text-5xl pop font-semibold text-[#2d2a26] leading-tight mb-6">
+        Build Stronger Structures with <br> Premium <span class="tcolor">Construction Solutions</span>
+      </h2>
+
+      <p class="text-gray-500 man text-sm max-w-2xl mx-auto leading-relaxed mb-10">
+        Partner with Usman Consultants for high-performance construction chemicals, structural repair, waterproofing,
+        and industrial flooring solutions. We ensure quality and reliability from material sourcing to project
+        completion across every site.
+      </p>
+
+      <!-- Buttons -->
+      <div class="flex pop flex-col sm:flex-row items-center justify-center gap-4">
+
+        <a href="./contact.html"
+          class="px-8 py-3 bg-[#1d3a72] text-white  text-sm font-medium rounded-full hover:opacity-80 transition">
+          Start Inquiry
+        </a>
+
+        <a href="./about.html"
+          class="px-8 py-3 border border-[#2d2a26]/20  text-[#2d2a26] text-sm font-medium rounded-full hover:bg-[#2d2a26]/5 transition">
+          About Us
+        </a>
+
+      </div>
+
+      <!-- Trust Line -->
+      <p class="text-gray-400 text-xs mt-8 tracking-wider">
+        Trusted Across Pakistan
+      </p>
+
+    </div>
+
+  </section>
+
+  <footer class="relative font-[Playfair_Display] overflow-hidden border-t border-[#1d3a72]/30 text-white bg-[#0a1628]">
+
+    <!-- Dark base with navy gradient -->
+    <div class="absolute inset-0 bg-gradient-to-b from-[#0a1628] via-[#0f1f3a] to-[#0a1628]"></div>
+
+    <!-- subtle texture -->
+    <div class="absolute inset-0 opacity-[0.04] mix-blend-overlay bg-[url('./public/images/pattern.png')] bg-repeat">
+    </div>
+
+    <!-- Top Strip (compact) -->
+    <div class="relative border-b border-[#1d3a72]/30 py-3 px-6 backdrop-blur-xl bg-[#1d3a72]/10">
+      <div class="container 2xl:max-w-[1530px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
+
+        <p class="text-[12px] man tracking-[0.25em] uppercase text-gray-400">
+          Faisalabad, Pakistan
+        </p>
+
+        <div class="flex items-center gap-4">
+          <span class="text-[12px] man tracking-[0.25em] uppercase text-gray-400">Quality Assured</span>
+          <span class="w-px h-3 bg-[#1d3a72]/30"></span>
+          <span class="text-[12px] man tracking-[0.25em] uppercase text-gray-400">Est. 2012</span>
+          <span class="w-px h-3 bg-[#1d3a72]/30"></span>
+          <span class="text-[12px] man tracking-[0.25em] uppercase text-gray-400">100+ Projects</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Main Footer -->
+    <div class="relative container 2xl:max-w-[1530px] mx-auto px-4 py-10">
+
+      <div class="grid lg:grid-cols-12 gap-10">
+
+        <!-- Brand -->
+        <div class="lg:col-span-4 flex flex-col gap-4">
+
+          <a href="./index.html">
+            <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/logo.png"
+              alt="Usman Consultants Logo" class="w-24 object-contain ">
+          </a>
+
+          <p class="text-sm text-gray-400 man leading-relaxed max-w-xs">
+            Premium construction chemicals, structural repair, waterproofing, and industrial flooring solutions since
+            2012.
+          </p>
+
+          <!-- Social -->
+          <div class="flex items-center gap-3">
+
+            <a href="#"
+              class="w-8 h-8 rounded-full bg-[#1d3a72]/20 border border-[#1d3a72]/30 flex items-center justify-center text-gray-400 hover:text-white hover:bg-[#1d3a72] hover:border-[#1d3a72] transition">
+              <i class="fa-brands fa-facebook-f text-[11px]"></i>
+            </a>
+
+            <a href="#"
+              class="w-8 h-8 rounded-full bg-[#1d3a72]/20 border border-[#1d3a72]/30 flex items-center justify-center text-gray-400 hover:text-white hover:bg-[#1d3a72] hover:border-[#1d3a72] transition">
+              <i class="fa-brands fa-instagram text-[11px]"></i>
+            </a>
+
+            <a href="#"
+              class="w-8 h-8 rounded-full bg-[#1d3a72]/20 border border-[#1d3a72]/30 flex items-center justify-center text-gray-400 hover:text-white hover:bg-[#1d3a72] hover:border-[#1d3a72] transition">
+              <i class="fa-brands fa-linkedin-in text-[11px]"></i>
+            </a>
+
+            <a href="#"
+              class="w-8 h-8 rounded-full bg-[#1d3a72]/20 border border-[#1d3a72]/30 flex items-center justify-center text-gray-400 hover:text-white hover:bg-[#1d3a72] hover:border-[#1d3a72] transition">
+              <i class="fa-brands fa-youtube text-[11px]"></i>
+            </a>
+
+          </div>
+
+        </div>
+
+        <!-- Navigate -->
+        <div class="lg:col-span-2 lg:col-start-6">
+          <p class="text-[12px] man tracking-[0.25em] uppercase text-[white] mb-4 font-semibold">Navigate</p>
+          <ul class="flex pop flex-col gap-2">
+            <li><a href="./index.html" class="text-sm text-gray-400 hover:text-white transition">Home</a></li>
+            <li><a href="./about.html" class="text-sm text-gray-400 hover:text-white transition">About</a></li>
+            <li><a href="./services.html" class="text-sm text-gray-400 hover:text-white transition">Services</a></li>
+            <li><a href="./projects.html" class="text-sm text-gray-400 hover:text-white transition">Projects</a></li>
+            <li><a href="./contact.html" class="text-sm text-gray-400 hover:text-white transition">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Products -->
+        <div class="lg:col-span-2">
+          <p class="text-[12px] man tracking-[0.25em] uppercase text-[white] mb-4 font-semibold">Solutions</p>
+          <ul class="flex flex-col pop gap-2">
+            <li><a href="./waterproofing.html"
+                class="text-sm text-gray-400 hover:text-white transition">Waterproofing</a></li>
+            <li><a href="./flooring.html" class="text-sm text-gray-400 hover:text-white transition">Industrial
+                Flooring</a></li>
+            <li><a href="./sealants.html" class="text-sm text-gray-400 hover:text-white transition">Joint Sealants</a>
+            </li>
+            <li><a href="./structural-repair.html" class="text-sm text-gray-400 hover:text-white transition">Structural
+                Repair</a></li>
+            <li><a href="./paints.html" class="text-sm text-gray-400 hover:text-white transition">Paints & Coatings</a>
+            </li>
+            <li><a href="./admixtures.html" class="text-sm text-gray-400 hover:text-white transition">Concrete
+                Admixtures</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="lg:col-span-2">
+          <p class="text-[12px] man tracking-[0.25em] uppercase text-[white] mb-4 font-semibold">Get In Touch</p>
+
+          <ul class="flex flex-col pop gap-3">
+            <li>
+              <a href="tel:+923016097666" class="flex flex-col">
+                <span class="text-[10px] text-gray-500">Phone</span>
+                <span class="text-xs text-gray-300 hover:text-white transition">+92 301 6097666</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="mailto:info@usmanconsultants.com" class="flex flex-col">
+                <span class="text-[10px] text-gray-500">Email</span>
+                <span class="text-xs text-gray-300 hover:text-white transition">info@usmanconsultants.com</span>
+              </a>
+            </li>
+
+            <li class="flex flex-col">
+              <span class="text-[10px] text-gray-500">Location</span>
+              <span class="text-xs text-gray-300">Faisalabad, Pakistan</span>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="mt-10 border-t border-[#1d3a72]/30 pt-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+
+        <p class="text-[11px] text-gray-500">© 2026 Usman Consultants. All rights reserved.</p>
+
+        <div class="flex items-center gap-4">
+          <a href="./terms.html" class="text-[11px] text-gray-500 hover:text-white transition">Terms</a>
+          <span class="w-px h-3 bg-[#1d3a72]/30"></span>
+          <a href="./privacy.html" class="text-[11px] text-gray-500 hover:text-white transition">Privacy</a>
+        </div>
+
+        <p class="text-[11px] text-gray-500">
+          Developed by
+          <a href="https://wa.me/923224066958" target="_blank" class="text-gray-300 hover:text-white transition">
+            MAC
+          </a>
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/923009653044" target="_blank" rel="noopener noreferrer"
+        class="fixed bottom-6 left-6 z-[9999] flex items-center gap-3 bg-[#25D366] text-white no-underline px-5 py-3 rounded-full shadow-lg hover:opacity-90 hover:scale-105 transition duration-300"
+        style="font-family: Manrope, sans-serif; font-size: 13px; font-weight: 500; letter-spacing: 0.02em; box-shadow: 0 4px 20px rgba(37,211,102,0.35);">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32" fill="white">
+            <path d="M16.003 2C8.28 2 2 8.278 2 15.998c0 2.47.648 4.788 1.784 6.8L2 30l7.397-1.744A13.947 13.947 0 0016.003 30C23.722 30 30 23.722 30 16.003 30 8.278 23.722 2 16.003 2zm0 25.452a11.43 11.43 0 01-5.832-1.596l-.418-.248-4.392 1.036 1.068-4.27-.272-.44A11.417 11.417 0 014.55 16c0-6.319 5.134-11.452 11.453-11.452S27.452 9.681 27.452 16c0 6.318-5.131 11.452-11.449 11.452zm6.28-8.57c-.344-.172-2.036-1.004-2.352-1.118-.316-.116-.546-.172-.776.172-.23.344-.892 1.118-1.092 1.348-.2.23-.4.258-.744.086-.344-.172-1.454-.536-2.77-1.708-1.024-.912-1.714-2.038-1.914-2.382-.2-.344-.022-.53.15-.702.154-.154.344-.4.516-.6.172-.2.23-.344.344-.574.114-.23.058-.43-.028-.602-.086-.172-.776-1.87-1.064-2.562-.28-.672-.564-.58-.776-.59l-.66-.012c-.23 0-.602.086-.916.43-.316.344-1.204 1.176-1.204 2.868s1.232 3.326 1.404 3.556c.172.23 2.424 3.7 5.874 5.19.822.354 1.462.566 1.962.724.824.262 1.574.225 2.167.136.66-.1 2.036-.832 2.322-1.634.286-.8.286-1.488.2-1.634-.084-.144-.314-.23-.658-.4z"/>
+        </svg>
+        <span>WhatsApp</span>
+    </a>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  <script src="./src/js/index.js"></script>
+  <script defer src="./src/js/gsap.js"></script>
+
+
+
+</body>
+
+
+</html>
