@@ -168,49 +168,176 @@
     <div id="overlay" class="fixed inset-0 bg-black/20 backdrop-blur-sm hidden z-[998] opacity-0 transition duration-300"></div>
 
     <!-- Side Menu -->
-    <div id="sideMenu"
-        class="fixed top-0 right-0 h-full w-[85%] max-w-sm bg-[#f8f7f5] z-[999] translate-x-full transition-transform duration-500 ease-in-out border-l border-neutral-200 flex flex-col">
-        <div class="flex items-center justify-between px-6 py-6 border-b border-neutral-200">
-            <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/logo.png"
-                class="w-24 object-contain" alt="Logo">
-            <button id="closeMenu" class="w-10 h-10 rounded-full border border-neutral-300 flex items-center justify-center text-neutral-700">✕</button>
-        </div>
-        <div class="flex-1 overflow-y-auto px-6 py-8">
-            <ul class="space-y-7 text-[15px] tracking-wide font-medium text-neutral-700 man">
-                <li><a href="./index.html" class="flex items-center justify-between hover:text-neutral-900 transition">Home <span class="w-8 h-px bg-neutral-900"></span></a></li>
-                <li><a href="./about.html" class="hover:text-neutral-900 transition block">About</a></li>
-                <li><a href="./services.html" class="hover:text-neutral-900 transition block">Services</a></li>
-                <li>
-                    <div class="border border-neutral-200 rounded-2xl overflow-hidden bg-white">
-                        <button id="productToggle" class="w-full flex items-center justify-between px-5 py-4 text-left text-neutral-800">
-                            <span>Products</span>
-                            <svg id="productArrow" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 transition duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                        <div id="productMenu" class="hidden border-t border-neutral-200 px-5 py-4">
-                            <ul class="space-y-4 text-[14px] text-neutral-600">
-                                <li><a href="./waterproofing.html" class="block hover:text-neutral-900 transition">Waterproofing</a></li>
-                                <li><a href="./flooring.html" class="block hover:text-neutral-900 transition">Industrial Flooring</a></li>
-                                <li><a href="./sealants.html" class="block hover:text-neutral-900 transition">Joint Sealants</a></li>
-                                <li><a href="./structural-repair.html" class="block hover:text-neutral-900 transition">Structural Repair</a></li>
-                                <li><a href="./paints.html" class="block hover:text-neutral-900 transition">Paints & Coatings</a></li>
-                                <li><a href="./admixtures.html" class="block hover:text-neutral-900 transition">Concrete Admixtures</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </li>
-                <li><a href="./client.html" class="hover:text-neutral-900 transition block">Our Clients</a></li>
-                <li><a href="./public/pdfs/E-brouchure.pdf" download class="hover:text-neutral-900 transition block">E-Brochure</a></li>
-            </ul>
-        </div>
-        <div class="p-6 border-t border-neutral-200">
-            <a href="./contact.html"
-                class="flex items-center justify-center gap-3 border border-neutral-300 rounded-full py-4 text-[14px] tracking-wide text-neutral-900 hover:bg-neutral-900 hover:text-white transition duration-300 man">
-                <span class="w-8 h-px bg-current"></span> Contact Us
-            </a>
-        </div>
+<div id="sideMenu"
+    class="fixed top-0 right-0 h-full w-[85%] max-w-sm bg-[#f8f7f5] z-[999] translate-x-full transition-transform duration-500 ease-in-out border-l border-neutral-200 flex flex-col">
+
+    <!-- Header -->
+    <div class="flex items-center justify-between px-6 py-6 border-b border-neutral-200">
+
+      <!-- Logo -->
+      <a href="./index.html">
+        <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/logo.png"
+          class="w-24 object-contain" alt="Logo">
+      </a>
+
+      <!-- Close -->
+      <button id="closeMenu"
+        class="w-10 h-10 rounded-full border border-neutral-300 flex items-center justify-center text-neutral-700">
+
+        ✕
+
+      </button>
+
     </div>
+
+    <!-- Menu Links -->
+    <div class="flex-1 overflow-y-auto px-6 py-8">
+
+<ul class="space-y-7 text-[15px] tracking-wide font-medium text-neutral-700 man">
+
+    <li>
+        <a href="./index.html" class="flex items-center justify-between hover:text-neutral-900 transition">
+            Home
+            <span class="w-8 h-px bg-neutral-900"></span>
+        </a>
+    </li>
+
+    <li>
+        <a href="./about.html" class="hover:text-neutral-900 transition block">
+            About
+        </a>
+    </li>
+
+    <li>
+        <a href="./services.html" class="hover:text-neutral-900 transition block">
+            Services
+        </a>
+    </li>
+
+    <!-- Products -->
+    <li>
+
+        <div class="border border-neutral-200 rounded-2xl overflow-hidden bg-white">
+
+            <!-- Products Heading -->
+            <button id="productToggle"
+                class="w-full flex items-center justify-between px-5 py-4 text-left text-neutral-800">
+
+                <span>Products</span>
+
+                <svg id="productArrow" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 transition duration-300"
+                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M19 9l-7 7-7-7" />
+
+                </svg>
+
+            </button>
+
+            <!-- Dropdown -->
+            <div id="productMenu" class="hidden border-t border-neutral-200 px-5 py-4">
+
+                <ul class="space-y-4 text-[14px] text-neutral-600">
+
+                    <li>
+                        <a href="./adhesives.html" class="block hover:text-neutral-900 transition">
+                            Adhesive
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./admixtures.html" class="block hover:text-neutral-900 transition">
+                            Admixtures
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./concrete-repair.html" class="block hover:text-neutral-900 transition">
+                            Concrete Repair
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./flooring.html" class="block hover:text-neutral-900 transition">
+                            Flooring
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./grout-anchor.html" class="block hover:text-neutral-900 transition">
+                            Grout and Anchor
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./paints.html" class="block hover:text-neutral-900 transition">
+                            Paint and Coatings
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./pu.html" class="block hover:text-neutral-900 transition">
+                            PU
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./sealants.html" class="block hover:text-neutral-900 transition">
+                            Sealants
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./surface-treatment.html" class="block hover:text-neutral-900 transition">
+                            Surface Treatment
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./waterproofing.html" class="block hover:text-neutral-900 transition">
+                            Water Proofing
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </li>
+
+    <li>
+        <a href="./client.html" class="hover:text-neutral-900 transition block">
+            Our Clients
+        </a>
+    </li>
+
+    <li>
+        <a href="./public/pdfs/E-brouchure.pdf" download class="hover:text-neutral-900 transition block">
+            E-Brochure
+        </a>
+    </li>
+
+</ul>
+
+    </div>
+
+    <!-- Bottom Button -->
+    <div class="p-6 border-t border-neutral-200">
+
+      <a href="./contact.html"
+        class="flex items-center justify-center gap-3 border border-neutral-300 rounded-full py-4 text-[14px] tracking-wide text-neutral-900 hover:bg-neutral-900 hover:text-white transition duration-300 man">
+
+        <span class="w-8 h-px bg-current"></span>
+
+        Contact Us
+
+      </a>
+
+    </div>
+
+  </div>
 
     <!-- Hero Section -->
 <section class="relative h-[500px] flex items-center justify-center overflow-hidden">
