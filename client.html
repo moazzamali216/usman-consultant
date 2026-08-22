@@ -43,11 +43,12 @@
             <li><a href="./about.html" class="hover:text-neutral-900 transition duration-300">About</a></li>
             <li><a href="./services.html" class="hover:text-neutral-900 transition duration-300">Services</a></li>
 
-<li class="relative">
+
+<!-- <li class="relative">
 
   <button id="dropdownProductsButton" data-dropdown-toggle="dropdownProducts"
     data-dropdown-placement="bottom-start"
-    class="flex uppercase items-center gap-1 hover:text-neutral-900 transition duration-300">
+    class="hidden uppercase items-center gap-1 hover:text-neutral-900 transition duration-300">
 
     Products
 
@@ -57,7 +58,7 @@
 
   </button>
 
-  <!-- Dropdown Menu -->
+
   <div id="dropdownProducts"
     class="hidden absolute top-12 left-0 w-64 bg-white border border-neutral-200 tracking-[1px] rounded-2xl shadow-lg overflow-hidden">
     <ul class="text-[11px] uppercase text-gray-500">
@@ -134,7 +135,8 @@
 
     </ul>
   </div>
-</li>
+</li> -->
+
 
             <li class="relative">
               <a href="./client.html" class="text-neutral-900">
@@ -230,7 +232,7 @@
         <div class="border border-neutral-200 rounded-2xl overflow-hidden bg-white">
 
             <!-- Products Heading -->
-            <button id="productToggle"
+            <!-- <button id="productToggle"
                 class="w-full flex items-center justify-between px-5 py-4 text-left text-neutral-800">
 
                 <span>Products</span>
@@ -242,8 +244,7 @@
 
                 </svg>
 
-            </button>
-
+            </button> -->
             <!-- Dropdown -->
             <div id="productMenu" class="hidden border-t border-neutral-200 px-5 py-4">
 
@@ -499,26 +500,26 @@
       </div>
 
       <!-- Stats Strip -->
-      <div class="mt-16 border border-neutral-200 rounded-3xl p-8 md:p-10 bg-[#f8f7f5]">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-          <div>
-            <p class="text-3xl md:text-4xl pop font-semibold text-[#1d3a72]">14+</p>
-            <p class="text-xs man tracking-widest text-gray-400 uppercase mt-1">Trusted Clients</p>
-          </div>
-          <div>
-            <p class="text-3xl md:text-4xl pop font-semibold text-[#1d3a72]">100+</p>
-            <p class="text-xs man tracking-widest text-gray-400 uppercase mt-1">Projects Completed</p>
-          </div>
-          <div>
-            <p class="text-3xl md:text-4xl pop font-semibold text-[#1d3a72]">13+</p>
-            <p class="text-xs man tracking-widest text-gray-400 uppercase mt-1">Years of Excellence</p>
-          </div>
-          <div>
-            <p class="text-3xl md:text-4xl pop font-semibold text-[#1d3a72]">50+</p>
-            <p class="text-xs man tracking-widest text-gray-400 uppercase mt-1">Contractors Partnered</p>
-          </div>
-        </div>
-      </div>
+<div class="mt-16 border border-neutral-200 rounded-3xl p-8 md:p-10 bg-[#f8f7f5]">
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+    <div>
+      <p class="text-3xl md:text-4xl pop font-semibold text-[#1d3a72]">50+</p>
+      <p class="text-xs man tracking-widest text-gray-400 uppercase mt-1">Trusted Clients</p>
+    </div>
+    <div>
+      <p class="text-3xl md:text-4xl pop font-semibold text-[#1d3a72]">1000+</p>
+      <p class="text-xs man tracking-widest text-gray-400 uppercase mt-1">Projects Completed</p>
+    </div>
+    <div>
+      <p class="text-3xl md:text-4xl pop font-semibold text-[#1d3a72]">13+</p>
+      <p class="text-xs man tracking-widest text-gray-400 uppercase mt-1">Years of Excellence</p>
+    </div>
+    <div>
+      <p class="text-3xl md:text-4xl pop font-semibold text-[#1d3a72]">100+</p>
+      <p class="text-xs man tracking-widest text-gray-400 uppercase mt-1">Contractors Partnered</p>
+    </div>
+  </div>
+</div>
 
       <!-- Testimonial / Trust Message -->
       <div class="mt-12 text-center">
@@ -544,13 +545,23 @@
   </section>
 
   <!-- Footer -->
-  <footer class="relative font-[Playfair_Display] overflow-hidden border-t border-[#1d3a72]/30 text-white bg-[#0a1628]">
-    <div class="absolute inset-0 bg-gradient-to-b from-[#0a1628] via-[#0f1f3a] to-[#0a1628]"></div>
-    <div class="absolute inset-0 opacity-[0.04] mix-blend-overlay bg-[url('./public/images/pattern.png')] bg-repeat"></div>
+<footer class="relative font-[Playfair_Display] overflow-hidden border-t border-[#1d3a72]/30 text-white bg-[#0a1628]">
 
+    <!-- Dark base with navy gradient -->
+    <div class="absolute inset-0 bg-gradient-to-b from-[#0a1628] via-[#0f1f3a] to-[#0a1628]"></div>
+
+    <!-- subtle texture -->
+    <div class="absolute inset-0 opacity-[0.04] mix-blend-overlay bg-[url('./public/images/pattern.png')] bg-repeat">
+    </div>
+
+    <!-- Top Strip (compact) -->
     <div class="relative border-b border-[#1d3a72]/30 py-3 px-6 backdrop-blur-xl bg-[#1d3a72]/10">
       <div class="container 2xl:max-w-[1530px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
-        <p class="text-[12px] man tracking-[0.25em] uppercase text-gray-400">Faisalabad, Pakistan</p>
+
+        <p class="text-[12px] man tracking-[0.25em] uppercase text-gray-400">
+          Faisalabad, Pakistan
+        </p>
+
         <div class="flex items-center gap-4">
           <span class="text-[12px] man tracking-[0.25em] uppercase text-gray-400">Quality Assured</span>
           <span class="w-px h-3 bg-[#1d3a72]/30"></span>
@@ -558,64 +569,90 @@
           <span class="w-px h-3 bg-[#1d3a72]/30"></span>
           <span class="text-[12px] man tracking-[0.25em] uppercase text-gray-400">100+ Projects</span>
         </div>
+
       </div>
     </div>
 
+    <!-- Main Footer -->
     <div class="relative container 2xl:max-w-[1530px] mx-auto px-4 py-10">
-      <div class="grid lg:grid-cols-12 gap-10">
+
+      <div class="grid lg:grid-cols-12 gap-8">
+
         <!-- Brand -->
-        <div class="lg:col-span-4 flex flex-col gap-4">
+        <div class="lg:col-span-3 flex flex-col gap-4">
+
           <a href="./index.html">
             <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/logo.png"
               alt="Usman Consultants Logo" class="w-24 object-contain">
           </a>
+
           <p class="text-sm text-gray-400 man leading-relaxed max-w-xs">
-            Premium construction chemicals, structural repair, waterproofing, and industrial flooring solutions since 2012.
+            Premium construction chemicals, structural repair, waterproofing, and industrial flooring solutions since
+            2012.
           </p>
+
+          <!-- Social -->
           <div class="flex items-center gap-3">
-            <a href="#" class="w-8 h-8 rounded-full bg-[#1d3a72]/20 border border-[#1d3a72]/30 flex items-center justify-center text-gray-400 hover:text-white hover:bg-[#1d3a72] hover:border-[#1d3a72] transition">
+
+            <a href="#" aria-label="Facebook"
+              class="w-8 h-8 rounded-full bg-[#1d3a72]/20 border border-[#1d3a72]/30 flex items-center justify-center text-gray-400 hover:text-white hover:bg-[#1d3a72] hover:border-[#1d3a72] transition">
               <i class="fa-brands fa-facebook-f text-[11px]"></i>
             </a>
-            <a href="#" class="w-8 h-8 rounded-full bg-[#1d3a72]/20 border border-[#1d3a72]/30 flex items-center justify-center text-gray-400 hover:text-white hover:bg-[#1d3a72] hover:border-[#1d3a72] transition">
+
+            <a href="#" aria-label="Instagram"
+              class="w-8 h-8 rounded-full bg-[#1d3a72]/20 border border-[#1d3a72]/30 flex items-center justify-center text-gray-400 hover:text-white hover:bg-[#1d3a72] hover:border-[#1d3a72] transition">
               <i class="fa-brands fa-instagram text-[11px]"></i>
             </a>
-            <a href="#" class="w-8 h-8 rounded-full bg-[#1d3a72]/20 border border-[#1d3a72]/30 flex items-center justify-center text-gray-400 hover:text-white hover:bg-[#1d3a72] hover:border-[#1d3a72] transition">
+
+            <a href="#" aria-label="LinkedIn"
+              class="w-8 h-8 rounded-full bg-[#1d3a72]/20 border border-[#1d3a72]/30 flex items-center justify-center text-gray-400 hover:text-white hover:bg-[#1d3a72] hover:border-[#1d3a72] transition">
               <i class="fa-brands fa-linkedin-in text-[11px]"></i>
             </a>
-            <a href="#" class="w-8 h-8 rounded-full bg-[#1d3a72]/20 border border-[#1d3a72]/30 flex items-center justify-center text-gray-400 hover:text-white hover:bg-[#1d3a72] hover:border-[#1d3a72] transition">
+
+            <a href="#" aria-label="YouTube"
+              class="w-8 h-8 rounded-full bg-[#1d3a72]/20 border border-[#1d3a72]/30 flex items-center justify-center text-gray-400 hover:text-white hover:bg-[#1d3a72] hover:border-[#1d3a72] transition">
               <i class="fa-brands fa-youtube text-[11px]"></i>
             </a>
+
           </div>
+
         </div>
 
         <!-- Navigate -->
-        <div class="lg:col-span-2 lg:col-start-6">
-          <p class="text-[12px] man tracking-[0.25em] uppercase text-[white] mb-4 font-semibold">Navigate</p>
+        <div class="lg:col-span-2">
+          <p class="text-[12px] man tracking-[0.25em] uppercase text-white mb-4 font-semibold">Navigate</p>
           <ul class="flex pop flex-col gap-2">
             <li><a href="./index.html" class="text-sm text-gray-400 hover:text-white transition">Home</a></li>
             <li><a href="./about.html" class="text-sm text-gray-400 hover:text-white transition">About</a></li>
             <li><a href="./services.html" class="text-sm text-gray-400 hover:text-white transition">Services</a></li>
-            <li><a href="./client.html" class="text-sm text-gray-400 hover:text-white transition">Our Clients</a></li>
+            <li><a href="./projects.html" class="text-sm text-gray-400 hover:text-white transition">Projects</a></li>
             <li><a href="./contact.html" class="text-sm text-gray-400 hover:text-white transition">Contact</a></li>
           </ul>
         </div>
 
-        <!-- Solutions -->
-        <div class="lg:col-span-2">
-          <p class="text-[12px] man tracking-[0.25em] uppercase text-[white] mb-4 font-semibold">Solutions</p>
-          <ul class="flex flex-col pop gap-2">
-            <li><a href="./waterproofing.html" class="text-sm text-gray-400 hover:text-white transition">Waterproofing</a></li>
-            <li><a href="./flooring.html" class="text-sm text-gray-400 hover:text-white transition">Industrial Flooring</a></li>
-            <li><a href="./sealants.html" class="text-sm text-gray-400 hover:text-white transition">Joint Sealants</a></li>
-            <li><a href="./structural-repair.html" class="text-sm text-gray-400 hover:text-white transition">Structural Repair</a></li>
-            <li><a href="./paints.html" class="text-sm text-gray-400 hover:text-white transition">Paints & Coatings</a></li>
-            <li><a href="./admixtures.html" class="text-sm text-gray-400 hover:text-white transition">Concrete Admixtures</a></li>
+        <!-- Solutions (2 columns, compact) -->
+        <div class="lg:col-span-4">
+          <p class="text-[12px] man tracking-[0.25em] uppercase text-white mb-4 font-semibold">Solutions</p>
+          <ul class="grid grid-cols-2 gap-x-6 gap-y-1.5 pop">
+            <li class="text-sm text-gray-400 hover:text-white transition cursor-default">Concrete Admixtures</li>
+            <li class="text-sm text-gray-400 hover:text-white transition cursor-default">Waterproofing Systems</li>
+            <li class="text-sm text-gray-400 hover:text-white transition cursor-default">Industrial Flooring</li>
+            <li class="text-sm text-gray-400 hover:text-white transition cursor-default">Joint Sealants</li>
+            <li class="text-sm text-gray-400 hover:text-white transition cursor-default">Protective Coatings</li>
+            <li class="text-sm text-gray-400 hover:text-white transition cursor-default">Structural Repair</li>
+            <li class="text-sm text-gray-400 hover:text-white transition cursor-default">Surface Treatments</li>
+            <li class="text-sm text-gray-400 hover:text-white transition cursor-default">Adhesives & Bonding</li>
+            <li class="text-sm text-gray-400 hover:text-white transition cursor-default">Membrane Systems</li>
+            <li class="text-sm text-gray-400 hover:text-white transition cursor-default">Asphalts & Bitumen</li>
+            <li class="text-sm text-gray-400 hover:text-white transition cursor-default">Grouts & Anchors</li>
+            <li class="text-sm text-gray-400 hover:text-white transition cursor-default">Concrete Repairs</li>
           </ul>
         </div>
 
         <!-- Contact -->
-        <div class="lg:col-span-2">
-          <p class="text-[12px] man tracking-[0.25em] uppercase text-[white] mb-4 font-semibold">Get In Touch</p>
+        <div class="lg:col-span-3">
+          <p class="text-[12px] man tracking-[0.25em] uppercase text-white mb-4 font-semibold">Get In Touch</p>
+
           <ul class="flex flex-col pop gap-3">
             <li>
               <a href="tel:+923016097666" class="flex flex-col">
@@ -623,34 +660,53 @@
                 <span class="text-xs text-gray-300 hover:text-white transition">+92 301 6097666</span>
               </a>
             </li>
+
+            <li>
+              <a href="tel:+923009653044" class="flex flex-col">
+                <span class="text-[10px] text-gray-500">Office</span>
+                <span class="text-xs text-gray-300 hover:text-white transition">+92 300 9653044</span>
+              </a>
+            </li>
+
             <li>
               <a href="mailto:info@usmanconsultants.com" class="flex flex-col">
                 <span class="text-[10px] text-gray-500">Email</span>
                 <span class="text-xs text-gray-300 hover:text-white transition">info@usmanconsultants.com</span>
               </a>
             </li>
+
             <li class="flex flex-col">
               <span class="text-[10px] text-gray-500">Location</span>
               <span class="text-xs text-gray-300">Faisalabad, Pakistan</span>
             </li>
           </ul>
+
         </div>
+
       </div>
 
       <!-- Bottom Bar -->
       <div class="mt-10 border-t border-[#1d3a72]/30 pt-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+
         <p class="text-[11px] text-gray-500">© 2026 Usman Consultants. All rights reserved.</p>
+
         <div class="flex items-center gap-4">
           <a href="./terms.html" class="text-[11px] text-gray-500 hover:text-white transition">Terms</a>
           <span class="w-px h-3 bg-[#1d3a72]/30"></span>
           <a href="./privacy.html" class="text-[11px] text-gray-500 hover:text-white transition">Privacy</a>
         </div>
+
         <p class="text-[11px] text-gray-500">
           Developed by
-          <a href="https://wa.me/923224066958" target="_blank" class="text-gray-300 hover:text-white transition">MAC</a>
+          <a href="https://wa.me/923224066958" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white transition">
+            MAC
+          </a>
         </p>
+
       </div>
+
     </div>
+
   </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
