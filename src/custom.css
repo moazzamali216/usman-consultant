@@ -32,3 +32,52 @@ nav{
 .tcolor{
   color: #0e63ab !important;
 }
+/* FAQ Styles - COMPLETE FIX */
+.faq-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out, padding 0.3s ease-in-out;
+  padding: 0 1.5rem !important;
+}
+
+.faq-content > * {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.faq-content.active > * {
+  opacity: 1;
+}
+
+.faq-btn {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.faq-btn:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.faq-icon {
+  transition: transform 0.3s ease;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #1d3a72;
+  min-width: 30px;
+  text-align: center;
+  line-height: 1;
+}
+
+.faq-icon.rotate-45 {
+  transform: rotate(45deg);
+}
+
+.faq-content p {
+  margin: 0;
+  padding: 16px 0;
+}
