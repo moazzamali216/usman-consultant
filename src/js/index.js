@@ -111,9 +111,7 @@ buttons.forEach(btn => {
       icon.classList.add('rotate-45');
     }
   });
-});
-
-
+})
 
 
 
